@@ -1,0 +1,48 @@
+# Exakat Docker Container.
+
+[Docker](https://www.docker.com) container to install and run [Exakat](https://www.exakat.io/) 0.9.2.
+
+## Features
+
+* [Exakat](https://www.exakat.io/) [`0.9.2`](https://github.com/exakat/exakat.git)
+* [PHP](https://php.net) 7.0
+
+## Installation
+
+1. Install the exakat/exakat container:
+
+    ``` sh
+	$ docker pull exakat/exakat
+	```
+
+2. Run Exakat:
+
+    ``` sh
+	$ docker run -v $(pwd)/projects:/usr/src/exakat/projects --rm exakat/exakat run
+    ```
+
+## Dockerfile building
+
+To build the Exakat dockerfile : 
+
+1. Clone the source:
+
+    ``` sh
+	$ git clone https://github.com/exakat/exakat-docker.git
+	$ cd exakat-docker
+    ```
+
+2. Build the container:
+
+    ``` sh
+	$ docker build --no-cache -t exakat/exakat:0.9.2 .
+    ```
+
+4. Test the Exakat container:
+
+    ``` sh
+    $ docker run -it -v $(pwd):/usr/src/exakat/projects --rm exakat/exakat doctor
+    $ docker run -it -v $(pwd):/usr/src/exakat/projects --rm exakat/exakat init -p nlptools -R https://github.com/atrilla/nlptools.git -v
+    $ docker run -it -v $(pwd):/usr/src/exakat/projects --rm exakat/exakat project -v -p nlptools
+	```
+
