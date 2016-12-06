@@ -3,8 +3,6 @@ MAINTAINER Exakat, Damien Seguy, dseguy@exakat.io
 
 COPY . /usr/src/exakat
 
-# install Java 8
-# add webupd8 repository
 RUN \
     echo "===> Java 8"  && \
     echo "deb http://ppa.launchpad.net/webupd8team/java/ubuntu trusty main" | tee /etc/apt/sources.list.d/webupd8team-java.list  && \
