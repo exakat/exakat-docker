@@ -38,12 +38,9 @@ RUN \
     echo "====> Gremlin 3" && \
     git clone https://github.com/thinkaurelius/neo4j-gremlin-plugin && \
     cd neo4j-gremlin-plugin && \
-    sed -i.bak s_\<version\>2.3.1\</version\>_\<version\>2.3.5\</version\>_ pom.xml && \
-    sed -i.bak s_\<version\>2.3.1\</version\>_\<version\>2.3.5\</version\>_ tinkerpop2/pom.xml && \
-    sed -i.bak s_\<version\>2.3.1\</version\>_\<version\>2.3.5\</version\>_ tinkerpop3/pom.xml && \
-    sed -i.bak s_\<tinkerpop-version\>3.1.0-incubating\</tinkerpop-version\>_\<tinkerpop-version\>3.1.0-incubating\</tinkerpop-version\>_ tinkerpop3/pom.xml && \
+    sed -i.bak s_\<tinkerpop-version\>3.1.0-incubating\</tinkerpop-version\>_\<tinkerpop-version\>3.2.0-incubating\</tinkerpop-version\>_ tinkerpop3/pom.xml && \
     mvn clean package -Dtp.version=3  && \
-    unzip target/neo4j-gremlin-plugin-tp3-2.3.5-server-plugin.zip -d ../neo4j/plugins/gremlin-plugin  && \
+    unzip target/neo4j-gremlin-plugin-tp3-2.3.1-server-plugin.zip -d ../neo4j/plugins/gremlin-plugin  && \
     cd .. && \
     echo "====> Cleanup" && \
     \
