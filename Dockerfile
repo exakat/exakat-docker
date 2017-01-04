@@ -1,7 +1,7 @@
 FROM php:7.0-cli
 MAINTAINER Exakat, Damien Seguy, dseguy@exakat.io
 
-COPY . /usr/src/exakat
+COPY config exakat.sh gremlin.tar /usr/src/exakat/
 
 RUN \
     echo "===> Java 8"  && \
@@ -14,11 +14,8 @@ RUN \
     echo debconf shared/accepted-oracle-license-v1-1 seen true | debconf-set-selections  && \
     DEBIAN_FRONTEND=noninteractive  apt-get install -y --force-yes oracle-java8-installer oracle-java8-set-default  && \
     \
-    echo "===> PHP ext/sem "  && \
-    docker-php-ext-install -j$(nproc) sysvsem && \
     apt-get update && apt-get install -y \
     git \
-    maven \ 
     lsof && \
     echo "====> Exakat latest" && \
     cd /usr/src/exakat && \
@@ -36,15 +33,9 @@ RUN \
     rm neo4j/conf/neo4j-server.properties.bak && \
     \
     echo "====> Gremlin 3" && \
-    git clone https://github.com/thinkaurelius/neo4j-gremlin-plugin && \
-    cd neo4j-gremlin-plugin && \
-    sed -i.bak s_\<tinkerpop-version\>3.1.0-incubating\</tinkerpop-version\>_\<tinkerpop-version\>3.2.0-incubating\</tinkerpop-version\>_ tinkerpop3/pom.xml && \
-    mvn clean package -Dtp.version=3  && \
-    unzip target/neo4j-gremlin-plugin-tp3-2.3.1-server-plugin.zip -d ../neo4j/plugins/gremlin-plugin  && \
-    cd .. && \
-    echo "====> Cleanup" && \
+    mkdir /usr/src/exakat/neo4j/plugins/gremlin-plugin && \
+    tar xvf gremlin.tar -C /usr/src/exakat/neo4j/plugins/gremlin-plugin && \
     \
-    apt-get remove -y --purge maven && \
     apt-get clean && \
     rm -rf /var/cache/oracle-jdk8-installer  && \
     rm -rf /var/lib/apt/lists/*
