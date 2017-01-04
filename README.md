@@ -1,10 +1,10 @@
 # Exakat Docker Container.
 
-[Docker](https://www.docker.com) container to install and run [Exakat](https://www.exakat.io/) 0.9.2.
+[Docker](https://www.docker.com) container to install and run [Exakat](https://www.exakat.io/) 0.9.5.
 
 ## Features
 
-* [Exakat](https://www.exakat.io/) [`0.9.2`](https://github.com/exakat/exakat.git)
+* [Exakat](https://www.exakat.io/) [`0.9.5`](https://github.com/exakat/exakat.git)
 * [PHP](https://php.net) 7.0
 
 ## Installation
@@ -21,6 +21,14 @@
 	$ docker run -v $(pwd)/projects:/usr/src/exakat/projects --rm exakat/exakat run
     ```
 
+3. Make commandline short cut for Exakat :
+
+    ``` sh
+    $ cat 'docker run -it -v $(pwd)/projects:/usr/src/exakat/projects --rm --name my-exakat exakat/exakat $1' > /etc/local/sbin/exakat.sh
+    $ chmod u+x  /etc/local/sbin/exakat.sh
+    $ ./exakat.sh version
+    ```
+
 ## Dockerfile building
 
 To build the Exakat dockerfile : 
@@ -35,7 +43,7 @@ To build the Exakat dockerfile :
 2. Build the container:
 
     ``` sh
-	$ docker build --no-cache -t exakat/exakat:0.9.2 .
+	$ docker build --no-cache -t exakat/exakat:0.9.5 .
     ```
 
 4. Test the Exakat container:
