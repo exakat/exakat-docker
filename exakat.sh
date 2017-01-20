@@ -8,4 +8,5 @@ for arg; do
 			;;
 	esac
 done
-./exakat.phar $@
+
+php exakat.phar $@
