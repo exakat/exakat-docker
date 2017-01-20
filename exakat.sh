@@ -9,4 +9,4 @@ for arg; do
 	esac
 done
 
-php exakat.phar $@
+./exakat.phar $@

@@ -1,13 +1,13 @@
-FROM php:7.1-cli
+FROM php:7.1.0-cli
 MAINTAINER Exakat, Damien Seguy, dseguy@exakat.io
 
-COPY exakat.sh gremlin.tar /usr/src/exakat/
+COPY exakat.sh /usr/src/exakat/
 COPY config/exakat.ini /usr/src/exakat/config/
 
 RUN \
-    ls -hla /usr/src/exakat && \
-    ls -hla /usr/src/exakat/config && \
-    cat /usr/src/exakat/config/exakat.ini && \
+    echo "===> php.ini" && \
+    echo "memory_limit=-1" >> /usr/local/etc/php/php.ini && \
+    \
     echo "===> Java 8"  && \
     echo "deb http://ppa.launchpad.net/webupd8team/java/ubuntu trusty main" | tee /etc/apt/sources.list.d/webupd8team-java.list  && \
     echo "deb-src http://ppa.launchpad.net/webupd8team/java/ubuntu trusty main" | tee -a /etc/apt/sources.list.d/webupd8team-java.list  && \
@@ -20,8 +20,9 @@ RUN \
     \
     apt-get update && apt-get install -y \
     git \
+    maven \ 
     lsof && \
-    echo "====> Exakat latest" && \
+    echo "====> Exakat 0.9.7" && \
     cd /usr/src/exakat && \
     wget --quiet http://dist.exakat.io/index.php?file=exakat-0.9.7.phar -O exakat.phar && \
     chmod a+x /usr/src/exakat/exakat.* && \
@@ -37,9 +38,15 @@ RUN \
     rm neo4j/conf/neo4j-server.properties.bak && \
     \
     echo "====> Gremlin 3" && \
-    mkdir /usr/src/exakat/neo4j/plugins/gremlin-plugin && \
-    tar xvf gremlin.tar -C /usr/src/exakat/neo4j/plugins/gremlin-plugin && \
+    git clone https://github.com/thinkaurelius/neo4j-gremlin-plugin && \
+    cd neo4j-gremlin-plugin && \
+    sed -i.bak s_\<tinkerpop-version\>3.1.0-incubating\</tinkerpop-version\>_\<tinkerpop-version\>3.2.0-incubating\</tinkerpop-version\>_ tinkerpop3/pom.xml && \
+    mvn clean package -Dtp.version=3  && \
+    unzip target/neo4j-gremlin-plugin-tp3-2.3.1-server-plugin.zip -d ../neo4j/plugins/gremlin-plugin  && \
+    cd .. && \
+    echo "====> Cleanup" && \
     \
+    apt-get remove -y --purge maven && \
     apt-get clean && \
     rm -rf /var/cache/oracle-jdk8-installer  && \
     rm -rf /var/lib/apt/lists/*
