@@ -1,4 +1,4 @@
-FROM php:7.1.0-cli
+FROM php:7.1-cli
 MAINTAINER Exakat, Damien Seguy, dseguy@exakat.io
 
 COPY exakat.sh /usr/src/exakat/
