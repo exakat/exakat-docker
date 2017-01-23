@@ -18,19 +18,19 @@ RUN \
     echo debconf shared/accepted-oracle-license-v1-1 seen true | debconf-set-selections  && \
     DEBIAN_FRONTEND=noninteractive  apt-get install -y --force-yes oracle-java8-installer oracle-java8-set-default  && \
     \
-    apt-get update && apt-get install -y \
+    apt-get update && apt-get install -y --no-install-recommends \
     git \
     maven \ 
     lsof && \
-    echo "====> Exakat 0.9.7" && \
+    echo "====> Exakat 0.9.8" && \
     cd /usr/src/exakat && \
-    wget --quiet http://dist.exakat.io/index.php?file=exakat-0.9.7.phar -O exakat.phar && \
+    wget --quiet http://dist.exakat.io/index.php?file=exakat-0.9.8.phar -O exakat.phar && \
     chmod a+x /usr/src/exakat/exakat.* && \
     \
     echo "====> Neo4j" && \
-    wget --quiet http://dist.neo4j.org/neo4j-community-2.3.7-unix.tar.gz && \
-    tar zxf neo4j-community-2.3.7-unix.tar.gz && \
-    mv neo4j-community-2.3.7 neo4j && \
+    wget --quiet http://dist.neo4j.org/neo4j-community-2.3.8-unix.tar.gz && \
+    tar zxf neo4j-community-2.3.8-unix.tar.gz && \
+    mv neo4j-community-2.3.8 neo4j && \
     export NEO4J_HOME=/usr/src/exakat && \
     sed -i.bak s/dbms\.security\.auth_enabled=true/dbms\.security\.auth_enabled=false/ neo4j/conf/neo4j-server.properties && \
     sed -i.bak s%#org.neo4j.server.thirdparty_jaxrs_classes=org.neo4j.examples.server.unmanaged=/examples/unmanaged%org.neo4j.server.thirdparty_jaxrs_classes=com.thinkaurelius.neo4j.plugins=/tp% neo4j/conf/neo4j-server.properties && \
@@ -40,7 +40,7 @@ RUN \
     echo "====> Gremlin 3" && \
     git clone https://github.com/thinkaurelius/neo4j-gremlin-plugin && \
     cd neo4j-gremlin-plugin && \
-    sed -i.bak s_\<tinkerpop-version\>3.1.0-incubating\</tinkerpop-version\>_\<tinkerpop-version\>3.2.0-incubating\</tinkerpop-version\>_ tinkerpop3/pom.xml && \
+    sed -i.bak s_\<tinkerpop-version\>3.1.0-incubating\</tinkerpop-version\>_\<tinkerpop-version\>3.2.3\</tinkerpop-version\>_ tinkerpop3/pom.xml && \
     mvn clean package -Dtp.version=3  && \
     unzip target/neo4j-gremlin-plugin-tp3-2.3.1-server-plugin.zip -d ../neo4j/plugins/gremlin-plugin  && \
     cd .. && \
