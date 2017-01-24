@@ -4,7 +4,7 @@
 
 ## Features
 
-* [Exakat](https://www.exakat.io/) [`0.9.7`](https://github.com/exakat/exakat.git)
+* [Exakat](https://www.exakat.io/) [`0.9.8`](https://github.com/exakat/exakat.git)
 * [PHP](https://php.net) 7.1
 
 ## Installation
@@ -43,7 +43,7 @@ To build the Exakat dockerfile :
 2. Build the container:
 
     ``` sh
-	$ docker build --no-cache -t exakat/exakat:0.9.7 .
+	$ docker build --no-cache -t exakat/exakat:0.9.8 .
     ```
 
 4. Test the Exakat container:
