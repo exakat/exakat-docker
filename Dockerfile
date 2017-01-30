@@ -40,7 +40,7 @@ RUN \
     echo "====> Gremlin 3" && \
     git clone https://github.com/thinkaurelius/neo4j-gremlin-plugin && \
     cd neo4j-gremlin-plugin && \
-    sed -i.bak s_\<tinkerpop-version\>3.1.0-incubating\</tinkerpop-version\>_\<tinkerpop-version\>3.2.3\</tinkerpop-version\>_ tinkerpop3/pom.xml && \
+    sed -i.bak s_\<tinkerpop-version\>3.1.0-incubating\</tinkerpop-version\>_\<tinkerpop-version\>3.2.0-incubating\</tinkerpop-version\>_ tinkerpop3/pom.xml && \
     mvn clean package -DskipTests -Dtp.version=3  && \
     unzip target/neo4j-gremlin-plugin-tp3-2.3.1-server-plugin.zip -d ../neo4j/plugins/gremlin-plugin  && \
     cd .. && \
