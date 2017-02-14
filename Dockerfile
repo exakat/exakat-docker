@@ -3,6 +3,8 @@ MAINTAINER Exakat, Damien Seguy, dseguy@exakat.io
 
 COPY exakat.sh /usr/src/exakat/
 COPY config/exakat.ini /usr/src/exakat/config/
+COPY projects /usr/src/exakat/projects
+COPY docs/ /docs/
 
 RUN \
     echo "===> php.ini" && \
@@ -22,10 +24,11 @@ RUN \
     git \
     maven \ 
     lsof && \
-    echo "====> Exakat 0.10.0" && \
+    echo "====> Exakat 0.10.1" && \
     cd /usr/src/exakat && \
     wget --quiet http://dist.exakat.io/index.php?file=exakat-0.10.1.phar -O exakat.phar && \
     chmod a+x /usr/src/exakat/exakat.* && \
+    ln -s /src /usr/src/exakat/projects/codacy/code && \
     \
     echo "====> Neo4j" && \
     wget --quiet http://dist.neo4j.org/neo4j-community-2.3.9-unix.tar.gz && \
@@ -49,10 +52,9 @@ RUN \
     apt-get remove -y --purge maven && \
     apt-get clean && \
     rm -rf /var/cache/oracle-jdk8-installer  && \
-    rm -rf /var/lib/apt/lists/*
+    rm -rf /var/lib/apt/lists/* 
 
 WORKDIR /usr/src/exakat
 
-entrypoint [ "/usr/src/exakat/exakat.sh" ]
+ENTRYPOINT [ "/usr/src/exakat/exakat.sh" ]
 
-CMD [ "doctor" ]
