@@ -22,9 +22,9 @@ RUN \
     git \
     maven \ 
     lsof && \
-    echo "====> Exakat 0.10.0" && \
+    echo "====> Exakat 0.10.2" && \
     cd /usr/src/exakat && \
-    wget --quiet http://dist.exakat.io/index.php?file=exakat-0.10.1.phar -O exakat.phar && \
+    wget --quiet http://dist.exakat.io/index.php?file=exakat-0.10.2.phar -O exakat.phar && \
     chmod a+x /usr/src/exakat/exakat.* && \
     \
     echo "====> Neo4j" && \
