@@ -1,0 +1,1 @@
+The following functions have been deprecated in PHP. Whatever the version you are using, it is recommended to stop using them and replace them with a durable equivalent. 

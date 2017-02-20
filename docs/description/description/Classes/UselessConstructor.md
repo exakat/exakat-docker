@@ -1,0 +1,1 @@
+Class constructor that have empty bodies are useless. They may be removed.

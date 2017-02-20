@@ -1,0 +1,14 @@
+Use statement doesn't require a fully qualified name.
+
+PHP manual recommends not to use fully qualified name (starting with \) when using the 'use' statement : they are "the leading backslash is unnecessary and not recommended, as import names must be fully qualified, and are not processed relative to the current namespace".
+
+<?php
+
+// Recommended way to write a use statement.
+use  A\B\C\D as E;
+
+// No need to use the initial \
+use \A\B\C\D as F;
+
+?>
+

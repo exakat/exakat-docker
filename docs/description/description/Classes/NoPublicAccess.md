@@ -1,0 +1,18 @@
+The properties below are declared with public access, but are never used publicly. They can be made protected or private.
+
+<?php
+
+class foo {
+    public $bar = 1;            // Public, and used in public space
+    public $neverInPublic = 3;  // Public, but never used in outside the class
+    
+    function bar() {
+        $neverInPublic++;
+    }
+}
+
+$x = new foo();
+$x->bar = 3;
+$x->bar();
+
+?>

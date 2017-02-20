@@ -1,0 +1,1 @@
+Some constants are defined several times in your code. This will lead to a fatal error, if they are defined during the same execution. 

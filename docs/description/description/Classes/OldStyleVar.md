@@ -1,0 +1,14 @@
+Var was used in PHP 4 to mark properties as public. Nowadays, new keywords are available : public, protected, private. Var is equivalent to public. 
+
+It is recommended to avoid using var, and explicitely use the new keywords.
+
+<?php
+
+class foo {
+    public $bar = 1;
+    // Avoid var
+    //var $bar = 1; 
+}
+
+?>
+
