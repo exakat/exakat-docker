@@ -1,1 +1,0 @@
-Those functions were removed in PHP 5.4.

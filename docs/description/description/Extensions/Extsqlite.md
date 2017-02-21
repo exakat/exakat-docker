@@ -1,1 +1,0 @@
-Extension ext/sqlite3

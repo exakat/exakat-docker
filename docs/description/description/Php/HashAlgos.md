@@ -1,1 +1,0 @@
-There is a long but limited list of hashing algorithm available to PHP. The one found below doesn't seem to be existing.

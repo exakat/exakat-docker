@@ -1,1 +1,0 @@
-Those variables are being written, but never read. This way, they are useless and should be removed, or read at some point.

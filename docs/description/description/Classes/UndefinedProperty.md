@@ -1,1 +1,0 @@
-List of properties that are not explicitely defined in the class, its parents or traits.

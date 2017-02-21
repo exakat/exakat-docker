@@ -1,1 +1,0 @@
-The magic methods must have public visibility and cannot be static

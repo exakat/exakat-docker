@@ -1,1 +1,0 @@
-Magical method __toString() can't throw exceptions, according to the world.

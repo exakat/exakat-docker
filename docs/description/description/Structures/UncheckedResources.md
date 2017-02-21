@@ -1,1 +1,0 @@
-Resources are created, but never checked before being used. This is not safe.
