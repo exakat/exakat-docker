@@ -1,0 +1,27 @@
+Mark properties that are used in children classes.
+
+<?php
+
+class foo {
+    // This property is used in children
+    protected protectedProperty = 1;
+    
+    // This property is not used in children
+    protected localProtectedProperty = 1;
+
+    private function foobar() {
+        // protectedProperty is used here, but defined in parent
+        $this->localProtectedProperty = 3;
+    }
+}
+
+class foofoo extends foo {
+    private function bar() {
+        // protectedProperty is used here, but defined in parent
+        $this->protectedProperty = 3;
+    }
+}
+
+?>
+
+This doesn't mark the current class, nor the (grand-)parent ones.

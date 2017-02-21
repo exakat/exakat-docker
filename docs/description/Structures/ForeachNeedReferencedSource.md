@@ -1,0 +1,20 @@
+When using foreach with a reference as value, the source must be a referenced array, which is a variable (or array or property or static property). 
+When the array is the result of an expression, the array is not kept in memory after the foreach loop, and any change made with & are lost.
+
+This will do nothing
+
+<?php
+    foreach(array(1,2,3) as &$value) {
+        $value *= 2;
+    }
+?>
+
+This will have an actual effect
+
+<?php
+    $array = array(1,2,3);
+    foreach($array as &$value) {
+        $value *= 2;
+    }
+?>
+

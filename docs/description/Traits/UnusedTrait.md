@@ -1,0 +1,19 @@
+Those traits are not used in a class or another trait. They may be dead code.
+
+<?php
+
+// unused trait
+trait unusedTrait { /**/ }
+
+// used trait
+trait tUsedInTrait { /**/ }
+
+trait tUsedInClass { 
+    use tUsedInTrait;
+    /**/ 
+    }
+
+class foo {
+    use tUsedInClass;
+}
+?>

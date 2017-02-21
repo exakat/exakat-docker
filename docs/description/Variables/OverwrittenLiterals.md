@@ -1,0 +1,1 @@
+In those methods, the same variable is assigned a literal twice. One of them is too much.

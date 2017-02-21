@@ -1,0 +1,1 @@
+When deriving classes, implements should be used for interfaces, and extends with classes.
