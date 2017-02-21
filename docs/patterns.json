@@ -1,0 +1,1709 @@
+{
+    "name": "exakat",
+    "patterns": [
+        {
+            "patternId": "Structures/AddZero",
+            "level": "Warning",
+            "category": "ErrorProne",
+            "parameters": []
+        },
+        {
+            "patternId": "Arrays/AmbiguousKeys",
+            "level": "Warning",
+            "category": "ErrorProne",
+            "parameters": []
+        },
+        {
+            "patternId": "Structures/Break0",
+            "level": "Warning",
+            "category": "ErrorProne",
+            "parameters": []
+        },
+        {
+            "patternId": "Structures/BreakNonInteger",
+            "level": "Warning",
+            "category": "ErrorProne",
+            "parameters": []
+        },
+        {
+            "patternId": "Structures/CalltimePassByReference",
+            "level": "Warning",
+            "category": "ErrorProne",
+            "parameters": []
+        },
+        {
+            "patternId": "Structures/ErrorReportingWithInteger",
+            "level": "Warning",
+            "category": "ErrorProne",
+            "parameters": []
+        },
+        {
+            "patternId": "Structures/EvalUsage",
+            "level": "Warning",
+            "category": "ErrorProne",
+            "parameters": []
+        },
+        {
+            "patternId": "Structures/ExitUsage",
+            "level": "Warning",
+            "category": "ErrorProne",
+            "parameters": []
+        },
+        {
+            "patternId": "Structures/ForgottenWhiteSpace",
+            "level": "Warning",
+            "category": "ErrorProne",
+            "parameters": []
+        },
+        {
+            "patternId": "Structures/MultiplyByOne",
+            "level": "Warning",
+            "category": "ErrorProne",
+            "parameters": []
+        },
+        {
+            "patternId": "Structures/NotNot",
+            "level": "Warning",
+            "category": "ErrorProne",
+            "parameters": []
+        },
+        {
+            "patternId": "Structures/OnceUsage",
+            "level": "Warning",
+            "category": "ErrorProne",
+            "parameters": []
+        },
+        {
+            "patternId": "Structures/PhpinfoUsage",
+            "level": "Warning",
+            "category": "ErrorProne",
+            "parameters": []
+        },
+        {
+            "patternId": "Structures/StrposCompare",
+            "level": "Warning",
+            "category": "ErrorProne",
+            "parameters": []
+        },
+        {
+            "patternId": "Structures/ThrowsAndAssign",
+            "level": "Warning",
+            "category": "ErrorProne",
+            "parameters": []
+        },
+        {
+            "patternId": "Structures/VardumpUsage",
+            "level": "Warning",
+            "category": "ErrorProne",
+            "parameters": []
+        },
+        {
+            "patternId": "Structures/toStringThrowsException",
+            "level": "Warning",
+            "category": "ErrorProne",
+            "parameters": []
+        },
+        {
+            "patternId": "Structures/ForWithFunctioncall",
+            "level": "Warning",
+            "category": "ErrorProne",
+            "parameters": []
+        },
+        {
+            "patternId": "Functions/EmptyFunction",
+            "level": "Warning",
+            "category": "ErrorProne",
+            "parameters": []
+        },
+        {
+            "patternId": "Interfaces/EmptyInterface",
+            "level": "Warning",
+            "category": "ErrorProne",
+            "parameters": []
+        },
+        {
+            "patternId": "Type/MalformedOctal",
+            "level": "Warning",
+            "category": "ErrorProne",
+            "parameters": []
+        },
+        {
+            "patternId": "Php/CaseForPSS",
+            "level": "Warning",
+            "category": "ErrorProne",
+            "parameters": []
+        },
+        {
+            "patternId": "Variables/VariableUsedOnce",
+            "level": "Warning",
+            "category": "ErrorProne",
+            "parameters": []
+        },
+        {
+            "patternId": "Traits/EmptyTrait",
+            "level": "Warning",
+            "category": "ErrorProne",
+            "parameters": []
+        },
+        {
+            "patternId": "Constants/ConstantStrangeNames",
+            "level": "Warning",
+            "category": "ErrorProne",
+            "parameters": []
+        },
+        {
+            "patternId": "Classes/EmptyClass",
+            "level": "Warning",
+            "category": "ErrorProne",
+            "parameters": []
+        },
+        {
+            "patternId": "Variables/VariableNonascii",
+            "level": "Warning",
+            "category": "ErrorProne",
+            "parameters": []
+        },
+        {
+            "patternId": "Php/Php54RemovedFunctions",
+            "level": "Warning",
+            "category": "ErrorProne",
+            "parameters": []
+        },
+        {
+            "patternId": "Classes/StaticMethodsCalledFromObject",
+            "level": "Warning",
+            "category": "ErrorProne",
+            "parameters": []
+        },
+        {
+            "patternId": "Classes/NonStaticMethodsCalledStatic",
+            "level": "Warning",
+            "category": "ErrorProne",
+            "parameters": []
+        },
+        {
+            "patternId": "Classes/NonPpp",
+            "level": "Warning",
+            "category": "ErrorProne",
+            "parameters": []
+        },
+        {
+            "patternId": "Classes/OldStyleConstructor",
+            "level": "Warning",
+            "category": "ErrorProne",
+            "parameters": []
+        },
+        {
+            "patternId": "Functions/RedeclaredPhpFunction",
+            "level": "Warning",
+            "category": "ErrorProne",
+            "parameters": []
+        },
+        {
+            "patternId": "Arrays/MultipleIdenticalKeys",
+            "level": "Warning",
+            "category": "ErrorProne",
+            "parameters": []
+        },
+        {
+            "patternId": "Php/Incompilable",
+            "level": "Warning",
+            "category": "ErrorProne",
+            "parameters": []
+        },
+        {
+            "patternId": "Namespaces/UseWithFullyQualifiedNS",
+            "level": "Warning",
+            "category": "ErrorProne",
+            "parameters": []
+        },
+        {
+            "patternId": "Namespaces/UnusedUse",
+            "level": "Warning",
+            "category": "ErrorProne",
+            "parameters": []
+        },
+        {
+            "patternId": "Structures/UselessInstruction",
+            "level": "Warning",
+            "category": "ErrorProne",
+            "parameters": []
+        },
+        {
+            "patternId": "Php/RawPostDataUsage",
+            "level": "Warning",
+            "category": "ErrorProne",
+            "parameters": []
+        },
+        {
+            "patternId": "Classes/AbstractStatic",
+            "level": "Warning",
+            "category": "ErrorProne",
+            "parameters": []
+        },
+        {
+            "patternId": "Constants/MultipleConstantDefinition",
+            "level": "Warning",
+            "category": "ErrorProne",
+            "parameters": []
+        },
+        {
+            "patternId": "Constants/InvalidName",
+            "level": "Warning",
+            "category": "ErrorProne",
+            "parameters": []
+        },
+        {
+            "patternId": "Functions/WrongOptionalParameter",
+            "level": "Warning",
+            "category": "ErrorProne",
+            "parameters": []
+        },
+        {
+            "patternId": "Functions/MultipleSameArguments",
+            "level": "Warning",
+            "category": "ErrorProne",
+            "parameters": []
+        },
+        {
+            "patternId": "Php/IsnullVsEqualNull",
+            "level": "Warning",
+            "category": "ErrorProne",
+            "parameters": []
+        },
+        {
+            "patternId": "Classes/ThisIsNotAnArray",
+            "level": "Warning",
+            "category": "ErrorProne",
+            "parameters": []
+        },
+        {
+            "patternId": "Type/OneVariableStrings",
+            "level": "Warning",
+            "category": "ErrorProne",
+            "parameters": []
+        },
+        {
+            "patternId": "Php/EchoTagUsage",
+            "level": "Warning",
+            "category": "ErrorProne",
+            "parameters": []
+        },
+        {
+            "patternId": "Php/ClosureThisSupport",
+            "level": "Warning",
+            "category": "ErrorProne",
+            "parameters": []
+        },
+        {
+            "patternId": "Classes/StaticContainsThis",
+            "level": "Warning",
+            "category": "ErrorProne",
+            "parameters": []
+        },
+        {
+            "patternId": "Structures/WhileListEach",
+            "level": "Warning",
+            "category": "ErrorProne",
+            "parameters": []
+        },
+        {
+            "patternId": "Structures/OneLineTwoInstructions",
+            "level": "Warning",
+            "category": "ErrorProne",
+            "parameters": []
+        },
+        {
+            "patternId": "Functions/OneLetterFunctions",
+            "level": "Warning",
+            "category": "ErrorProne",
+            "parameters": []
+        },
+        {
+            "patternId": "Structures/MultipleDefinedCase",
+            "level": "Warning",
+            "category": "ErrorProne",
+            "parameters": []
+        },
+        {
+            "patternId": "Structures/SwitchWithoutDefault",
+            "level": "Warning",
+            "category": "ErrorProne",
+            "parameters": []
+        },
+        {
+            "patternId": "Structures/FunctionPreSubscripting",
+            "level": "Warning",
+            "category": "ErrorProne",
+            "parameters": []
+        },
+        {
+            "patternId": "Classes/ThisIsForClasses",
+            "level": "Warning",
+            "category": "ErrorProne",
+            "parameters": []
+        },
+        {
+            "patternId": "Structures/NestedTernary",
+            "level": "Warning",
+            "category": "ErrorProne",
+            "parameters": []
+        },
+        {
+            "patternId": "Structures/SwitchWithMultipleDefault",
+            "level": "Warning",
+            "category": "ErrorProne",
+            "parameters": []
+        },
+        {
+            "patternId": "Constants/UndefinedConstants",
+            "level": "Warning",
+            "category": "ErrorProne",
+            "parameters": []
+        },
+        {
+            "patternId": "Arrays/NonConstantArray",
+            "level": "Warning",
+            "category": "ErrorProne",
+            "parameters": []
+        },
+        {
+            "patternId": "Classes/InstantiatingAbstractClass",
+            "level": "Warning",
+            "category": "ErrorProne",
+            "parameters": []
+        },
+        {
+            "patternId": "Classes/MutualExtension",
+            "level": "Warning",
+            "category": "ErrorProne",
+            "parameters": []
+        },
+        {
+            "patternId": "Classes/CitSameName",
+            "level": "Warning",
+            "category": "ErrorProne",
+            "parameters": []
+        },
+        {
+            "patternId": "Structures/EmptyTryCatch",
+            "level": "Warning",
+            "category": "ErrorProne",
+            "parameters": []
+        },
+        {
+            "patternId": "Classes/UndefinedClasses",
+            "level": "Warning",
+            "category": "ErrorProne",
+            "parameters": []
+        },
+        {
+            "patternId": "Structures/Htmlentitiescall",
+            "level": "Warning",
+            "category": "ErrorProne",
+            "parameters": []
+        },
+        {
+            "patternId": "Classes/UndefinedConstants",
+            "level": "Warning",
+            "category": "ErrorProne",
+            "parameters": []
+        },
+        {
+            "patternId": "Classes/UnusedPrivateProperty",
+            "level": "Warning",
+            "category": "ErrorProne",
+            "parameters": []
+        },
+        {
+            "patternId": "Classes/UnusedPrivateMethod",
+            "level": "Warning",
+            "category": "ErrorProne",
+            "parameters": []
+        },
+        {
+            "patternId": "Functions/UnusedFunctions",
+            "level": "Warning",
+            "category": "ErrorProne",
+            "parameters": []
+        },
+        {
+            "patternId": "Variables/VariableUsedOnceByContext",
+            "level": "Warning",
+            "category": "ErrorProne",
+            "parameters": []
+        },
+        {
+            "patternId": "Functions/UndefinedFunctions",
+            "level": "Warning",
+            "category": "ErrorProne",
+            "parameters": []
+        },
+        {
+            "patternId": "Php/Deprecated",
+            "level": "Warning",
+            "category": "ErrorProne",
+            "parameters": []
+        },
+        {
+            "patternId": "Structures/CryptWithoutSalt",
+            "level": "Warning",
+            "category": "ErrorProne",
+            "parameters": []
+        },
+        {
+            "patternId": "Structures/McryptcreateivWithoutOption",
+            "level": "Warning",
+            "category": "ErrorProne",
+            "parameters": []
+        },
+        {
+            "patternId": "Structures/DanglingArrayReferences",
+            "level": "Warning",
+            "category": "ErrorProne",
+            "parameters": []
+        },
+        {
+            "patternId": "Structures/QueriesInLoop",
+            "level": "Warning",
+            "category": "ErrorProne",
+            "parameters": []
+        },
+        {
+            "patternId": "Functions/AliasesUsage",
+            "level": "Warning",
+            "category": "ErrorProne",
+            "parameters": []
+        },
+        {
+            "patternId": "Functions/UsesDefaultArguments",
+            "level": "Warning",
+            "category": "ErrorProne",
+            "parameters": []
+        },
+        {
+            "patternId": "Classes/OldStyleVar",
+            "level": "Warning",
+            "category": "ErrorProne",
+            "parameters": []
+        },
+        {
+            "patternId": "Functions/WrongNumberOfArguments",
+            "level": "Warning",
+            "category": "ErrorProne",
+            "parameters": []
+        },
+        {
+            "patternId": "Functions/HardcodedPasswords",
+            "level": "Warning",
+            "category": "ErrorProne",
+            "parameters": []
+        },
+        {
+            "patternId": "Classes/UnresolvedClasses",
+            "level": "Warning",
+            "category": "ErrorProne",
+            "parameters": []
+        },
+        {
+            "patternId": "Functions/LoopCalling",
+            "level": "Warning",
+            "category": "ErrorProne",
+            "parameters": []
+        },
+        {
+            "patternId": "Namespaces/UnresolvedUse",
+            "level": "Warning",
+            "category": "ErrorProne",
+            "parameters": []
+        },
+        {
+            "patternId": "Classes/ImplementIsForInterface",
+            "level": "Warning",
+            "category": "ErrorProne",
+            "parameters": []
+        },
+        {
+            "patternId": "Constants/UnusedConstants",
+            "level": "Warning",
+            "category": "ErrorProne",
+            "parameters": []
+        },
+        {
+            "patternId": "Classes/UndefinedParentMP",
+            "level": "Warning",
+            "category": "ErrorProne",
+            "parameters": []
+        },
+        {
+            "patternId": "Classes/UndefinedStaticMP",
+            "level": "Warning",
+            "category": "ErrorProne",
+            "parameters": []
+        },
+        {
+            "patternId": "Classes/UselessConstructor",
+            "level": "Warning",
+            "category": "ErrorProne",
+            "parameters": []
+        },
+        {
+            "patternId": "Classes/AccessPrivate",
+            "level": "Warning",
+            "category": "ErrorProne",
+            "parameters": []
+        },
+        {
+            "patternId": "Classes/PssWithoutClass",
+            "level": "Warning",
+            "category": "ErrorProne",
+            "parameters": []
+        },
+        {
+            "patternId": "Classes/AccessProtected",
+            "level": "Warning",
+            "category": "ErrorProne",
+            "parameters": []
+        },
+        {
+            "patternId": "Structures/ListOmissions",
+            "level": "Warning",
+            "category": "ErrorProne",
+            "parameters": []
+        },
+        {
+            "patternId": "Structures/OrDie",
+            "level": "Warning",
+            "category": "ErrorProne",
+            "parameters": []
+        },
+        {
+            "patternId": "Constants/ConstRecommended",
+            "level": "Warning",
+            "category": "ErrorProne",
+            "parameters": []
+        },
+        {
+            "patternId": "Structures/UnreachableCode",
+            "level": "Warning",
+            "category": "ErrorProne",
+            "parameters": []
+        },
+        {
+            "patternId": "Functions/MustReturn",
+            "level": "Warning",
+            "category": "ErrorProne",
+            "parameters": []
+        },
+        {
+            "patternId": "Variables/WrittenOnlyVariable",
+            "level": "Warning",
+            "category": "ErrorProne",
+            "parameters": []
+        },
+        {
+            "patternId": "Classes/UnusedMethods",
+            "level": "Warning",
+            "category": "ErrorProne",
+            "parameters": []
+        },
+        {
+            "patternId": "Structures/PropertyVariableConfusion",
+            "level": "Warning",
+            "category": "ErrorProne",
+            "parameters": []
+        },
+        {
+            "patternId": "Exceptions/OverwriteException",
+            "level": "Warning",
+            "category": "ErrorProne",
+            "parameters": []
+        },
+        {
+            "patternId": "Structures/ForeachNeedReferencedSource",
+            "level": "Warning",
+            "category": "ErrorProne",
+            "parameters": []
+        },
+        {
+            "patternId": "Structures/ForeachReferenceIsNotModified",
+            "level": "Warning",
+            "category": "ErrorProne",
+            "parameters": []
+        },
+        {
+            "patternId": "Structures/ComparedComparison",
+            "level": "Warning",
+            "category": "ErrorProne",
+            "parameters": []
+        },
+        {
+            "patternId": "Structures/NoChangeIncomingVariables",
+            "level": "Warning",
+            "category": "ErrorProne",
+            "parameters": []
+        },
+        {
+            "patternId": "Functions/UselessReturn",
+            "level": "Warning",
+            "category": "ErrorProne",
+            "parameters": []
+        },
+        {
+            "patternId": "Classes/UnusedClass",
+            "level": "Warning",
+            "category": "ErrorProne",
+            "parameters": []
+        },
+        {
+            "patternId": "Structures/Unpreprocessed",
+            "level": "Warning",
+            "category": "ErrorProne",
+            "parameters": []
+        },
+        {
+            "patternId": "Classes/UndefinedProperty",
+            "level": "Warning",
+            "category": "ErrorProne",
+            "parameters": []
+        },
+        {
+            "patternId": "Extensions/Extapc",
+            "level": "Warning",
+            "category": "ErrorProne",
+            "parameters": []
+        },
+        {
+            "patternId": "Extensions/Extfdf",
+            "level": "Warning",
+            "category": "ErrorProne",
+            "parameters": []
+        },
+        {
+            "patternId": "Extensions/Extmysql",
+            "level": "Warning",
+            "category": "ErrorProne",
+            "parameters": []
+        },
+        {
+            "patternId": "Extensions/Extsqlite",
+            "level": "Warning",
+            "category": "ErrorProne",
+            "parameters": []
+        },
+        {
+            "patternId": "Php/ShortOpenTagRequired",
+            "level": "Warning",
+            "category": "ErrorProne",
+            "parameters": []
+        },
+        {
+            "patternId": "Structures/BooleanStrictComparison",
+            "level": "Warning",
+            "category": "ErrorProne",
+            "parameters": []
+        },
+        {
+            "patternId": "Structures/LoneBlock",
+            "level": "Warning",
+            "category": "ErrorProne",
+            "parameters": []
+        },
+        {
+            "patternId": "Classes/ThisIsNotForStatic",
+            "level": "Warning",
+            "category": "ErrorProne",
+            "parameters": []
+        },
+        {
+            "patternId": "Functions/ShouldBeTypehinted",
+            "level": "Warning",
+            "category": "ErrorProne",
+            "parameters": []
+        },
+        {
+            "patternId": "Structures/GlobalUsage",
+            "level": "Warning",
+            "category": "ErrorProne",
+            "parameters": []
+        },
+        {
+            "patternId": "Php/ReservedNames",
+            "level": "Warning",
+            "category": "ErrorProne",
+            "parameters": []
+        },
+        {
+            "patternId": "Classes/ShouldUseSelf",
+            "level": "Warning",
+            "category": "ErrorProne",
+            "parameters": []
+        },
+        {
+            "patternId": "Structures/ImplicitGlobal",
+            "level": "Warning",
+            "category": "ErrorProne",
+            "parameters": []
+        },
+        {
+            "patternId": "Php/LogicalInLetters",
+            "level": "Warning",
+            "category": "ErrorProne",
+            "parameters": []
+        },
+        {
+            "patternId": "Structures/CatchShadowsVariable",
+            "level": "Warning",
+            "category": "ErrorProne",
+            "parameters": []
+        },
+        {
+            "patternId": "Functions/DeepDefinitions",
+            "level": "Warning",
+            "category": "ErrorProne",
+            "parameters": []
+        },
+        {
+            "patternId": "Classes/ConstantClass",
+            "level": "Warning",
+            "category": "ErrorProne",
+            "parameters": []
+        },
+        {
+            "patternId": "Files/NotDefinitionsOnly",
+            "level": "Warning",
+            "category": "ErrorProne",
+            "parameters": []
+        },
+        {
+            "patternId": "Arrays/ShouldPreprocess",
+            "level": "Warning",
+            "category": "ErrorProne",
+            "parameters": []
+        },
+        {
+            "patternId": "Structures/RepeatedPrint",
+            "level": "Warning",
+            "category": "ErrorProne",
+            "parameters": []
+        },
+        {
+            "patternId": "Structures/PrintWithoutParenthesis",
+            "level": "Warning",
+            "category": "ErrorProne",
+            "parameters": []
+        },
+        {
+            "patternId": "Classes/LocallyUnusedProperty",
+            "level": "Warning",
+            "category": "ErrorProne",
+            "parameters": []
+        },
+        {
+            "patternId": "Structures/ObjectReferences",
+            "level": "Warning",
+            "category": "ErrorProne",
+            "parameters": []
+        },
+        {
+            "patternId": "Variables/LostReferences",
+            "level": "Warning",
+            "category": "ErrorProne",
+            "parameters": []
+        },
+        {
+            "patternId": "Constants/CreatedOutsideItsNamespace",
+            "level": "Warning",
+            "category": "ErrorProne",
+            "parameters": []
+        },
+        {
+            "patternId": "Namespaces/ConstantFullyQualified",
+            "level": "Warning",
+            "category": "ErrorProne",
+            "parameters": []
+        },
+        {
+            "patternId": "Classes/PropertyNeverUsed",
+            "level": "Warning",
+            "category": "ErrorProne",
+            "parameters": []
+        },
+        {
+            "patternId": "Type/NoRealComparison",
+            "level": "Warning",
+            "category": "ErrorProne",
+            "parameters": []
+        },
+        {
+            "patternId": "Structures/SequenceInFor",
+            "level": "Warning",
+            "category": "ErrorProne",
+            "parameters": []
+        },
+        {
+            "patternId": "Classes/ShouldUseThis",
+            "level": "Warning",
+            "category": "ErrorProne",
+            "parameters": []
+        },
+        {
+            "patternId": "Classes/DirectCallToMagicMethod",
+            "level": "Warning",
+            "category": "ErrorProne",
+            "parameters": []
+        },
+        {
+            "patternId": "Type/StringHoldAVariable",
+            "level": "Warning",
+            "category": "ErrorProne",
+            "parameters": []
+        },
+        {
+            "patternId": "Structures/UnusedGlobal",
+            "level": "Warning",
+            "category": "ErrorProne",
+            "parameters": []
+        },
+        {
+            "patternId": "Structures/UselessGlobal",
+            "level": "Warning",
+            "category": "ErrorProne",
+            "parameters": []
+        },
+        {
+            "patternId": "Structures/ShouldPreprocess",
+            "level": "Warning",
+            "category": "ErrorProne",
+            "parameters": []
+        },
+        {
+            "patternId": "Classes/UselessFinal",
+            "level": "Warning",
+            "category": "ErrorProne",
+            "parameters": []
+        },
+        {
+            "patternId": "Structures/UselessUnset",
+            "level": "Warning",
+            "category": "ErrorProne",
+            "parameters": []
+        },
+        {
+            "patternId": "Structures/BuriedAssignation",
+            "level": "Warning",
+            "category": "ErrorProne",
+            "parameters": []
+        },
+        {
+            "patternId": "Performances/ArrayMergeInLoops",
+            "level": "Warning",
+            "category": "ErrorProne",
+            "parameters": []
+        },
+        {
+            "patternId": "Structures/UselessParenthesis",
+            "level": "Warning",
+            "category": "ErrorProne",
+            "parameters": []
+        },
+        {
+            "patternId": "Classes/UnresolvedInstanceof",
+            "level": "Warning",
+            "category": "ErrorProne",
+            "parameters": []
+        },
+        {
+            "patternId": "Php/UseObjectApi",
+            "level": "Warning",
+            "category": "ErrorProne",
+            "parameters": []
+        },
+        {
+            "patternId": "Exceptions/Unthrown",
+            "level": "Warning",
+            "category": "ErrorProne",
+            "parameters": []
+        },
+        {
+            "patternId": "Structures/AlteringForeachWithoutReference",
+            "level": "Warning",
+            "category": "ErrorProne",
+            "parameters": []
+        },
+        {
+            "patternId": "Php/oldAutoloadUsage",
+            "level": "Warning",
+            "category": "ErrorProne",
+            "parameters": []
+        },
+        {
+            "patternId": "Structures/EmptyLines",
+            "level": "Warning",
+            "category": "ErrorProne",
+            "parameters": []
+        },
+        {
+            "patternId": "Classes/toStringPss",
+            "level": "Warning",
+            "category": "ErrorProne",
+            "parameters": []
+        },
+        {
+            "patternId": "Php/UsePathinfo",
+            "level": "Warning",
+            "category": "ErrorProne",
+            "parameters": []
+        },
+        {
+            "patternId": "Php/HashAlgos",
+            "level": "Warning",
+            "category": "ErrorProne",
+            "parameters": []
+        },
+        {
+            "patternId": "Functions/ShouldUseConstants",
+            "level": "Warning",
+            "category": "ErrorProne",
+            "parameters": []
+        },
+        {
+            "patternId": "Structures/NoParenthesisForLanguageConstruct",
+            "level": "Warning",
+            "category": "ErrorProne",
+            "parameters": []
+        },
+        {
+            "patternId": "Structures/UnusedLabel",
+            "level": "Warning",
+            "category": "ErrorProne",
+            "parameters": []
+        },
+        {
+            "patternId": "Structures/NoHardcodedPath",
+            "level": "Warning",
+            "category": "ErrorProne",
+            "parameters": []
+        },
+        {
+            "patternId": "Structures/NoHardcodedPort",
+            "level": "Warning",
+            "category": "ErrorProne",
+            "parameters": []
+        },
+        {
+            "patternId": "Functions/UseConstantAsArguments",
+            "level": "Warning",
+            "category": "ErrorProne",
+            "parameters": []
+        },
+        {
+            "patternId": "Structures/ImpliedIf",
+            "level": "Warning",
+            "category": "ErrorProne",
+            "parameters": []
+        },
+        {
+            "patternId": "Classes/MakeDefault",
+            "level": "Warning",
+            "category": "ErrorProne",
+            "parameters": []
+        },
+        {
+            "patternId": "Variables/OverwrittenLiterals",
+            "level": "Warning",
+            "category": "ErrorProne",
+            "parameters": []
+        },
+        {
+            "patternId": "Classes/NoPublicAccess",
+            "level": "Warning",
+            "category": "ErrorProne",
+            "parameters": []
+        },
+        {
+            "patternId": "Structures/ShouldChainException",
+            "level": "Warning",
+            "category": "ErrorProne",
+            "parameters": []
+        },
+        {
+            "patternId": "Interfaces/UnusedInterfaces",
+            "level": "Warning",
+            "category": "ErrorProne",
+            "parameters": []
+        },
+        {
+            "patternId": "Interfaces/UndefinedInterfaces",
+            "level": "Warning",
+            "category": "ErrorProne",
+            "parameters": []
+        },
+        {
+            "patternId": "Interfaces/UselessInterfaces",
+            "level": "Warning",
+            "category": "ErrorProne",
+            "parameters": []
+        },
+        {
+            "patternId": "Interfaces/ConcreteVisibility",
+            "level": "Warning",
+            "category": "ErrorProne",
+            "parameters": []
+        },
+        {
+            "patternId": "Structures/DoubleInstruction",
+            "level": "Warning",
+            "category": "ErrorProne",
+            "parameters": []
+        },
+        {
+            "patternId": "Structures/PrintAndDie",
+            "level": "Warning",
+            "category": "ErrorProne",
+            "parameters": []
+        },
+        {
+            "patternId": "Structures/UncheckedResources",
+            "level": "Warning",
+            "category": "ErrorProne",
+            "parameters": []
+        },
+        {
+            "patternId": "Security/ShouldUsePreparedStatement",
+            "level": "Warning",
+            "category": "ErrorProne",
+            "parameters": []
+        },
+        {
+            "patternId": "Structures/NoHardcodedIp",
+            "level": "Warning",
+            "category": "ErrorProne",
+            "parameters": []
+        },
+        {
+            "patternId": "Structures/EchoWithConcat",
+            "level": "Warning",
+            "category": "ErrorProne",
+            "parameters": []
+        },
+        {
+            "patternId": "Structures/ElseIfElseif",
+            "level": "Warning",
+            "category": "ErrorProne",
+            "parameters": []
+        },
+        {
+            "patternId": "Structures/UnsetInForeach",
+            "level": "Warning",
+            "category": "ErrorProne",
+            "parameters": []
+        },
+        {
+            "patternId": "Classes/CouldBeClassConstant",
+            "level": "Warning",
+            "category": "ErrorProne",
+            "parameters": []
+        },
+        {
+            "patternId": "Structures/CouldBeStatic",
+            "level": "Warning",
+            "category": "ErrorProne",
+            "parameters": []
+        },
+        {
+            "patternId": "Classes/MultipleDeclarations",
+            "level": "Warning",
+            "category": "ErrorProne",
+            "parameters": []
+        },
+        {
+            "patternId": "Namespaces/EmptyNamespace",
+            "level": "Warning",
+            "category": "ErrorProne",
+            "parameters": []
+        },
+        {
+            "patternId": "Structures/CouldUseShortAssignation",
+            "level": "Warning",
+            "category": "ErrorProne",
+            "parameters": []
+        },
+        {
+            "patternId": "Classes/UselessAbstract",
+            "level": "Warning",
+            "category": "ErrorProne",
+            "parameters": []
+        },
+        {
+            "patternId": "Classes/NullOnNew",
+            "level": "Warning",
+            "category": "ErrorProne",
+            "parameters": []
+        },
+        {
+            "patternId": "Structures/StaticLoop",
+            "level": "Warning",
+            "category": "ErrorProne",
+            "parameters": []
+        },
+        {
+            "patternId": "Performances/PrePostIncrement",
+            "level": "Warning",
+            "category": "ErrorProne",
+            "parameters": []
+        },
+        {
+            "patternId": "Structures/OnlyVariableReturnedByReference",
+            "level": "Warning",
+            "category": "ErrorProne",
+            "parameters": []
+        },
+        {
+            "patternId": "Structures/IndicesAreIntOrString",
+            "level": "Warning",
+            "category": "ErrorProne",
+            "parameters": []
+        },
+        {
+            "patternId": "Type/ShouldTypecast",
+            "level": "Warning",
+            "category": "ErrorProne",
+            "parameters": []
+        },
+        {
+            "patternId": "Classes/NoSelfReferencingConstant",
+            "level": "Warning",
+            "category": "ErrorProne",
+            "parameters": []
+        },
+        {
+            "patternId": "Structures/BreakOutsideLoop",
+            "level": "Warning",
+            "category": "ErrorProne",
+            "parameters": []
+        },
+        {
+            "patternId": "Structures/NoDirectUsage",
+            "level": "Warning",
+            "category": "ErrorProne",
+            "parameters": []
+        },
+        {
+            "patternId": "Structures/NoSubstrOne",
+            "level": "Warning",
+            "category": "ErrorProne",
+            "parameters": []
+        },
+        {
+            "patternId": "Structures/DoubleAssignation",
+            "level": "Warning",
+            "category": "ErrorProne",
+            "parameters": []
+        },
+        {
+            "patternId": "Php/EmptyList",
+            "level": "Warning",
+            "category": "ErrorProne",
+            "parameters": []
+        },
+        {
+            "patternId": "Php/ListWithAppends",
+            "level": "Warning",
+            "category": "ErrorProne",
+            "parameters": []
+        },
+        {
+            "patternId": "Structures/UselessBrackets",
+            "level": "Warning",
+            "category": "ErrorProne",
+            "parameters": []
+        },
+        {
+            "patternId": "Structures/pregOptionE",
+            "level": "Warning",
+            "category": "ErrorProne",
+            "parameters": []
+        },
+        {
+            "patternId": "Structures/EvalWithoutTry",
+            "level": "Warning",
+            "category": "ErrorProne",
+            "parameters": []
+        },
+        {
+            "patternId": "Extensions/Extfann",
+            "level": "Warning",
+            "category": "ErrorProne",
+            "parameters": []
+        },
+        {
+            "patternId": "Functions/RelayFunction",
+            "level": "Warning",
+            "category": "ErrorProne",
+            "parameters": []
+        },
+        {
+            "patternId": "Functions/funcGetArgModified",
+            "level": "Warning",
+            "category": "ErrorProne",
+            "parameters": []
+        },
+        {
+            "patternId": "Structures/UseInstanceof",
+            "level": "Warning",
+            "category": "ErrorProne",
+            "parameters": []
+        },
+        {
+            "patternId": "Type/SilentlyCastInteger",
+            "level": "Warning",
+            "category": "ErrorProne",
+            "parameters": []
+        },
+        {
+            "patternId": "Traits/UnusedTrait",
+            "level": "Warning",
+            "category": "ErrorProne",
+            "parameters": []
+        },
+        {
+            "patternId": "Structures/TimestampDifference",
+            "level": "Warning",
+            "category": "ErrorProne",
+            "parameters": []
+        },
+        {
+            "patternId": "Functions/UnusedArguments",
+            "level": "Warning",
+            "category": "ErrorProne",
+            "parameters": []
+        },
+        {
+            "patternId": "Structures/SwitchToSwitch",
+            "level": "Warning",
+            "category": "ErrorProne",
+            "parameters": []
+        },
+        {
+            "patternId": "Php/InternalParameterType",
+            "level": "Warning",
+            "category": "ErrorProne",
+            "parameters": []
+        },
+        {
+            "patternId": "Classes/CouldBePrivate",
+            "level": "Warning",
+            "category": "ErrorProne",
+            "parameters": []
+        },
+        {
+            "patternId": "Classes/RedefinedConstants",
+            "level": "Warning",
+            "category": "ErrorProne",
+            "parameters": []
+        },
+        {
+            "patternId": "Classes/RedefinedDefault",
+            "level": "Warning",
+            "category": "ErrorProne",
+            "parameters": []
+        },
+        {
+            "patternId": "Php/FopenMode",
+            "level": "Warning",
+            "category": "ErrorProne",
+            "parameters": []
+        },
+        {
+            "patternId": "Php/DirectiveName",
+            "level": "Warning",
+            "category": "ErrorProne",
+            "parameters": []
+        },
+        {
+            "patternId": "Variables/CloseNaming",
+            "level": "Warning",
+            "category": "ErrorProne",
+            "parameters": []
+        },
+        {
+            "patternId": "Php/PregMatchAllFlag",
+            "level": "Warning",
+            "category": "ErrorProne",
+            "parameters": []
+        },
+        {
+            "patternId": "Structures/NegativePow",
+            "level": "Warning",
+            "category": "ErrorProne",
+            "parameters": []
+        },
+        {
+            "patternId": "Php/BetterRand",
+            "level": "Warning",
+            "category": "ErrorProne",
+            "parameters": []
+        },
+        {
+            "patternId": "Interfaces/AlreadyParentsInterface",
+            "level": "Warning",
+            "category": "ErrorProne",
+            "parameters": []
+        },
+        {
+            "patternId": "Classes/WrongCase",
+            "level": "Warning",
+            "category": "ErrorProne",
+            "parameters": []
+        },
+        {
+            "patternId": "Classes/CantExtendFinal",
+            "level": "Warning",
+            "category": "ErrorProne",
+            "parameters": []
+        },
+        {
+            "patternId": "Structures/TernaryInConcat",
+            "level": "Warning",
+            "category": "ErrorProne",
+            "parameters": []
+        },
+        {
+            "patternId": "Classes/UsingThisOutsideAClass",
+            "level": "Warning",
+            "category": "ErrorProne",
+            "parameters": []
+        },
+        {
+            "patternId": "Traits/UndefinedTrait",
+            "level": "Warning",
+            "category": "ErrorProne",
+            "parameters": []
+        },
+        {
+            "patternId": "Structures/NoHardcodedHash",
+            "level": "Warning",
+            "category": "ErrorProne",
+            "parameters": []
+        },
+        {
+            "patternId": "Structures/IdenticalConditions",
+            "level": "Warning",
+            "category": "ErrorProne",
+            "parameters": []
+        },
+        {
+            "patternId": "Structures/UnknownPregOption",
+            "level": "Warning",
+            "category": "ErrorProne",
+            "parameters": []
+        },
+        {
+            "patternId": "Structures/NoChoice",
+            "level": "Warning",
+            "category": "ErrorProne",
+            "parameters": []
+        },
+        {
+            "patternId": "Structures/CommonAlternatives",
+            "level": "Warning",
+            "category": "ErrorProne",
+            "parameters": []
+        },
+        {
+            "patternId": "Structures/LogicalMistakes",
+            "level": "Warning",
+            "category": "ErrorProne",
+            "parameters": []
+        },
+        {
+            "patternId": "Structures/Iffectation",
+            "level": "Warning",
+            "category": "ErrorProne",
+            "parameters": []
+        },
+        {
+            "patternId": "Exceptions/UncaughtExceptions",
+            "level": "Warning",
+            "category": "ErrorProne",
+            "parameters": []
+        },
+        {
+            "patternId": "Structures/SameConditions",
+            "level": "Warning",
+            "category": "ErrorProne",
+            "parameters": []
+        },
+        {
+            "patternId": "Structures/ReturnTrueFalse",
+            "level": "Warning",
+            "category": "ErrorProne",
+            "parameters": []
+        },
+        {
+            "patternId": "Structures/UselessSwitch",
+            "level": "Warning",
+            "category": "ErrorProne",
+            "parameters": []
+        },
+        {
+            "patternId": "Variables/Overwriting",
+            "level": "Warning",
+            "category": "ErrorProne",
+            "parameters": []
+        },
+        {
+            "patternId": "Structures/CouldUseDir",
+            "level": "Warning",
+            "category": "ErrorProne",
+            "parameters": []
+        },
+        {
+            "patternId": "Php/ShouldUseCoalesce",
+            "level": "Warning",
+            "category": "ErrorProne",
+            "parameters": []
+        },
+        {
+            "patternId": "Classes/MakeGlobalAProperty",
+            "level": "Warning",
+            "category": "ErrorProne",
+            "parameters": []
+        },
+        {
+            "patternId": "Structures/IfWithSameConditions",
+            "level": "Warning",
+            "category": "ErrorProne",
+            "parameters": []
+        },
+        {
+            "patternId": "Exceptions/ThrowFunctioncall",
+            "level": "Warning",
+            "category": "ErrorProne",
+            "parameters": []
+        },
+        {
+            "patternId": "Classes/UseInstanceof",
+            "level": "Warning",
+            "category": "ErrorProne",
+            "parameters": []
+        },
+        {
+            "patternId": "Structures/ResultMayBeMissing",
+            "level": "Warning",
+            "category": "ErrorProne",
+            "parameters": []
+        },
+        {
+            "patternId": "Structures/NeverNegative",
+            "level": "Warning",
+            "category": "ErrorProne",
+            "parameters": []
+        },
+        {
+            "patternId": "Structures/EmptyBlocks",
+            "level": "Warning",
+            "category": "ErrorProne",
+            "parameters": []
+        },
+        {
+            "patternId": "Classes/ThrowInDestruct",
+            "level": "Warning",
+            "category": "ErrorProne",
+            "parameters": []
+        },
+        {
+            "patternId": "Structures/UseSystemTmp",
+            "level": "Warning",
+            "category": "ErrorProne",
+            "parameters": []
+        },
+        {
+            "patternId": "Classes/PropertyUsedBelow",
+            "level": "Warning",
+            "category": "ErrorProne",
+            "parameters": []
+        },
+        {
+            "patternId": "Traits/DependantTrait",
+            "level": "Warning",
+            "category": "ErrorProne",
+            "parameters": []
+        },
+        {
+            "patternId": "Namespaces/HiddenUse",
+            "level": "Warning",
+            "category": "ErrorProne",
+            "parameters": []
+        },
+        {
+            "patternId": "Namespaces/CouldUseAlias",
+            "level": "Warning",
+            "category": "ErrorProne",
+            "parameters": []
+        },
+        {
+            "patternId": "Namespaces/ShouldMakeAlias",
+            "level": "Warning",
+            "category": "ErrorProne",
+            "parameters": []
+        },
+        {
+            "patternId": "Classes/MultipleTraitOrInterface",
+            "level": "Warning",
+            "category": "ErrorProne",
+            "parameters": []
+        },
+        {
+            "patternId": "Namespaces/MultipleAliasDefinitions",
+            "level": "Warning",
+            "category": "ErrorProne",
+            "parameters": []
+        },
+        {
+            "patternId": "Structures/NestedIfthen",
+            "level": "Warning",
+            "category": "ErrorProne",
+            "parameters": []
+        },
+        {
+            "patternId": "Structures/CastToBoolean",
+            "level": "Warning",
+            "category": "ErrorProne",
+            "parameters": []
+        },
+        {
+            "patternId": "Structures/FailingSubstrComparison",
+            "level": "Warning",
+            "category": "ErrorProne",
+            "parameters": []
+        },
+        {
+            "patternId": "Structures/ShouldMakeTernary",
+            "level": "Warning",
+            "category": "ErrorProne",
+            "parameters": []
+        },
+        {
+            "patternId": "Functions/UnusedReturnedValue",
+            "level": "Warning",
+            "category": "ErrorProne",
+            "parameters": []
+        },
+        {
+            "patternId": "Structures/ModernEmpty",
+            "level": "Warning",
+            "category": "ErrorProne",
+            "parameters": []
+        },
+        {
+            "patternId": "Structures/UsePositiveCondition",
+            "level": "Warning",
+            "category": "ErrorProne",
+            "parameters": []
+        },
+        {
+            "patternId": "Structures/DropElseAfterReturn",
+            "level": "Warning",
+            "category": "ErrorProne",
+            "parameters": []
+        },
+        {
+            "patternId": "Classes/UseClassOperator",
+            "level": "Warning",
+            "category": "ErrorProne",
+            "parameters": []
+        },
+        {
+            "patternId": "Security/DontEchoError",
+            "level": "Warning",
+            "category": "ErrorProne",
+            "parameters": []
+        },
+        {
+            "patternId": "Structures/UselessCasting",
+            "level": "Warning",
+            "category": "ErrorProne",
+            "parameters": []
+        },
+        {
+            "patternId": "Structures/NoIssetWithEmpty",
+            "level": "Warning",
+            "category": "ErrorProne",
+            "parameters": []
+        },
+        {
+            "patternId": "Structures/UselessCheck",
+            "level": "Warning",
+            "category": "ErrorProne",
+            "parameters": []
+        },
+        {
+            "patternId": "Classes/UnitializedProperties",
+            "level": "Warning",
+            "category": "ErrorProne",
+            "parameters": []
+        },
+        {
+            "patternId": "Structures/BailOutEarly",
+            "level": "Warning",
+            "category": "ErrorProne",
+            "parameters": []
+        },
+        {
+            "patternId": "Structures/DontChangeBlindKey",
+            "level": "Warning",
+            "category": "ErrorProne",
+            "parameters": []
+        },
+        {
+            "patternId": "Php/UseStdclass",
+            "level": "Warning",
+            "category": "ErrorProne",
+            "parameters": []
+        },
+        {
+            "patternId": "Functions/CouldReturnVoid",
+            "level": "Warning",
+            "category": "ErrorProne",
+            "parameters": []
+        },
+        {
+            "patternId": "Functions/TooManyLocalVariables",
+            "level": "Warning",
+            "category": "ErrorProne",
+            "parameters": []
+        },
+        {
+            "patternId": "Classes/WrongName",
+            "level": "Warning",
+            "category": "ErrorProne",
+            "parameters": []
+        },
+        {
+            "patternId": "Classes/FinalByOcramius",
+            "level": "Warning",
+            "category": "ErrorProne",
+            "parameters": []
+        },
+        {
+            "patternId": "Classes/CouldBeProtectedProperty",
+            "level": "Warning",
+            "category": "ErrorProne",
+            "parameters": []
+        },
+        {
+            "patternId": "Structures/LongArguments",
+            "level": "Warning",
+            "category": "ErrorProne",
+            "parameters": []
+        },
+        {
+            "patternId": "Variables/AssignedTwiceOrMore",
+            "level": "Warning",
+            "category": "ErrorProne",
+            "parameters": []
+        }
+    ]
+}
