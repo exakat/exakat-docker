@@ -1,6 +1,11 @@
 FROM php:7.1-cli
 MAINTAINER Exakat, Damien Seguy, dseguy@exakat.io
 
+COPY exakat.sh /usr/src/exakat/
+COPY config/exakat.ini /usr/src/exakat/config/
+COPY projects /usr/src/exakat/projects
+COPY docs/ /docs/
+
 RUN \
     echo "===> php.ini" && \
     echo "memory_limit=-1" >> /usr/local/etc/php/php.ini && \
@@ -20,23 +25,6 @@ RUN \
     maven \ 
     lsof && \
     \
-    echo "====> Cleanup" && \
-    apt-get clean && \
-    rm -rf /var/cache/oracle-jdk8-installer  && \
-    rm -rf /var/lib/apt/lists/* && \
-    useradd -ms /bin/bash docker
-
-#   RFU
-#    apt-get remove -y --purge maven && \
-
-USER docker 
-
-COPY exakat.sh /usr/src/exakat/
-COPY config/exakat.ini /usr/src/exakat/config/
-COPY projects /usr/src/exakat/projects
-COPY docs/ /docs/
-
-RUN \
     echo "====> Exakat 0.10.3" && \
     cd /usr/src/exakat && \
     chmod a+x /usr/src/exakat/exakat.* && \
@@ -58,7 +46,16 @@ RUN \
     cd neo4j-gremlin-plugin && \
     sed -i.bak s_\<tinkerpop-version\>3.1.0-incubating\</tinkerpop-version\>_\<tinkerpop-version\>3.2.0-incubating\</tinkerpop-version\>_ tinkerpop3/pom.xml && \
     mvn clean package -DskipTests -Dtp.version=3  && \
-    unzip target/neo4j-gremlin-plugin-tp3-2.3.1-server-plugin.zip -d ../neo4j/plugins/gremlin-plugin 
+    unzip target/neo4j-gremlin-plugin-tp3-2.3.1-server-plugin.zip -d ../neo4j/plugins/gremlin-plugin && \
+    \
+    echo "====> Cleanup" && \
+    apt-get clean && \
+    apt-get remove -y --purge maven && \
+    rm -rf /var/cache/oracle-jdk8-installer  && \
+    rm -rf /var/lib/apt/lists/* && \
+    useradd -u 2004 -ms /bin/bash docker && \
+    chown -R docker:docker /docs && \
+    chown -R docker:docker /usr/src/exakat 
 
 WORKDIR /usr/src/exakat
 
