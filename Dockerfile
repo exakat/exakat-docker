@@ -27,6 +27,8 @@ RUN \
     wget --quiet http://dist.exakat.io/index.php?file=exakat-0.10.3.phar -O exakat.phar && \
     chmod a+x /usr/src/exakat/exakat.* && \
     \
+    export TERM="xterm" && \
+    \
     echo "====> Neo4j" && \
     wget --quiet http://dist.neo4j.org/neo4j-community-2.3.9-unix.tar.gz && \
     tar zxf neo4j-community-2.3.9-unix.tar.gz && \
