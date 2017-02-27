@@ -1,5 +1,5 @@
 #compile 
-docker build --no-cache -t exakat/codacy:0.10.2 .
+docker build --no-cache -t exakat/codacy:0.10.3 .
 
 #run
 docker run -t \
@@ -8,5 +8,5 @@ docker run -t \
 --cap-drop=ALL \
 --user=docker \
 --rm=true \
--v $(pwd)/projects/sculpin/code:/src:ro \
-exakat/codacy:0.10.2
+-v $(pwd)/projects/api/code:/src:ro \
+exakat/codacy:0.10.3
