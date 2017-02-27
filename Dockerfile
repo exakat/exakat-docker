@@ -25,6 +25,8 @@ RUN \
     maven \ 
     lsof && \
     \
+    export TERM="xterm" && \
+    \    
     echo "====> Exakat 0.10.3" && \
     cd /usr/src/exakat && \
     wget --quiet http://dist.exakat.io/index.php?file=exakat-0.10.3.phar -O exakat.phar && \
