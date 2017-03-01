@@ -1309,8 +1309,8 @@
     },
     {
         "patternId": "Php/FopenMode",
-        "title": "fopen() Mode",
-        "description": "fopen() Mode",
+        "title": "Wrong fopen() Mode",
+        "description": "Wrong fopen() Mode",
         "timetofix": 15
     },
     {
