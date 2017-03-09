@@ -22,9 +22,9 @@ RUN \
     git \
     maven \ 
     lsof && \
-    echo "====> Exakat 0.10.3" && \
+    echo "====> Exakat 0.10.4" && \
     cd /usr/src/exakat && \
-    wget --quiet http://dist.exakat.io/index.php?file=exakat-0.10.3.phar -O exakat.phar && \
+    wget --quiet http://dist.exakat.io/index.php?file=exakat-0.10.4.phar -O exakat.phar && \
     chmod a+x /usr/src/exakat/exakat.* && \
     \
     export TERM="xterm" && \
@@ -38,6 +38,7 @@ RUN \
     sed -i.bak s%#org.neo4j.server.thirdparty_jaxrs_classes=org.neo4j.examples.server.unmanaged=/examples/unmanaged%org.neo4j.server.thirdparty_jaxrs_classes=com.thinkaurelius.neo4j.plugins=/tp% neo4j/conf/neo4j-server.properties && \
     sed -i.bak s%org.neo4j.server.webserver.port=7474%org.neo4j.server.webserver.port=7777% neo4j/conf/neo4j-server.properties && \
     rm neo4j/conf/neo4j-server.properties.bak && \
+    rm -rf neo4j-community-2.3.9-unix.tar.gz && \
     \
     echo "====> Gremlin 3" && \
     git clone https://github.com/thinkaurelius/neo4j-gremlin-plugin && \
@@ -46,6 +47,8 @@ RUN \
     mvn clean package -DskipTests -Dtp.version=3  && \
     unzip target/neo4j-gremlin-plugin-tp3-2.3.1-server-plugin.zip -d ../neo4j/plugins/gremlin-plugin  && \
     cd .. && \
+    rm -rf /usr/src/exakat/neo4j-gremlin-plugin && \
+    \
     echo "====> Cleanup" && \
     \
     apt-get remove -y --purge maven && \
