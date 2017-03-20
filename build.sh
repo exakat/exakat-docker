@@ -1,12 +1,11 @@
-#compile 
-docker build --no-cache -t exakat/codacy:0.10.3 .
+#!/usr/bin/env bash
 
-#run
-docker run -t \
---net=none \
---privileged=false \
---cap-drop=ALL \
---user=docker \
---rm=true \
--v $(pwd)/projects/api/code:/src:ro \
-exakat/codacy:0.10.3
+# Build gremlin plugin
+docker build --no-cache -f build.dockerfile -t exakat/builder .
+docker run --rm -it -v $(pwd):/mnt exakat/builder
+
+# Build base image with dependencies
+docker build --no-cache -f base.dockerfile -t exakat/base .
+
+# Build exakat docker
+docker build --no-cache -t exakat/codacy .
