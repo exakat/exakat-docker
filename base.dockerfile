@@ -22,12 +22,12 @@ RUN \
     && echo "http://dl-cdn.alpinelinux.org/alpine/edge/testing" >> /etc/apk/repositories \
     && apk add --no-cache bash curl \
     && echo "===> PHP 7.1" \
-    && apk add --update php7.1 php7.1-xml php7.1-xsl php7.1-pdo_mysql \
-    php7.1-mcrypt php7.1-curl php7.1-json php7.1-fpm php7.1-phar php7.1-openssl \
-    php7.1-mysqlnd php7.1-ctype php7.1-sqlite3 php7.1-mbstring \
+    && apk add --update 'php7>7.1' 'php7-xml>7.1' 'php7-xsl>7.1' 'php7-pdo_mysql>7.1' \
+    'php7-mcrypt>7.1' 'php7-curl>7.1' 'php7-json>7.1' 'php7-fpm>7.1' 'php7-phar>7.1' 'php7-openssl>7.1' \
+    'php7-mysqlnd>7.1' 'php7-ctype>7.1' 'php7-sqlite3>7.1' 'php7-mbstring>7.1' \
     \
     && echo "===> php.ini" \
-    && echo "memory_limit=-1" >> /etc/php7.1/php.ini \
+    && echo "memory_limit=-1" >> /etc/php7/php.ini \
     \
     && export TERM="xterm" \
     \
