@@ -1,2 +1,2 @@
-#!/bin/sh
-./exakat.phar project -p codacy
+#!/bin/bash
+php exakat.phar project -p codacy

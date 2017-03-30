@@ -27,9 +27,9 @@ RUN \
     \
     export TERM="xterm" && \
     \    
-    echo "====> Exakat 0.10.4" && \
+    echo "====> Exakat 0.10.6" && \
     cd /usr/src/exakat && \
-    wget --quiet http://dist.exakat.io/index.php?file=exakat-0.10.4.phar -O exakat.phar && \
+    wget --quiet http://dist.exakat.io/index.php?file=exakat-0.10.6.phar -O exakat.phar && \
     chmod a+x /usr/src/exakat/exakat.* && \
     ln -s /src /usr/src/exakat/projects/codacy/code && \
     \
