@@ -3,7 +3,7 @@ FROM exakat/base
 MAINTAINER Exakat, Damien Seguy, dseguy@exakat.io
 
 
-ENV EXAKAT_VERSION 0.10.6
+ENV EXAKAT_VERSION 0.10.8
 ENV EXAKAT_URI http://dist.exakat.io/index.php?file=exakat-$EXAKAT_VERSION.phar
 
 
