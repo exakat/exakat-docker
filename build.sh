@@ -1,5 +1,5 @@
 #Building
-docker build --no-cache -t exakat/exakat:0.10.2 .
+docker build --no-cache -t exakat/exakat:0.10.9 .
 
 #Check for installation
 docker run -it --rm exakat/exakat:latest doctor
