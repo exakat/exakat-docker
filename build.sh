@@ -1,5 +1,5 @@
 #compile 
-docker build --no-cache -t exakat/codacy:0.10.3 .
+docker build --no-cache -t exakat/codacy:0.10.9 .
 
 #run
 docker run -t \
@@ -9,4 +9,4 @@ docker run -t \
 --user=docker \
 --rm=true \
 -v $(pwd)/projects/api/code:/src:ro \
-exakat/codacy:0.10.3
+exakat/codacy:0.10.9
