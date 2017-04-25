@@ -10,8 +10,10 @@ There is no need to declare them individually final.
     }
 
     class bar {
-        // Usefule final, as the whole class is not final
+        // Useful final, as the whole class is not final
         final function method() { }
     }
 
 ?>
+
+See also [Final keyword](http://php.net/manual/en/language.oop5.final.php), and [When to declare final](https://ocramius.github.io/blog/when-to-declare-classes-final/).

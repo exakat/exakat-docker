@@ -1,6 +1,23 @@
-Those classes were used in the code, but there is no way to find a definition of that class in the PHP code.
+Those classes are used in the code, but there are no definition for them.
 
 This may happens under normal conditions, if the application makes use of an unsupported extension, that defines extra classes; 
 or if some external libraries, such as PEAR, are not provided during the analysis.
 
-Otherwise, this should be checked. 
+<?php
+
+// FPDF is a classic PDF class, that is usually omitted by Exakat. 
+$o = new FPDF();
+
+// Exakat reports undefined classes in instanceof
+// PHP ignores them
+if ($o instanceof SomeClass) {
+    // doSomething();
+}
+
+// Classes may be used in typehint too
+function foo(TypeHintClass $x) {
+    // doSomething();
+}
+
+?>
+

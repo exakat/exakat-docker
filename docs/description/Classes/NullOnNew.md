@@ -1,6 +1,6 @@
-The following classes used to have a very specific behavior during instantiation : they were able to return NULL on new.
+Until PHP 7.0, some classes instantiation could yield null, instead of throwing an exception. 
 
-After issuing a 'new' with those classes, it was important to check if the returned object were null (sic) or not. No exception were thrown.
+After issuing a 'new' with those classes, it was important to check if the returned object were null or not. No exception were thrown.
 
 <?php
 
@@ -14,3 +14,4 @@ if ($mf === null) {
 
 This inconsistency has been cleaned in PHP 7 : see See [Internal Constructor Behavior](https://wiki.php.net/rfc/internal_constructor_behaviour)
 
+See also [PHP RFC: Constructor behaviour of internal classes](https://wiki.php.net/rfc/internal_constructor_behaviour).
