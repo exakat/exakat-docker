@@ -22,9 +22,9 @@ RUN \
     git \
     maven \ 
     lsof && \
-    echo "====> Exakat 0.11.2" && \
+    echo "====> Exakat 0.11.3" && \
     cd /usr/src/exakat && \
-    wget --quiet http://dist.exakat.io/index.php?file=exakat-0.11.2.phar -O exakat.phar && \
+    wget --quiet http://dist.exakat.io/index.php?file=exakat-0.11.3.phar -O exakat.phar && \
     chmod a+x /usr/src/exakat/exakat.* && \
     \
     export TERM="xterm" && \
