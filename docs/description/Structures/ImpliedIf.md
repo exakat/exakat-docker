@@ -1,4 +1,4 @@
-It is possible to emulate a 'if...then' structure by using the operators 'and' and 'or'. Since optimizations will be applied to them : 
+It is possible to emulate a if/then structure by using the operators 'and' and 'or'. Since optimizations will be applied to them : 
 when the left operand of 'and' is false, the right one is not executed, as its result is useless; 
 when the left operand of 'or' is true, the right one is not executed, as its result is useless; 
 

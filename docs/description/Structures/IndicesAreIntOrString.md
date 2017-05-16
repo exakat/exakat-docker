@@ -41,3 +41,6 @@ Array
 Decimal numbers are rounded to the closest integer; Null is transtyped to '' (empty string); true is 1 and false is 0; Integers in strings are transtyped, while partial numbers or decimals are not analyzed in strings. 
 
 As a general rule of thumb, only use integers or strings that don\'t look like integers. 
+
+This analyzer may find constant definitions, when available.
+
