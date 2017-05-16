@@ -14,7 +14,6 @@ ENV NEO4J_HOME /var/lib/neo4j
 
 COPY neo4j-gremlin-plugin/ $NEO4J_HOME/plugins/gremlin-plugin
 
-
 RUN \
     echo "===> Setup" \
     && echo "http://dl-cdn.alpinelinux.org/alpine/edge/main" >> /etc/apk/repositories \
@@ -24,7 +23,7 @@ RUN \
     && echo "===> PHP 7.1" \
     && apk add --update 'php7>7.1' 'php7-xml>7.1' 'php7-xsl>7.1' 'php7-pdo_mysql>7.1' \
     'php7-mcrypt>7.1' 'php7-curl>7.1' 'php7-json>7.1' 'php7-fpm>7.1' 'php7-phar>7.1' 'php7-openssl>7.1' \
-    'php7-mysqlnd>7.1' 'php7-ctype>7.1' 'php7-sqlite3>7.1' 'php7-mbstring>7.1' \
+    'php7-mysqlnd>7.1' 'php7-ctype>7.1' 'php7-sqlite3>7.1' 'php7-mbstring>7.1' 'php7-tokenizer>7.1' \
     \
     && echo "===> php.ini" \
     && echo "memory_limit=-1" >> /etc/php7/php.ini \
@@ -45,6 +44,7 @@ RUN \
     && sed -i.bak s/dbms\.security\.auth_enabled=true/dbms\.security\.auth_enabled=false/ $NEO4J_HOME/conf/neo4j-server.properties \
     && sed -i.bak s%#org.neo4j.server.thirdparty_jaxrs_classes=org.neo4j.examples.server.unmanaged=/examples/unmanaged%org.neo4j.server.thirdparty_jaxrs_classes=com.thinkaurelius.neo4j.plugins=/tp% $NEO4J_HOME/conf/neo4j-server.properties \
     && sed -i.bak s%org.neo4j.server.webserver.port=7474%org.neo4j.server.webserver.port=7777% $NEO4J_HOME/conf/neo4j-server.properties \
+    && echo "wrapper.java.additional=-XX:MaxPermSize=512m" >> $NEO4J_HOME/conf/neo4j-wrapper.conf \
     && rm $NEO4J_HOME/conf/neo4j-server.properties.bak \
     \
     && echo "====> Cleanup" \
@@ -54,3 +54,5 @@ RUN \
     && echo "====> Permissions" \
     && adduser -u 2004 -D docker \
     && chown -R docker:docker $NEO4J_HOME
+
+COPY ssl/ $NEO4J_HOME/conf/ssl/
