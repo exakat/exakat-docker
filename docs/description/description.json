@@ -204,12 +204,6 @@
         "timetofix": 5
     },
     {
-        "patternId": "Php/Incompilable",
-        "title": "Incompilable Files",
-        "description": "Incompilable Files",
-        "timetofix": 30
-    },
-    {
         "patternId": "Namespaces/UseWithFullyQualifiedNS",
         "title": "Use With Fully Qualified Name",
         "description": "Use With Fully Qualified Name",
@@ -502,12 +496,6 @@
         "title": "Unresolved Classes",
         "description": "Unresolved Classes",
         "timetofix": 15
-    },
-    {
-        "patternId": "Functions/LoopCalling",
-        "title": "Functions In Loop Calls",
-        "description": "Functions In Loop Calls",
-        "timetofix": 30
     },
     {
         "patternId": "Namespaces/UnresolvedUse",
@@ -1690,12 +1678,6 @@
         "title": "Could Be Protected Property",
         "description": "Could Be Protected Property",
         "timetofix": 30
-    },
-    {
-        "patternId": "Structures/LongArguments",
-        "title": "Long Arguments",
-        "description": "Long Arguments",
-        "timetofix": 15
     },
     {
         "patternId": "Variables/AssignedTwiceOrMore",
