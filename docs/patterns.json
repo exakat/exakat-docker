@@ -206,12 +206,6 @@
             "parameters": []
         },
         {
-            "patternId": "Php/Incompilable",
-            "level": "Warning",
-            "category": "ErrorProne",
-            "parameters": []
-        },
-        {
             "patternId": "Namespaces/UseWithFullyQualifiedNS",
             "level": "Warning",
             "category": "ErrorProne",
@@ -501,12 +495,6 @@
         },
         {
             "patternId": "Classes/UnresolvedClasses",
-            "level": "Warning",
-            "category": "ErrorProne",
-            "parameters": []
-        },
-        {
-            "patternId": "Functions/LoopCalling",
             "level": "Warning",
             "category": "ErrorProne",
             "parameters": []
@@ -1689,12 +1677,6 @@
         },
         {
             "patternId": "Classes/CouldBeProtectedProperty",
-            "level": "Warning",
-            "category": "ErrorProne",
-            "parameters": []
-        },
-        {
-            "patternId": "Structures/LongArguments",
             "level": "Warning",
             "category": "ErrorProne",
             "parameters": []
