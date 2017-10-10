@@ -24,9 +24,9 @@
 3. Make commandline short cut for Exakat :
 
     ``` sh
-    $ cat 'docker run -it -v $(pwd)/projects:/usr/src/exakat/projects --rm --name my-exakat exakat/exakat $1' > /etc/local/sbin/exakat.sh
-    $ chmod u+x  /etc/local/sbin/exakat.sh
-    $ ./exakat.sh version
+    $ echo "#\!/bin/bash\ndocker run -it -v \$(pwd)/projects:/usr/src/exakat/projects --rm --name my-exakat exakat/exakat \$@" > /usr/local/bin/exakat
+    $ chmod u+x /usr/local/bin/exakat
+    $ exakat version
     ```
 
 ## Dockerfile building
