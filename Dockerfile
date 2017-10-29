@@ -1,5 +1,7 @@
 FROM php:7.1-cli
-MAINTAINER Exakat, Damien Seguy, dseguy@exakat.io
+LABEL MAINTAINER Exakat, Damien Seguy, dseguy@exakat.io
+LABEL EXAKAT_VERSION 1.0.0
+LABEL GREMLIN_VERSION 3.2.6
 
 COPY exakat.sh /usr/src/exakat/
 COPY config/exakat.ini /usr/src/exakat/config/
