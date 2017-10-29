@@ -18,40 +18,28 @@ RUN \
     echo debconf shared/accepted-oracle-license-v1-1 seen true | debconf-set-selections  && \
     DEBIAN_FRONTEND=noninteractive  apt-get install -y --force-yes oracle-java8-installer oracle-java8-set-default  && \
     \
-    apt-get update && apt-get install -y --no-install-recommends \
-    git \
-    maven \ 
-    lsof && \
-    echo "====> Exakat 0.12.13" && \
+    apt-get update && apt-get install -y --no-install-recommends git subversion mercurial lsof unzip && \
+    \
+    echo "====> Exakat 1.0.0" && \
     cd /usr/src/exakat && \
-    wget --quiet http://dist.exakat.io/index.php?file=exakat-0.12.13.phar -O exakat.phar && \
+    wget --quiet http://dist.exakat.io/index.php?file=exakat-1.0.0.phar -O exakat.phar && \
     chmod a+x /usr/src/exakat/exakat.* && \
     \
     export TERM="xterm" && \
     \
-    echo "====> Neo4j" && \
-    wget --quiet http://dist.neo4j.org/neo4j-community-2.3.11-unix.tar.gz && \
-    tar zxf neo4j-community-2.3.11-unix.tar.gz && \
-    mv neo4j-community-2.3.11 neo4j && \
-    export NEO4J_HOME=/usr/src/exakat && \
-    sed -i.bak s/dbms\.security\.auth_enabled=true/dbms\.security\.auth_enabled=false/ neo4j/conf/neo4j-server.properties && \
-    sed -i.bak s%#org.neo4j.server.thirdparty_jaxrs_classes=org.neo4j.examples.server.unmanaged=/examples/unmanaged%org.neo4j.server.thirdparty_jaxrs_classes=com.thinkaurelius.neo4j.plugins=/tp% neo4j/conf/neo4j-server.properties && \
-    sed -i.bak s%org.neo4j.server.webserver.port=7474%org.neo4j.server.webserver.port=7777% neo4j/conf/neo4j-server.properties && \
-    rm neo4j/conf/neo4j-server.properties.bak && \
-    rm -rf neo4j-community-2.3.11-unix.tar.gz && \
-    \
-    echo "====> Gremlin 3" && \
-    git clone https://github.com/thinkaurelius/neo4j-gremlin-plugin && \
-    cd neo4j-gremlin-plugin && \
-    sed -i.bak s_\<tinkerpop-version\>3.1.0-incubating\</tinkerpop-version\>_\<tinkerpop-version\>3.2.0-incubating\</tinkerpop-version\>_ tinkerpop3/pom.xml && \
-    mvn clean package -DskipTests -Dtp.version=3  && \
-    unzip target/neo4j-gremlin-plugin-tp3-2.3.1-server-plugin.zip -d ../neo4j/plugins/gremlin-plugin  && \
+    echo "====> Gremlin-Server" && \
+    wget -O apache-tinkerpop-gremlin-server-3.2.6-bin.zip http://ftp.tudelft.nl/apache/tinkerpop/3.2.6/apache-tinkerpop-gremlin-server-3.2.6-bin.zip && \
+    unzip apache-tinkerpop-gremlin-server-3.2.6-bin.zip && \
+    mv apache-tinkerpop-gremlin-server-3.2.6 tinkergraph && \
+    rm -rf apache-tinkerpop-gremlin-server-3.2.6-bin.zip  && \
+    cd tinkergraph && \
+    bin/gremlin-server.sh -i org.apache.tinkerpop neo4j-gremlin 3.2.6 && \
     cd .. && \
-    rm -rf /usr/src/exakat/neo4j-gremlin-plugin && \
+    \
+    php exakat.phar doctor  && \
     \
     echo "====> Cleanup" && \
     \
-    apt-get remove -y --purge maven && \
     apt-get clean && \
     rm -rf /var/cache/oracle-jdk8-installer  && \
     rm -rf /var/lib/apt/lists/*
