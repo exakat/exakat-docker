@@ -1,4 +1,4 @@
-FROM php:7.2-cli
+FROM php:7.1-cli
 LABEL MAINTAINER Exakat, Damien Seguy, dseguy@exakat.io
 LABEL EXAKAT_VERSION 1.0.7
 LABEL GREMLIN_VERSION 3.2.6
