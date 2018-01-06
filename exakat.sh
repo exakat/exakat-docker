@@ -1,2 +1,3 @@
 #!/bin/sh
-./exakat.phar $@
+
+./exakat.phar "$@"
