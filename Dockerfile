@@ -1,7 +1,7 @@
 FROM php:7.1-cli
 LABEL MAINTAINER Exakat, Damien Seguy, dseguy@exakat.io
-LABEL EXAKAT_VERSION 1.0.7
-LABEL GREMLIN_VERSION 3.2.6
+LABEL EXAKAT_VERSION 1.1.1
+LABEL GREMLIN_VERSION 3.2.7
 
 COPY exakat.sh /usr/src/exakat/
 COPY config/exakat.ini /usr/src/exakat/config/
@@ -22,20 +22,20 @@ RUN \
     \
     apt-get update && apt-get install -y --no-install-recommends git subversion mercurial lsof unzip && \
     \
-    echo "====> Exakat 1.0.7" && \
+    echo "====> Exakat 1.1.1" && \
     cd /usr/src/exakat && \
-    wget --quiet http://dist.exakat.io/index.php?file=exakat-1.0.7.phar -O exakat.phar && \
+    wget --quiet http://dist.exakat.io/index.php?file=exakat-1.1.1.phar -O exakat.phar && \
     chmod a+x /usr/src/exakat/exakat.* && \
     \
     export TERM="xterm" && \
     \
     echo "====> Gremlin-Server" && \
-    wget -O apache-tinkerpop-gremlin-server-3.2.6-bin.zip http://ftp.tudelft.nl/apache/tinkerpop/3.2.6/apache-tinkerpop-gremlin-server-3.2.6-bin.zip && \
-    unzip apache-tinkerpop-gremlin-server-3.2.6-bin.zip && \
-    mv apache-tinkerpop-gremlin-server-3.2.6 tinkergraph && \
-    rm -rf apache-tinkerpop-gremlin-server-3.2.6-bin.zip  && \
+    wget -O apache-tinkerpop-gremlin-server-3.2.7-bin.zip http://ftp.tudelft.nl/apache/tinkerpop/3.2.7/apache-tinkerpop-gremlin-server-3.2.7-bin.zip && \
+    unzip apache-tinkerpop-gremlin-server-3.2.7-bin.zip && \
+    mv apache-tinkerpop-gremlin-server-3.2.7 tinkergraph && \
+    rm -rf apache-tinkerpop-gremlin-server-3.2.7-bin.zip  && \
     cd tinkergraph && \
-    bin/gremlin-server.sh -i org.apache.tinkerpop neo4j-gremlin 3.2.6 && \
+    bin/gremlin-server.sh -i org.apache.tinkerpop neo4j-gremlin 3.2.7 && \
     cd .. && \
     \
     php exakat.phar doctor  && \
