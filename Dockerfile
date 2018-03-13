@@ -1,6 +1,7 @@
 FROM php:7.1-cli
+
 LABEL MAINTAINER Exakat, Damien Seguy, dseguy@exakat.io
-LABEL EXAKAT_VERSION 1.1.6
+LABEL EXAKAT_VERSION 1.1.8
 LABEL GREMLIN_VERSION 3.2.7
 
 COPY exakat.sh /usr/src/exakat/
@@ -22,9 +23,9 @@ RUN \
     \
     apt-get update && apt-get install -y --no-install-recommends git subversion mercurial lsof unzip && \
     \
-    echo "====> Exakat 1.1.6" && \
+    echo "====> Exakat 1.1.8" && \
     cd /usr/src/exakat && \
-    wget --quiet http://dist.exakat.io/index.php?file=exakat-1.1.6.phar -O exakat.phar && \
+    wget --quiet http://dist.exakat.io/index.php?file=exakat-1.1.8.phar -O exakat.phar && \
     chmod a+x /usr/src/exakat/exakat.* && \
     \
     export TERM="xterm" && \
