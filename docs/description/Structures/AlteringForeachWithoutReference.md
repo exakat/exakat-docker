@@ -1,3 +1,4 @@
+Altering Foreach Without Reference
 Foreach() loop that should use a reference. 
 
 When using a foreach loop that modifies the original source, it is recommended to use referenced variables, rather than access the original value with $source[$index]. 

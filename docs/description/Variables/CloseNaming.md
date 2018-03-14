@@ -1,7 +1,10 @@
+Confusing Names
 The following variables's name are very close and may lead to confusion.
 
 Variables are 3 letters long (at least). Variables names build with an extra 's' are omitted.
 Variables may be scattered across the code, or close to each other. 
+
+Variables which differ only by case, or by punctuation or by numbers are reported here.
 
 <?php
 
@@ -20,6 +23,18 @@ Variables may be scattered across the code, or close to each other.
     $exept10 = 2;
     $exept8 = 3;
     
+    // Variables that differ by punctation
+    $locale = 'fr';
+    $_locate = 'en';
+
+    // Variables that differ by numbers
+    $x11 = 'a';
+    $x12 = 'b';
+
+    // Variables that differ by numbers
+    $songMP3 = 'a';
+    $Songmp3 = 'b';
+    
     // This even looks like a typo
     $privileges  = 1;
     $privilieges = true;
@@ -29,3 +44,4 @@ Variables may be scattered across the code, or close to each other.
     
 ?>
 
+See also `How to pick bad function and variable names <http://mojones.net/how-to-pick-bad-function-and-variable-names.html>`_.

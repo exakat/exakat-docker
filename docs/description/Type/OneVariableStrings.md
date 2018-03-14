@@ -1,3 +1,4 @@
+One Variable String
 These strings only contains one variable or property or array. 
 
 <?php

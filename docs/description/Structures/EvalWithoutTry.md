@@ -1,3 +1,4 @@
+eval() Without Try
 eval() emits a ParseError exception with PHP 7 and later. Catching this exception is the recommended way to handle errors when using the eval() function.
 
 <?php

@@ -1,3 +1,4 @@
+$this Is Not An Array
 `$this` variable represents the current object and it is not an array, unless the class (or its parents) has the ArrayAccess interface.
 
 <?php

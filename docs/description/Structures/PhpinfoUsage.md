@@ -1,3 +1,4 @@
+Phpinfo
 phpinfo() is a great function to learn about the current configuration of the server.
 
 <?php

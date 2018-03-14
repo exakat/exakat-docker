@@ -1,3 +1,4 @@
+Common Alternatives
 In the following conditional structures, expressions were found that are common to both 'then' and 'else'. It may be interesting, though not always possible, to put them both out of the conditional, and reduce line count. 
 
 <?php

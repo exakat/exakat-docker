@@ -1,6 +1,7 @@
-Those brackets have no use here. 
+Useless Brackets
+Standalone brackets have no use. Brackets are used to delimit a block of code, and are used by control statements. They may also be used to protect variables in strings. 
 
-They may be a left over of an old instruction, or a misunderstanding of the alternative syntax.
+Standalone brackets may be a left over of an old instruction, or a misunderstanding of the alternative syntax.
 
 <?php
 

@@ -1,3 +1,4 @@
+Silently Cast Integer
 Those are integer literals that are cast to a float when running PHP. They are simply too big for the current PHP version, and PHP resorts to cast them into a float, which has a much larger capacity but a lower precision.
 
 Compare your literals to PHP_MAX_INT (typically 9223372036854775807) and PHP_MIN_INT (typically -9223372036854775808).

@@ -1,3 +1,4 @@
+Negative Power
 The power operator ** has higher precedence than the sign operators + and -.
 
 This means that -2 ** 2 == -4. It is in fact, -(2 ** 2). 

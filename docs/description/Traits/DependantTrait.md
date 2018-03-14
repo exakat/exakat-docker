@@ -1,3 +1,4 @@
+Dependant Trait
 Traits should be autonomous. It is recommended to avoid depending on methods or properties that should be in the using class.
 
 The following traits make usage of methods and properties, static or not, that are not defined in the trait. This means the host class must provide those methods and properties, but there is no way to enforce this. 

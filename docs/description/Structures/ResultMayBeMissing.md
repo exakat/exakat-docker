@@ -1,3 +1,4 @@
+Results May Be Missing
 preg_match() may return empty values, if the search fails. It is important to check for the existence of results before assigning them to another variable, or using it.
 
 <?php

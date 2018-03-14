@@ -1,3 +1,4 @@
+preg_match_all() Flag
 preg_match_all() has an option to configure the structure of the results : it is either by capturing parenthesis (by default), or by result sets. 
 
 The second option is the most interesting when the following foreach() loop has to manipulate several captured strings at the same time. No need to use an index in the first array and use it in the other arrays.

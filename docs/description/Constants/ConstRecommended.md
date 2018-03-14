@@ -1,3 +1,4 @@
+Use const
 The const keyword may be used to define constant, just like the define() function. 
 
 When defining a constant, it is recommended to use 'const' when the features of the constant are not dynamical (name or value are known at compile time). 

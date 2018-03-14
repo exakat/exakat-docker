@@ -1,3 +1,4 @@
+Multiple Class Declarations
 It is possible to declare several times the same class in the code. PHP will not mention it until execution time, since declarations may be conditional. 
 
 <?php

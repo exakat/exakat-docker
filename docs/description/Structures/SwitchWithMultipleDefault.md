@@ -1,3 +1,4 @@
+Switch With Too Many Default
 Switch statements should only hold one default, not more. Check the code and remove the extra default.  
 
 PHP 7.0 won't compile a script that allows for several default cases. 

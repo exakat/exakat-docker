@@ -1,3 +1,4 @@
+String May Hold A Variable
 Those strings looks like holding a variable. 
 
 Single quotes and Nowdoc syntax may include $ signs that are treated as literals, and not replaced with a variable value. 

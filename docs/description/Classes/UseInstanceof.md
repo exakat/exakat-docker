@@ -1,3 +1,4 @@
+Use Instanceof
 The instanceof operator is a faster alternative to is_object(). 
 
 instanceof checks for an variable to be of a class or its parents or the interfaces it implements. 

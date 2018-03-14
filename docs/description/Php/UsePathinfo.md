@@ -1,3 +1,4 @@
+Use Pathinfo
 Use pathinfo() function instead of string manipulations.
 
 pathinfo() is more efficient and readable and string functions.

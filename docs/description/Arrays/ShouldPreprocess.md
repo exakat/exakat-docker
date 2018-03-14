@@ -1,3 +1,4 @@
+Preprocess Arrays
 Using long list of assignations for initializing arrays is significantly slower than the declaring them as an array. 
 
 <?php

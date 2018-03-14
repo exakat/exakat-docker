@@ -1,3 +1,4 @@
+Break Outside Loop
 Starting with PHP 7, break or continue that are outside a loop (for, foreach(), do...while(), while()) or a switch() statement won't compile anymore.
 
 It is not possible anymore to include a piece of code inside a loop that will then break.

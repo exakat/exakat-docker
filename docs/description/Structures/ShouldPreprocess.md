@@ -1,3 +1,4 @@
+Preprocessable
 The following expression are made of literals or already known values : they may be fully calculated before running PHP.
 
 <?php

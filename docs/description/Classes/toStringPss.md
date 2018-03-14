@@ -1,3 +1,4 @@
+Magic Visibility
 The class magic methods must have public visibility and cannot be static.
 
 <?php
@@ -18,4 +19,4 @@ class foo{
 
 ?>
 
-See [Magic methods](http://php.net/manual/en/language.oop5.magic.php).
+See also `Magic methods <http://php.net/manual/en/language.oop5.magic.php>`_.

@@ -1,4 +1,5 @@
-strpos() returns a string position, starting at 0, or false, in case of failure. 
+Strpos()-like Comparison
+strpos(), and several PHP native functions, returns a string position, starting at 0, or false, in case of failure. 
 
 <?php
 
@@ -22,5 +23,7 @@ if (strpos($string, 'a') == 0) { }
 
 ?>
 
-It is recommended to check the reslt of strpos with === or !==, so as to avoid confusing 0 and false. 
-This analyzer list all the strpos() function that are directly compared with == or !=. 
+It is recommended to check the result of strpos() with === or !==, so as to avoid confusing 0 and false. 
+
+This analyzer list all the strpos()-like functions that are directly compared with == or !=. preg_match(), when its first argument is a literal, is omitted : this function only returns NULL in case of regex error. 
+

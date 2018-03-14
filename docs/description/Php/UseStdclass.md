@@ -1,3 +1,4 @@
+Avoid Using stdClass
 stdClass is the default class for PHP. It is instantiated when PHP needs to return a object, but no class is specifically available.
 
 It is recommended to avoid instantiating this class, nor use it is any way.

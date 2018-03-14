@@ -1,3 +1,4 @@
+Should Use Coalesce
 PHP 7 introduced the ?? operator, that replaces longer structures to set default values when a variable is not set.
 
 <?php
@@ -12,5 +13,5 @@ $model = Model::get($id) ?? $default_model;
 
 ?>
 
-Sample extracted from PHP docs [Isset Ternary](https://wiki.php.net/rfc/isset_ternary)
+Sample extracted from PHP docs `Isset Ternary <https://wiki.php.net/rfc/isset_ternary>`_
 

@@ -1,4 +1,5 @@
-Affectations that appears in a conditions. 
+Iffectations
+Affectations that appears in a condition. 
 
 Iffectations are a way to do both a test and an affectations. 
 They may also be typos, such as if ($x = 3) { ... }, leading to a constant condition. 

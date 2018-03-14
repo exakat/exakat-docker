@@ -1,3 +1,4 @@
+Must Return Methods
 The following methods are expected to return a value that will be used later. Without return, they are useless.
 
 Methods that must return are : __get(), __isset(), __sleep(), __toString(), __set_state(), __invoke(), __debugInfo().

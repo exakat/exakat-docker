@@ -1,6 +1,7 @@
+Should Chain Exception
 Chain exception to provide more context.
 
-When catching an exception and rethrowing another one, it is recommended to chain the exception : this means providing the original exception, so that the final recipiend has a chance to track the origin of the problem. This doesn't change the thrown message, but provides more information.
+When catching an exception and rethrowing another one, it is recommended to chain the exception : this means providing the original exception, so that the final recipient has a chance to track the origin of the problem. This doesn't change the thrown message, but provides more information.
 
 Note : Chaining requires PHP > 5.3.0.
 
@@ -14,3 +15,4 @@ Note : Chaining requires PHP > 5.3.0.
     }
 ?>
 
+See also `Exception::__construct <http://php.net/manual/en/exception.construct.php>`_.

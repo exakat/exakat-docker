@@ -1,3 +1,4 @@
+Indices Are Int Or String
 Indices in an array notation such as $array['indice'] may only be integers or string.
 
 Boolean, Null or float will be converted to their integer or string equivalent.

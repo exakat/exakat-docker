@@ -1,3 +1,4 @@
+Sequences In For
 For() instructions allows several instructions in each of its parameters. Then, the instruction separator is comma ',', not semi-colon, which is used for separating the 3 arguments.
 
 <?php

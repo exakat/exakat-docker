@@ -1,4 +1,5 @@
-Avoid __autoload(). Only use spl_register_autoload().
+Old Style __autoload()
+Avoid __autoload(), only use spl_register_autoload().
 
 __autoload() will be deprecated in PHP 7.2 and possibly removed in later version.
 
@@ -19,4 +20,4 @@ function __autoload($class){}
 
 Do not use the old __autoload() function, but rather the new spl_register_autoload() function. 
 
-See also [Autoloading Classe](http://php.net/manual/en/language.oop5.autoload.php).
+See also `Autoloading Classe <http://php.net/manual/en/language.oop5.autoload.php>`_.

@@ -1,6 +1,9 @@
-Some classes elements (property, method, and constant in PHP 7.1) are missing their explicit visibility.
+Forgotten Visibility
+Some classes elements (property, method, constant) are missing their explicit visibility.
 
 By default, it is public. It should at least be mentioned as public, or may be reviewed as protected or private. 
+
+Class constants support also visibility since PHP 7.1.
 
 final, static and abstract are not counted as visibility. Only public, private and protected. The PHP 4 var keyword is counted as undefined.
 
@@ -28,3 +31,4 @@ class X {
 
 ?>
 
+See also `Visibility <http://php.net/manual/en/language.oop5.visibility.php>`_ and `Understanding The Concept Of Visibility In Object Oriented PHP <https://torquemag.io/2016/05/understanding-concept-visibility-object-oriented-php/>`_.

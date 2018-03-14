@@ -1,4 +1,5 @@
-Those functions are not defined in the code. This means that the functions are probably defined in a missing library, or in an extension. If not, this will yield a Fatal error at execution.
+Undefined Functions
+Some functions are called, but not defined in the code. This means that the functions are probably defined in a missing library, or in an extension. If not, this will yield a Fatal error at execution.
 
 <?php
 

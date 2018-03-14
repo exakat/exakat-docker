@@ -1,3 +1,4 @@
+error_reporting() With Integers
 Using named constants with error_reporting is strongly encouraged to ensure compatibility for future versions. As error levels are added, the range of integers increases, so older integer-based error levels will not always behave as expected. (Adapted from the documentation).
 
 <?php

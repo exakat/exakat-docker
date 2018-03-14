@@ -1,8 +1,9 @@
+Class Should Be Final By Ocramius
 'Make your classes always final, if they implement an interface, and no other public methods are defined'.
 
-When a class should be final, as explained by Ocramiux (Marco Pivetti).
+When a class should be final, as explained by Ocramiux (Marco Pivetta).
 
-Full article : [When to declare classes final](http://ocramius.github.io/blog/when-to-declare-classes-final/).
+Full article : `When to declare classes final <http://ocramius.github.io/blog/when-to-declare-classes-final/>`_.
 
 <?php
 

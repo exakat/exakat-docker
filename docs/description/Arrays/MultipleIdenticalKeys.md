@@ -1,3 +1,4 @@
+Multiple Index Definition
 Indexes that are defined multiple times in the same array. 
 
 <?php

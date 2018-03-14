@@ -1,3 +1,4 @@
+Identical Conditions
 These logical expressions contain members that are identical. 
 
 This means those expressions may be simplified. 

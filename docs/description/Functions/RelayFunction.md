@@ -1,3 +1,4 @@
+Relay Function
 Relay function only hand workload to another one. 
 
 Relay functions (or methods) are delegating the actual work to another function or method. They do not have any impact on the results, besides exposing another name for the same feature.

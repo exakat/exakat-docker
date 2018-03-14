@@ -1,3 +1,4 @@
+Queries In Loops
 Avoid querying databases in a loop. 
 
 Querying an external database in a loop usually leads to performances problems. This is also called the 'n + 1 problem'. 

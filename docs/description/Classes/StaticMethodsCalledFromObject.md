@@ -1,3 +1,4 @@
+Static Methods Called From Object
 Static methods may be called without instantiating an object. As such, they never interact with the special variable '$this', as they do not depend on object existence. 
 
 Besides this, static methods are normal methods that may be called directly from object context, to perform some utility task. 

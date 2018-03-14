@@ -1,3 +1,4 @@
+Throw Functioncall
 The throw keyword is excepted to use an exception. Calling a function to prepare that exception before throwing it is possible, but forgetting the new keyword is also possible. 
 
 <?php

@@ -1,4 +1,7 @@
+Throws An Assignement
 It is possible to throw an exception, and, in the same time, assign this exception to a variable.
+
+However, $e will never be used, as the exception is thrown, and any following code is not executed. 
 
 <?php
 
@@ -10,7 +13,5 @@ It is possible to throw an exception, and, in the same time, assign this excepti
     throw $e = new() Exception();
 
 ?>
-
-However, $e will never be used, as the exception is thrown, and any following code is not executed. 
 
 The assignement should be removed.

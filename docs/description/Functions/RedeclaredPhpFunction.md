@@ -1,3 +1,4 @@
+Redeclared PHP Functions
 Function that bear the same name as a PHP function, and that are declared. 
 
 This is possible when managing some backward compatibility, like emulating an old function, or preparing for newer PHP version, like emulating new upcoming function.

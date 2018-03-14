@@ -1,1 +1,2 @@
+Use Constant As Arguments
 Some methods and functions are defined to be used with constants as arguments. Those constants are made to be meaningful and readable, keeping the code maintenable. It is recommended to use such constants as soon as they are documented.

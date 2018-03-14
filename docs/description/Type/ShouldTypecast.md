@@ -1,3 +1,4 @@
+Should Typecast
 When typecasting, it is better to use the casting operator, such as (int) or (bool).
 
 Functions such as intval() or settype() are always slower.

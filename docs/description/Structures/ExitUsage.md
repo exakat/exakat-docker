@@ -1,4 +1,5 @@
-Using exit or die() in the code makes the code untestable (it will break unit tests). Morover, if there is no reason or string to display, it may take a long time to spot where the application is stuck. 
+Exit() Usage
+Using exit or die() in the code makes the code untestable (it will break unit tests). Moreover, if there is no reason or string to display, it may take a long time to spot where the application is stuck. 
 
 <?php
 

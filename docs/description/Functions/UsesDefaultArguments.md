@@ -1,3 +1,4 @@
+Uses Default Values
 Default values are provided to methods so as to make it convenient to use. However, with new versions, those values may change. For example, in PHP 5.4, htmlentities() switched from Latin1 to UTF-8 default encoding.
 
 <?php

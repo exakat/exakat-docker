@@ -1,3 +1,4 @@
+Undefined Class Constants
 Class constants that are used, but never defined. This should yield a fatal error upon execution, but no feedback at compile level.
 
 <?php
