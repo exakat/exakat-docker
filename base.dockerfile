@@ -2,17 +2,8 @@ FROM develar/java
 
 MAINTAINER Exakat, Damien Seguy, dseguy@exakat.io
 
-
-ENV NEO4J_VERSION 2.3.10
-ENV NEO4J_EDITION community
-ENV NEO4J_DOWNLOAD_SHA256 b910ca32c454dd3aa2870d2d9f83973c9597ab67b7f72355091ca2d924d646ab
-ENV NEO4J_DOWNLOAD_ROOT http://dist.neo4j.org
-ENV NEO4J_TARBALL neo4j-$NEO4J_EDITION-$NEO4J_VERSION-unix.tar.gz
-ENV NEO4J_URI $NEO4J_DOWNLOAD_ROOT/$NEO4J_TARBALL
-ENV NEO4J_HOME /var/lib/neo4j
-
-
-COPY neo4j-gremlin-plugin/ $NEO4J_HOME/plugins/gremlin-plugin
+ENV GREMLIN_VERSION 3.2.7
+ENV GREMLIN_HOME /usr/src/exakat/tinkergraph
 
 RUN \
     echo "===> Setup" \
@@ -30,22 +21,16 @@ RUN \
     \
     && export TERM="xterm" \
     \
-    && echo "===> Neo4j" \
-    && curl --fail --silent --show-error --location --output lsof.apk http://dl-3.alpinelinux.org/alpine/v3.0/main/x86_64/lsof-4.87-r0.apk \
-    && apk add --quiet --allow-untrusted lsof.apk \
-    && rm lsof.apk \
-    \
-    && curl --fail --silent --show-error --location --output neo4j.tar.gz $NEO4J_URI \
-    && echo "$NEO4J_DOWNLOAD_SHA256  neo4j.tar.gz" | sha256sum -c -s - \
-    && tar -xzf neo4j.tar.gz -C /var/lib \
-    && rm -rf /var/lib/neo4j-*/plugins \
-    && mv /var/lib/neo4j-*/* $NEO4J_HOME \
-    && rm neo4j.tar.gz \
-    && sed -i.bak s/dbms\.security\.auth_enabled=true/dbms\.security\.auth_enabled=false/ $NEO4J_HOME/conf/neo4j-server.properties \
-    && sed -i.bak s%#org.neo4j.server.thirdparty_jaxrs_classes=org.neo4j.examples.server.unmanaged=/examples/unmanaged%org.neo4j.server.thirdparty_jaxrs_classes=com.thinkaurelius.neo4j.plugins=/tp% $NEO4J_HOME/conf/neo4j-server.properties \
-    && sed -i.bak s%org.neo4j.server.webserver.port=7474%org.neo4j.server.webserver.port=7777% $NEO4J_HOME/conf/neo4j-server.properties \
-    && echo "wrapper.java.additional=-XX:MaxPermSize=512m" >> $NEO4J_HOME/conf/neo4j-wrapper.conf \
-    && rm $NEO4J_HOME/conf/neo4j-server.properties.bak \
+    && echo "====> Gremlin-Server" \
+    && mkdir -p /usr/src/exakat \
+    && wget -O apache-tinkerpop-gremlin-server-$GREMLIN_VERSION-bin.zip http://ftp.tudelft.nl/apache/tinkerpop/$GREMLIN_VERSION/apache-tinkerpop-gremlin-server-$GREMLIN_VERSION-bin.zip \
+    && unzip apache-tinkerpop-gremlin-server-$GREMLIN_VERSION-bin.zip \
+    && mv apache-tinkerpop-gremlin-server-$GREMLIN_VERSION /usr/src/exakat/tinkergraph \
+    && rm -rf apache-tinkerpop-gremlin-server-$GREMLIN_VERSION-bin.zip  \
+    && cd $GREMLIN_HOME \
+    && mkdir db \
+    && bin/gremlin-server.sh -i org.apache.tinkerpop neo4j-gremlin $GREMLIN_VERSION \
+    && cd - \
     \
     && echo "====> Cleanup" \
     && apk del curl \
@@ -53,6 +38,5 @@ RUN \
     \
     && echo "====> Permissions" \
     && adduser -u 2004 -D docker \
-    && chown -R docker:docker $NEO4J_HOME
-
-COPY ssl/ $NEO4J_HOME/conf/ssl/
+    && chown -R docker:docker $GREMLIN_HOME
+    
