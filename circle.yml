@@ -15,6 +15,7 @@ dependencies:
     - (cd $HOME/codacy-plugins-test && sbt compile)
     - |
       (cd $HOME/$CIRCLE_PROJECT_REPONAME && \
+        docker build -f gremlin.dockerfile -t exakat/gremlin . && \
         docker build -f base.dockerfile -t exakat/base . && \
         docker build -t "$CIRCLE_PROJECT_REPONAME:latest" .)
   cache_directories:
