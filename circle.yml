@@ -34,7 +34,7 @@ test:
     - (cd $HOME/codacy-plugins-test; git fetch --all; git reset --hard origin/master)
   override:
     - (cd $HOME/codacy-plugins-test && sbt -Dcodacy.tests.ignore.descriptions=true "run-main codacy.plugins.DockerTest json $CIRCLE_PROJECT_REPONAME:latest")
-    - (cd $HOME/codacy-plugins-test && sbt -Dcodacy.tests.noremove=true -Dcodacy.tests.threads=8 "run-main codacy.plugins.DockerTest pattern $CIRCLE_PROJECT_REPONAME:latest")
+    - (cd $HOME/codacy-plugins-test && sbt "run-main codacy.plugins.DockerTest pattern $CIRCLE_PROJECT_REPONAME:latest")
 
 deployment:
   hub:
