@@ -1,4 +1,4 @@
-FROM develar/java
+FROM anapsix/alpine-java
 
 MAINTAINER Exakat, Damien Seguy, dseguy@exakat.io
 
@@ -25,6 +25,18 @@ RUN \
     \
     && echo "===> php.ini" \
     && echo "memory_limit=-1" >> /etc/php7/php.ini \
+    \
+    && echo "====> Gremlin-Server" \
+    && curl --fail --silent --show-error --location --output apache-tinkerpop-gremlin-server-$GREMLIN_VERSION-bin.zip http://ftp.tudelft.nl/apache/tinkerpop/$GREMLIN_VERSION/apache-tinkerpop-gremlin-server-$GREMLIN_VERSION-bin.zip \
+    && unzip apache-tinkerpop-gremlin-server-$GREMLIN_VERSION-bin.zip \
+    && mv apache-tinkerpop-gremlin-server-$GREMLIN_VERSION tinkergraph \
+    && rm -rf apache-tinkerpop-gremlin-server-$GREMLIN_VERSION-bin.zip  \
+    && cd tinkergraph \
+    && mkdir db \
+    && ./bin/gremlin-server.sh -i org.apache.tinkerpop neo4j-gremlin 3.2.7 \
+    && rm -rf javadocs \
+    && rm -rf docs \
+    && cd .. \
     \
     && echo "===> Setup Exakat" \
     && apk add --no-cache curl curl-dev grep findutils ncurses libbsd=0.8.6-r2 \
