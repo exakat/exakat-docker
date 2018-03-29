@@ -1,4 +1,6 @@
-#!/bin/sh
+#!/bin/bash
+
+ln -s /src /usr/src/exakat/projects/codacy/code
 
 cd tinkergraph
 ./bin/gremlin-server.sh conf/gsneo4j.yaml > /dev/null 2>&1 & 
