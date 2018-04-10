@@ -1,4 +1,5 @@
-It is recommended to avoid hardcoding the tmp file. It is better to rely on the system's tmp folder, which is accessible with sys_get_temp_dir().
+Use System Tmp
+It is recommended to avoid hardcoding the temporary file. It is better to rely on the system's temporary folder, which is accessible with sys_get_temp_dir().
 
 <?php
 

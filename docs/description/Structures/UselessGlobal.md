@@ -1,3 +1,4 @@
+Useless Global
 Global are useless in two cases. First, on super-globals, which are always globals, like $_GET. Secondly, on variables that are not used.
 
 <?php

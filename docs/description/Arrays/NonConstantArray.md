@@ -1,3 +1,4 @@
+Non-constant Index In Array
 Undefined constants revert as strings in Arrays. They are also called barewords.
 
 In '$array[index]', PHP cannot find index as a constant, but, as a default behavior, turns it into the string 'index'. 
@@ -25,5 +26,5 @@ define('index', 2);
 
 It is recommended to make index a real string (with ' or "), or to define the corresponding constant to avoid any future surprise.
 
-Note that PHP 7.2 removes the support for this feature : [PHP RFC: Deprecate and Remove Bareword (Unquoted) Strings](https://wiki.php.net/rfc/deprecate-bareword-strings).
+Note that PHP 7.2 removes the support for this feature : `PHP RFC: Deprecate and Remove Bareword (Unquoted) Strings <https://wiki.php.net/rfc/deprecate-bareword-strings>`_.
 

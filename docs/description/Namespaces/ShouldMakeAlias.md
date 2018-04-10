@@ -1,3 +1,4 @@
+Should Make Alias
 Long names should be aliased.
 
 Aliased names are easy to read at the beginning of the script; they may be changed at one point, and update the whole code at the same time. 

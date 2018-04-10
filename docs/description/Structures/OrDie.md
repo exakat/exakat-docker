@@ -1,3 +1,4 @@
+Or Die
 Classic old style failed error management. 
 
 <?php

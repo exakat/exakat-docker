@@ -1,3 +1,4 @@
+Static Methods Can't Contain $this
 Static methods are also called 'class methods' : they may be called even if the class has no instantiated object. Thus, the local variable $this won't exist, PHP will set it to NULL as usual. 
 
 <?php

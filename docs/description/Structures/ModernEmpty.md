@@ -1,3 +1,4 @@
+Modernize Empty With Expression
 empty() accept expressions since PHP 5.5. There is no need to store the expression in a variable before testing, unless it is reused later.
 
 <?php
@@ -23,3 +24,4 @@ if (empty($a2)) {
 
 ?>
 
+See also `empty() <http://www.php.net/manual/en/function.empty.php>`_.

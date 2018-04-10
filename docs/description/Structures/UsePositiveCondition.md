@@ -1,3 +1,4 @@
+Use Positive Condition
 Whenever possible, use a positive condition. 
 
 Positive conditions are easier to understand, and lead to less understanding problems.

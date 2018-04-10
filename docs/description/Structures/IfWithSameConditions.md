@@ -1,3 +1,4 @@
+If With Same Conditions
 Successive If / then structures that have the same condition may be either merged or have one of the condition changed. 
 
 <?php

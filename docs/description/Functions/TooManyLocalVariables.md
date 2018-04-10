@@ -1,3 +1,4 @@
+Too Many Local Variables
 Too many local variables were found in the methods. When over 15 variables are found in such a method, a violation is reported.
 
 Local variables exclude globals (imported with global) and arguments. 

@@ -1,3 +1,4 @@
+Should Use Local Class
 Methods in a class should use the class, or be functions.
 
 Methods should use $this with another method or a property, or call parent::. Static methods should call another static method, or a static property. 

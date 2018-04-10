@@ -1,3 +1,4 @@
+Useless Parenthesis
 Situations where parenthesis are not necessary, and may be removed.
 
 <?php

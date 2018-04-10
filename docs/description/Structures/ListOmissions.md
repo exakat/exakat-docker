@@ -1,3 +1,6 @@
+list() May Omit Variables
+Simply omit any unused variable in a list() call. 
+
 list() is the only PHP function that accepts to have omitted arguments. If the following code makes no usage of a listed variable, just omit it. 
 
 <?php

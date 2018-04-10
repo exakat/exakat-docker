@@ -1,3 +1,4 @@
+Empty Try Catch
 The code does try, then catch errors but do no act upon the error. 
 
 <?php

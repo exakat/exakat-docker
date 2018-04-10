@@ -1,3 +1,4 @@
+Drop Else After Return
 Avoid else clause when the then clause returns, but not the else. 
 
 The else may simply be set in the main sequence of the function. 

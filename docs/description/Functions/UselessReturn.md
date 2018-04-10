@@ -1,3 +1,4 @@
+Useless Return
 The spotted functions or methods have a return statement, but this statement is useless. This is the case for constructor and destructors, whose return value are ignored or inaccessible.
 
 When return is void, and the last element in a function, it is also useless.

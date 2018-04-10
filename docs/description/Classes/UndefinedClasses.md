@@ -1,3 +1,4 @@
+Undefined Classes
 Those classes are used in the code, but there are no definition for them.
 
 This may happens under normal conditions, if the application makes use of an unsupported extension, that defines extra classes; 

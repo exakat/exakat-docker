@@ -1,3 +1,4 @@
+Foreach Needs Reference Array
 When using foreach with a reference as value, the source must be a referenced array, which is a variable (or array or property or static property). 
 When the array is the result of an expression, the array is not kept in memory after the foreach loop, and any change made with & are lost.
 

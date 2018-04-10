@@ -1,3 +1,4 @@
+Unitialized Properties
 Properties that are not initialized in the constructor, nor at definition. 
 
 <?php

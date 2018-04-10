@@ -1,3 +1,4 @@
+Never Used Properties
 Properties that are never used. They are defined, but never actually used.
 
 <?php

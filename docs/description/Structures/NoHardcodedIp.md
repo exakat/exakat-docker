@@ -1,3 +1,4 @@
+No Hardcoded Ip
 Do not leave hard coded IP in your code.
 
 It is recommended to move such configuration in external files or databases, for each update. 

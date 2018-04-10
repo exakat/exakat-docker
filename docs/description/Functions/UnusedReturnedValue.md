@@ -1,3 +1,4 @@
+Unused Returned Value
 The function called returns a value, which is ignored. 
 
 Usually, this is a sign of dead code, or a missed check on the results of the functioncall. At times, it may be a valid call if the function has voluntarily no return value. 

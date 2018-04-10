@@ -1,3 +1,4 @@
+Only Variable Returned By Reference
 Function can't return literals by reference.
 
 When a function returns a reference, it is only possible to return variables, properties or static properties. 

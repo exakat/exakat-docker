@@ -1,3 +1,4 @@
+var_dump()... Usage
 var_dump(), print_r() or var_export() should not be left in any production code. They are debugging functions.
 
 <?php

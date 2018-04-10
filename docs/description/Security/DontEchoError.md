@@ -1,3 +1,4 @@
+Dont Echo Error
 It is recommended to avoid displaying error messages directly to the browser.
 
 <?php

@@ -1,4 +1,5 @@
-These conditional expressions return true/false, depending on the condition. This may be simplified by dropping the control structure alltogether.
+Return True False
+These conditional expressions return true/false, depending on the condition. This may be simplified by dropping the control structure altogether.
 
 <?php
 

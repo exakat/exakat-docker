@@ -1,3 +1,4 @@
+Illegal Name For Method
 PHP has reserved usage of methods starting with __ for magic methods. It is recommended to avoid using this prefix, to prevent confusions.
 
 <?php

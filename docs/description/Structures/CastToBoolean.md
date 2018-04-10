@@ -1,3 +1,4 @@
+Cast To Boolean
 This expression may be reduced by casting to boolean type.
 
 <?php

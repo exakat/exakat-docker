@@ -1,4 +1,9 @@
 #!/bin/bash
 
-$NEO4J_HOME/bin/neo4j start && \
-php exakat.phar project -p codacy
+ln -s /src /usr/src/exakat/projects/codacy/code
+
+cd tinkergraph
+./bin/gremlin-server.sh conf/gsneo4j.yaml > /dev/null 2>&1 & 
+while ! echo exit | nc localhost 8182; do sleep 1; done
+cd ..;
+php exakat.phar codacy

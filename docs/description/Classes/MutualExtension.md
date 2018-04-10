@@ -1,3 +1,4 @@
+Classes Mutually Extending Each Other
 Those classes are extending each other, creating an extension loop. PHP will yield a fatal error at running time, even if it is compiling the code.
 
 <?php

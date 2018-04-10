@@ -1,3 +1,4 @@
+Undefined Trait
 Those traits are undefined. 
 
 When the using class or trait is instantiated, PHP emits a a fatal error.

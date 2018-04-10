@@ -1,3 +1,4 @@
+No Self Referencing Constant
 It is not possible to use 'self' when defining a constant in a class. It will yield a fatal error at runtime. 
 
 <?php

@@ -1,3 +1,4 @@
+Accessing Private
 List of calls to private properties/methods that will compile but yield some fatal error upon execution.
 
 <?php

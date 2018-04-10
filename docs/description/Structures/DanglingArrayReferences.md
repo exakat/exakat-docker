@@ -1,3 +1,4 @@
+Dangling Array References
 Always unset a referenced-variable used in a loop.
 
 It is highly recommended to unset blind variables when they are set up as references after a loop. 
@@ -29,4 +30,4 @@ foreach($array as $a) {}
 
 When omitting this step, the next loop that will also require this variable will deal with garbage values, and produce unexpected results.
 
-See also : [No Dangling Reference](https://github.com/dseguy/clearPHP/blob/master/rules/no-dangling-reference.md).
+See also : `No Dangling Reference <https://github.com/dseguy/clearPHP/blob/master/rules/no-dangling-reference.md>`_.
