@@ -5,7 +5,7 @@
 ## Features
 
 * [Exakat](https://www.exakat.io/) [`1.2.3`](https://github.com/exakat/exakat.git)
-* [PHP](https://php.net) 7.2
+* [PHP](https://php.net) 7.1
 * [Gremlin Server 3.2.8](http://tinkerpop.apache.org/)
 * [Git](https://git-scm.com/), [Mercurial](https://www.mercurial-scm.org/) and [SVN](https://subversion.apache.org/).
 
