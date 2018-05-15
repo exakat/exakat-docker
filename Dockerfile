@@ -1,7 +1,7 @@
 FROM php:7.1-cli
 
 LABEL MAINTAINER Exakat, Damien Seguy, dseguy@exakat.io
-ENV EXAKAT_VERSION 1.2.6
+ENV EXAKAT_VERSION 1.2.7
 ENV GREMLIN_VERSION 3.2.8
 
 COPY exakat.sh /usr/src/exakat/
