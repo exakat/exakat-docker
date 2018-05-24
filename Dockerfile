@@ -11,6 +11,8 @@ RUN \
     echo "===> php.ini" && \
     echo "memory_limit=-1" >> /usr/local/etc/php/php.ini && \
     \
+    apt-get update && apt-get install -y --no-install-recommends apt-utils gnupg  && \
+    \
     echo "===> Java 8"  && \
     echo "deb http://ppa.launchpad.net/webupd8team/java/ubuntu trusty main" | tee /etc/apt/sources.list.d/webupd8team-java.list  && \
     echo "deb-src http://ppa.launchpad.net/webupd8team/java/ubuntu trusty main" | tee -a /etc/apt/sources.list.d/webupd8team-java.list  && \
@@ -21,7 +23,7 @@ RUN \
     echo debconf shared/accepted-oracle-license-v1-1 seen true | debconf-set-selections  && \
     DEBIAN_FRONTEND=noninteractive apt-get install -y --force-yes oracle-java8-installer oracle-java8-set-default  && \
     \
-    apt-get update && apt-get install -y --no-install-recommends apt-utils git subversion mercurial lsof unzip && \
+    apt-get update && apt-get install -y --no-install-recommends git subversion mercurial lsof unzip && \
     \
     echo "====> Exakat $EXAKAT_VERSION" && \
     cd /usr/src/exakat && \
