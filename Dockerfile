@@ -1,4 +1,4 @@
-FROM php:7.1-cli
+FROM php:7.1-cli-jessie
 
 LABEL MAINTAINER Exakat, Damien Seguy, dseguy@exakat.io
 ENV EXAKAT_VERSION 1.2.8
