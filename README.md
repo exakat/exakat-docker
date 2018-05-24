@@ -55,4 +55,3 @@ To build the Exakat dockerfile :
     $ docker run -it -v $(pwd):/usr/src/exakat/projects --rm exakat/exakat init -p nlptools -R https://github.com/atrilla/nlptools.git -v
     $ docker run -it -v $(pwd):/usr/src/exakat/projects --rm exakat/exakat project -v -p nlptools
 	```
-
