@@ -1,4 +1,4 @@
-FROM php:7.1-cli
+FROM php:7.2-cli
 
 LABEL MAINTAINER Exakat, Damien Seguy, dseguy@exakat.io
 ENV EXAKAT_VERSION 1.2.8
@@ -7,7 +7,11 @@ ENV GREMLIN_VERSION 3.2.9
 COPY exakat.sh /usr/src/exakat/
 COPY config/exakat.ini /usr/src/exakat/config/
 
+RUN apt-get update
 RUN \
+    echo "===> prereqs" && \
+    apt-get install -y gnupg  && \
+    mkdir -p /usr/share/man/man1 && \
     echo "===> php.ini" && \
     echo "memory_limit=-1" >> /usr/local/etc/php/php.ini && \
     \
@@ -15,10 +19,10 @@ RUN \
     echo "deb http://ppa.launchpad.net/webupd8team/java/ubuntu trusty main" | tee /etc/apt/sources.list.d/webupd8team-java.list  && \
     echo "deb-src http://ppa.launchpad.net/webupd8team/java/ubuntu trusty main" | tee -a /etc/apt/sources.list.d/webupd8team-java.list  && \
     apt-key adv --keyserver keyserver.ubuntu.com --recv-keys EEA14886  && \
-    apt-get update  && \
+    apt-get update && \
     \
     echo debconf shared/accepted-oracle-license-v1-1 select true | debconf-set-selections  && \
-    echo debconf shared/accepted-oracle-license-v1-1 seen true | debconf-set-selections  && \
+    echo debconf shared/accepted-oracle-license-v1-1 seen true | debconf-set-selections && \
     DEBIAN_FRONTEND=noninteractive apt-get install -y --force-yes oracle-java8-installer oracle-java8-set-default  && \
     \
     apt-get update && apt-get install -y --no-install-recommends git subversion mercurial lsof unzip && \
