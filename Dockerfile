@@ -21,7 +21,7 @@ RUN \
     echo debconf shared/accepted-oracle-license-v1-1 seen true | debconf-set-selections  && \
     DEBIAN_FRONTEND=noninteractive apt-get install -y --force-yes oracle-java8-installer oracle-java8-set-default  && \
     \
-    apt-get update && apt-get install -y --no-install-recommends git subversion mercurial lsof unzip && \
+    apt-get update && apt-get install -y --no-install-recommends apt-utils git subversion mercurial lsof unzip && \
     \
     echo "====> Exakat $EXAKAT_VERSION" && \
     cd /usr/src/exakat && \
@@ -31,7 +31,7 @@ RUN \
     export TERM="xterm" && \
     \
     echo "====> Gremlin-Server" && \
-    wget -O apache-tinkerpop-gremlin-server-$GREMLIN_VERSION-bin.zip "https://www.apache.org/dyn/mirrors/mirrors.cgi?action=download&filename=tinkerpop/$GREMLIN_VERSION/apache-tinkerpop-gremlin-server-$GREMLIN_VERSION-bin.zip" && \
+    wget --trust-server-names  -O apache-tinkerpop-gremlin-server-$GREMLIN_VERSION-bin.zip "https://www.apache.org/dyn/mirrors/mirrors.cgi?action=download&filename=tinkerpop/$GREMLIN_VERSION/apache-tinkerpop-gremlin-server-$GREMLIN_VERSION-bin.zip" && \
     unzip apache-tinkerpop-gremlin-server-$GREMLIN_VERSION-bin.zip && \
     mv apache-tinkerpop-gremlin-server-$GREMLIN_VERSION tinkergraph && \
     rm -rf apache-tinkerpop-gremlin-server-$GREMLIN_VERSION-bin.zip  && \
