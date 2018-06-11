@@ -1,8 +1,8 @@
 FROM php:7.1-cli-jessie
 
 LABEL MAINTAINER Exakat, Damien Seguy, dseguy@exakat.io
-ENV EXAKAT_VERSION 1.3.0
-ENV GREMLIN_VERSION 3.2.9
+ENV EXAKAT_VERSION 1.3.1
+ENV GREMLIN_VERSION 3.3.3
 
 COPY exakat.sh /usr/src/exakat/
 COPY config/exakat.ini /usr/src/exakat/config/
@@ -33,7 +33,7 @@ RUN \
     export TERM="xterm" && \
     \
     echo "====> Gremlin-Server" && \
-    wget --trust-server-names  -O apache-tinkerpop-gremlin-server-$GREMLIN_VERSION-bin.zip "https://www.apache.org/dyn/mirrors/mirrors.cgi?action=download&filename=tinkerpop/$GREMLIN_VERSION/apache-tinkerpop-gremlin-server-$GREMLIN_VERSION-bin.zip" && \
+    wget --trust-server-names  -O apache-tinkerpop-gremlin-server-$GREMLIN_VERSION-bin.zip http://dist.exakat.io/apache-tinkerpop-gremlin-server-$GREMLIN_VERSION-bin.zip && \
     unzip apache-tinkerpop-gremlin-server-$GREMLIN_VERSION-bin.zip && \
     mv apache-tinkerpop-gremlin-server-$GREMLIN_VERSION tinkergraph && \
     rm -rf apache-tinkerpop-gremlin-server-$GREMLIN_VERSION-bin.zip  && \
