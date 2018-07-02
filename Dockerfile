@@ -1,7 +1,7 @@
 FROM php:7.1-cli-jessie
 
 LABEL MAINTAINER Exakat, Damien Seguy, dseguy@exakat.io
-ENV EXAKAT_VERSION 1.3.3
+ENV EXAKAT_VERSION 1.3.4
 ENV GREMLIN_VERSION 3.3.3
 
 COPY exakat.sh /usr/src/exakat/
