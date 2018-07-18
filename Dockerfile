@@ -2,12 +2,11 @@ FROM anapsix/alpine-java
 
 MAINTAINER Exakat, Damien Seguy, dseguy@exakat.io
 
-ENV GREMLIN_VERSION 3.2.7
+ENV GREMLIN_VERSION 3.3.3
 ENV GREMLIN_HOME /usr/src/exakat/tinkergraph
-ENV EXAKAT_VERSION 1.2.0a
+ENV EXAKAT_VERSION 1.3.6
 ENV EXAKAT_URI http://dist.exakat.io/index.php?file=exakat-$EXAKAT_VERSION.phar
 
-COPY tinkergraph/ /usr/src/exakat/tinkergraph
 COPY exakat.sh /usr/src/exakat/
 COPY config/exakat.ini /usr/src/exakat/config/
 COPY projects /usr/src/exakat/projects
@@ -19,21 +18,21 @@ RUN \
     && echo "http://dl-cdn.alpinelinux.org/alpine/edge/community" >> /etc/apk/repositories \
     && echo "http://dl-cdn.alpinelinux.org/alpine/edge/testing" >> /etc/apk/repositories \
     && apk add --no-cache bash curl \
-    && echo "===> PHP 7.1" \
-    && apk add --update 'php7>7.1' 'php7-curl>7.1' 'php7-json>7.1' 'php7-phar>7.1' \
-       'php7-sqlite3>7.1' 'php7-mbstring>7.1' 'php7-tokenizer>7.1' \
+    && echo "===> PHP 7.2" \
+    && apk add --update 'php7>7.2' 'php7-curl>7.2' 'php7-json>7.2' 'php7-phar>7.2' \
+       'php7-sqlite3>7.2' 'php7-mbstring>7.2' 'php7-tokenizer>7.2' \
     \
     && echo "===> php.ini" \
     && echo "memory_limit=-1" >> /etc/php7/php.ini \
     \
     && echo "====> Gremlin-Server" \
-    && curl --fail --silent --show-error --location --output apache-tinkerpop-gremlin-server-$GREMLIN_VERSION-bin.zip http://ftp.tudelft.nl/apache/tinkerpop/$GREMLIN_VERSION/apache-tinkerpop-gremlin-server-$GREMLIN_VERSION-bin.zip \
+    && curl --fail --silent --show-error --location --output apache-tinkerpop-gremlin-server-$GREMLIN_VERSION-bin.zip http://dist.exakat.io/apache-tinkerpop-gremlin-server-$GREMLIN_VERSION-bin.zip \
     && unzip apache-tinkerpop-gremlin-server-$GREMLIN_VERSION-bin.zip \
     && mv apache-tinkerpop-gremlin-server-$GREMLIN_VERSION tinkergraph \
     && rm -rf apache-tinkerpop-gremlin-server-$GREMLIN_VERSION-bin.zip  \
     && cd tinkergraph \
     && mkdir db \
-    && ./bin/gremlin-server.sh -i org.apache.tinkerpop neo4j-gremlin 3.2.7 \
+    && ./bin/gremlin-server.sh install org.apache.tinkerpop neo4j-gremlin $GREMLIN_VERSION \
     && rm -rf javadocs \
     && rm -rf docs \
     && cd .. \
