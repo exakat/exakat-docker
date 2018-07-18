@@ -1,4 +1,3 @@
-Undefined Interfaces
 Typehint or instanceof that are relying on undefined interfaces (or classes) : they will always return false. Any condition based upon them are dead code.
 
 <?php

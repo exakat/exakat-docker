@@ -1,4 +1,3 @@
-Empty Traits
 List of all empty trait defined in the code. 
 
 <?php

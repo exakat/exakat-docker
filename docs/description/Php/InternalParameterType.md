@@ -1,4 +1,3 @@
-Wrong Parameter Type
 The expected parameter is not of the correct type. Check PHP documentation to know which is the right format to be used.
 
 <?php

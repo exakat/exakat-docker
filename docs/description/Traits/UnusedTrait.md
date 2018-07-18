@@ -1,4 +1,3 @@
-Unused Traits
 Those traits are not used in a class or another trait. They may be dead code.
 
 <?php

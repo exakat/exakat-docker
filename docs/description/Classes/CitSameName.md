@@ -1,4 +1,3 @@
-Class, Interface Or Trait With Identical Names
 The following names are used at the same time for classes, interfaces or traits. For example, 
 
 <?php

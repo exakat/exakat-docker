@@ -1,4 +1,3 @@
-Implied If
 It is confusing to emulate if/then with boolean operators.
 
 It is possible to emulate a if/then structure by using the operators 'and' and 'or'. Since optimizations will be applied to them : 

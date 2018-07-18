@@ -1,4 +1,3 @@
-Altering Foreach Without Reference
 Foreach() loop that should use a reference. 
 
 When using a foreach loop that modifies the original source, it is recommended to use referenced variables, rather than access the original value with $source[$index]. 
@@ -23,4 +22,6 @@ foreach($source as $key => &$value) {
 ?>
 
 You may also use array_walk() or array_map() (when $key is not used) to avoid the use of foreach.
+
+See also [Foreach](http://php.net/manual/en/control-structures.foreach.php).
 

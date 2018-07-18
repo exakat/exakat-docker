@@ -1,4 +1,3 @@
-Useless Final
 When a class is declared final, all of its methods are also final by default. 
 
 There is no need to declare them individually final.
@@ -17,4 +16,4 @@ There is no need to declare them individually final.
 
 ?>
 
-See also `Final keyword <http://php.net/manual/en/language.oop5.final.php>`_, and `When to declare final <https://ocramius.github.io/blog/when-to-declare-classes-final/>`_.
+See also [Final keyword](http://php.net/manual/en/language.oop5.final.php), and [When to declare final](https://ocramius.github.io/blog/when-to-declare-classes-final/).

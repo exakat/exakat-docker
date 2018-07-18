@@ -1,4 +1,3 @@
-Else If Versus Elseif
 Always use elseif instead of else and if. 
 
 "The keyword elseif SHOULD be used instead of else if so that all control keywords look like single words". Quoted from the PHP-FIG documentation

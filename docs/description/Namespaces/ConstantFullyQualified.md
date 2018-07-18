@@ -1,4 +1,3 @@
-Fully Qualified Constants
 Constants defined with their namespace.
 
 When defining constants with define() function, it is possible to include the actual namespace : 

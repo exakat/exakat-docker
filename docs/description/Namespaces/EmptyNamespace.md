@@ -1,4 +1,3 @@
-Empty Namespace
 Declaring a namespace in the code and not using it for structure declarations or global instructions is useless.
 
 Using simple style : 

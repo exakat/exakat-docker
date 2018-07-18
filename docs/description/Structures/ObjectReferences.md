@@ -1,4 +1,3 @@
-Objects Don't Need References
 There is no need to create references for objects, as those are always passed by reference when used as arguments.
 
 <?php
@@ -21,4 +20,4 @@ There is no need to create references for objects, as those are always passed by
 
 ?>
 
-See also `Passing by reference <http://php.net/manual/en/language.references.pass.php>`_.
+See also [Passing by reference](http://php.net/manual/en/language.references.pass.php).

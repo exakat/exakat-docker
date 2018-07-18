@@ -1,4 +1,3 @@
-Invalid Constant Name
 According to PHP's manual, constant names, ' A valid constant name starts with a letter or underscore, followed by any number of letters, numbers, or underscores.'.
 
 Constant, when defined using define() function, must follow this regex : 

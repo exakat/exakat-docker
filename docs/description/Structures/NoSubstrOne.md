@@ -1,4 +1,3 @@
-No Substr() One
 Use array notation $string[$position] to reach a single byte in a string.
 
 There are two ways to access a byte in a string : substr() and $v[$pos];

@@ -1,4 +1,3 @@
-Wrong fopen() Mode
 Wrong file opening for fopen().
 
 fopen() has a few modes, as described in the documentation : 'r', 'r+', for reading;  'w', 'w+' for writing; 'a', 'a+' for appending; 'x', 'x+' for modifying; 'c', 'c+' for writing and locking, 't' for text files and windows only.

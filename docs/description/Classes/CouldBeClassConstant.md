@@ -1,4 +1,3 @@
-Could Be Class Constant
 When a property is defined and read, but never modified, it may be a constant. 
 
 <?php

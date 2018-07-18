@@ -1,4 +1,3 @@
-Uncaught Exceptions
 The following exceptions are thrown in the code, but are never caught. 
 
 <?php

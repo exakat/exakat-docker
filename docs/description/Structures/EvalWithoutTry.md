@@ -1,5 +1,4 @@
-eval() Without Try
-eval() emits a ParseError exception with PHP 7 and later. Catching this exception is the recommended way to handle errors when using the eval() function.
+``eval()`` emits a ``ParseError`` exception with PHP 7 and later. Catching this exception is the recommended way to handle errors when using the ``eval()`` function.
 
 <?php
 
@@ -18,4 +17,4 @@ try {
 
 ?>
 
-Note that it will catch situations where eval() is provided with code that can't be used, but it will not catch security problems. Avoid using eval() with incoming data.
+Note that it will catch situations where ``eval()`` is provided with code that can't be used, but it will not catch security problems. Avoid using ``eval()`` with incoming data.

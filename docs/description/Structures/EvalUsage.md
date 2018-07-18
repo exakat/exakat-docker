@@ -1,4 +1,3 @@
-Eval() Usage
 Using eval() is bad for performances (compilation time), for caches (it won't be compiled), and for security (if it includes external data).
 
 <?php

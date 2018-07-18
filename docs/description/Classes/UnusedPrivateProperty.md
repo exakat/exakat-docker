@@ -1,4 +1,3 @@
-Unused Private Properties
 List of all static properties that are not used. They look like dead code.
 
 <?php

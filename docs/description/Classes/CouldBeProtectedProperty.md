@@ -1,4 +1,3 @@
-Could Be Protected Property
 Those properties are declared public, but are never used publicly. They may be made protected. 
 
 <?php

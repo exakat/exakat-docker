@@ -1,4 +1,3 @@
-No Public Access
 The properties below are declared with public access, but are never used publicly. They can be made protected or private.
 
 <?php

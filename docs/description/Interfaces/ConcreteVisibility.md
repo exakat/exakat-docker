@@ -1,4 +1,3 @@
-Concrete Visibility
 Methods that implements an interface in a class must be public. 
 
 PHP doesn't lint this, unless the interface and the class are in the same file. At execution, it stops immediately with a Fatal error : 'Access level to c::iPrivate() must be public (as in class i) ';
@@ -20,5 +19,5 @@ class c implements i {
 
 ?>
 
-See also `Interfaces <http://php.net/manual/en/language.oop5.interfaces.php>`_.
+See also [Interfaces](http://php.net/manual/en/language.oop5.interfaces.php).
 

@@ -1,4 +1,3 @@
-Useless Instructions
 Those instructions are useless, or contains useless parts. 
 
 For example, an addition whose result is not stored in a variable, or immediately reused, does nothing : it is actually performed, and the result is lost. Just plain lost. 

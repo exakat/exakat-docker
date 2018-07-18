@@ -1,4 +1,3 @@
-Redefined Class Constants
 Redefined class constants.
 
 Class constants may be redefined, though it is prone to errors when using them, as it is now crucial to use the right class name to access the right value.

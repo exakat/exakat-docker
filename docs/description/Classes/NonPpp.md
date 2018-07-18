@@ -1,4 +1,3 @@
-Forgotten Visibility
 Some classes elements (property, method, constant) are missing their explicit visibility.
 
 By default, it is public. It should at least be mentioned as public, or may be reviewed as protected or private. 
@@ -31,4 +30,4 @@ class X {
 
 ?>
 
-See also `Visibility <http://php.net/manual/en/language.oop5.visibility.php>`_ and `Understanding The Concept Of Visibility In Object Oriented PHP <https://torquemag.io/2016/05/understanding-concept-visibility-object-oriented-php/>`_.
+See also [Visibility](http://php.net/manual/en/language.oop5.visibility.php) and [Understanding The Concept Of Visibility In Object Oriented PHP](https://torquemag.io/2016/05/understanding-concept-visibility-object-oriented-php/).

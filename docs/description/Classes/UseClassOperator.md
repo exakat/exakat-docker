@@ -1,4 +1,3 @@
-Use Class Operator
 Use ::class to hardcode class names, instead of strings.
 
 This is actually faster than strings, which are parsed at executio time, while ::class is compiled, making it faster to execute. 

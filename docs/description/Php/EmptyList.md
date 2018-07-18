@@ -1,4 +1,3 @@
-Empty List
 Empty list() are not allowed anymore in PHP 7. There must be at least one variable in the list call.
 
 <?php

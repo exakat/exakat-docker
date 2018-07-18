@@ -1,4 +1,3 @@
-Bail Out Early
 When using conditions, it is recommended to quit in the current context, and avoid else clause altogether. 
 
 The main benefit is to make clear the method applies a condition, and stop quickly went it is not satisfied. 
@@ -50,5 +49,17 @@ function foo3($a) {
     return $a;
 }
 
+// Make a return early, and make the condition clearly visible.
+function foo3($a) {
+    if ($a < 0) {
+        $a++;
+        methodcall();
+        functioncall();
+    } 
+}
+
 ?>
+
+See also [Avoid nesting too deeply and return early (part 1)](https://github.com/jupeter/clean-code-php#avoid-nesting-too-deeply-and-return-early-part-1) and 
+         [Avoid nesting too deeply and return early (part 2)](https://github.com/jupeter/clean-code-php#avoid-nesting-too-deeply-and-return-early-part-2).
 

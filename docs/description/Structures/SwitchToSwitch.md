@@ -1,4 +1,3 @@
-Switch To Switch
 The following structures are based on if / elseif / else. Since they have more than three conditions (not withstanding the final else), it is recommended to use the switch structure, so as to make this more readable.
 
 On the other hand, switch() structures will less than 3 elements should be expressed as a if / else structure.

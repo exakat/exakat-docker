@@ -1,4 +1,3 @@
-Identical Conditions
 These logical expressions contain members that are identical. 
 
 This means those expressions may be simplified. 
@@ -8,7 +7,7 @@ This means those expressions may be simplified.
 // twice $a
 if ($a || $b || $c || $a) {  }
 
-// Hiding is parenthesis is bad
+// Hiding in parenthesis is bad
 if (($a) ^ ($a)) {}
 
 // expressions may be large

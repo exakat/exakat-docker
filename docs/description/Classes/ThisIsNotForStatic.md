@@ -1,9 +1,8 @@
-$this Is Not For Static Methods
 Static methods shouldn't use $this variable.
 
 $this variable represents an object, the current object. It is not compatible with a static method, which may operate without any object. 
 
-While executing a static method, $this is actually set to NULL.
+While executing a static method, ``$this`` is actually set to ``NULL``.
 
 <?php
 
@@ -23,4 +22,4 @@ class foo {
 
 ?>
 
-See also `Static Keyword <http://php.net/manual/en/language.oop5.static.php>`_.
+See also [Static Keyword](http://php.net/manual/en/language.oop5.static.php).

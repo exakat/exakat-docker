@@ -1,4 +1,3 @@
-Don't Change Incomings
 PHP hands over a lot of information using special variables like $_GET, $_POST, etc... Modifying those variables and those values inside de variables means that the original content is lost, while it will still look like raw data, and, as such, will be untrustworthy.
 
 <?php

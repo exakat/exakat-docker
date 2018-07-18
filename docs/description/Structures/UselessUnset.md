@@ -1,4 +1,3 @@
-Useless Unset
 Unsetting variables may not be applicable with a certain type of variables. This is the list of such cases.
 
 <?php

@@ -1,4 +1,3 @@
-Iffectations
 Affectations that appears in a condition. 
 
 Iffectations are a way to do both a test and an affectations. 

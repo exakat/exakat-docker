@@ -1,5 +1,6 @@
-Empty Classes
-Classes that do no define anything at all. Classes that are directly derived from an exception are omitted.
+Classes that do no define anything at all. This is probably dead code.
+
+Classes that are directly derived from an exception are omitted.
 
 <?php
 

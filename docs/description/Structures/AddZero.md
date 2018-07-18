@@ -1,4 +1,3 @@
-Adding Zero
 Adding 0 is useless, as 0 is the neutral element for addition. In PHP, it triggers a cast to integer. 
 
 It is recommended to make the cast explicit with (int) 

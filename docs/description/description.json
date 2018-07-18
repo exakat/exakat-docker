@@ -1,1646 +1,1604 @@
 [
     {
-        "patternId": "Structures\/AddZero",
+        "patternId": "Structures/AddZero",
         "title": "Adding Zero",
-        "description": "Adding 0 is useless, as 0 is the neutral element for addition",
+        "description": "Adding Zero",
         "timetofix": 5
     },
     {
-        "patternId": "Arrays\/AmbiguousKeys",
+        "patternId": "Arrays/AmbiguousKeys",
         "title": "Ambiguous Array Index",
-        "description": "Those indexes are defined with different types, in the same array",
-        "timetofix": 20
+        "description": "Ambiguous Array Index",
+        "timetofix": 15
     },
     {
-        "patternId": "Arrays\/MultipleIdenticalKeys",
-        "title": "Multiple Index Definition",
-        "description": "Indexes that are defined multiple times in the same array",
-        "timetofix": 5
-    },
-    {
-        "patternId": "Classes\/EmptyClass",
-        "title": "Empty Classes",
-        "description": "Classes that do no define anything at all",
-        "timetofix": 20
-    },
-    {
-        "patternId": "Classes\/NonPpp",
-        "title": "Forgotten Visibility",
-        "description": "Some classes elements (property, method, constant) are missing their explicit visibility",
-        "timetofix": 5
-    },
-    {
-        "patternId": "Classes\/NonStaticMethodsCalledStatic",
-        "title": "Non Static Methods Called In A Static",
-        "description": "Static methods have to be declared as such (using the static keyword)",
-        "timetofix": 20
-    },
-    {
-        "patternId": "Classes\/OldStyleConstructor",
-        "title": "Old Style Constructor",
-        "description": "PHP classes used to have the method bearing the same name as the class acts as the constructor",
-        "timetofix": 20
-    },
-    {
-        "patternId": "Classes\/StaticMethodsCalledFromObject",
-        "title": "Static Methods Called From Object",
-        "description": "Static methods may be called without instantiating an object",
-        "timetofix": 20
-    },
-    {
-        "patternId": "Constants\/ConstantStrangeNames",
-        "title": "Constants With Strange Names",
-        "description": "List of constants being defined with names that are incompatible with PHP standards",
-        "timetofix": 60
-    },
-    {
-        "patternId": "Extensions\/Extapc",
-        "title": "ext\/apc",
-        "description": "Extension Alternative PHP Cache",
-        "timetofix": 60
-    },
-    {
-        "patternId": "Extensions\/Extfdf",
-        "title": "ext\/fdf",
-        "description": "Extension ext\/fdf",
-        "timetofix": 60
-    },
-    {
-        "patternId": "Extensions\/Extmysql",
-        "title": "ext\/mysql",
-        "description": "Extension for MySQL (Original MySQL API)",
-        "timetofix": 60
-    },
-    {
-        "patternId": "Extensions\/Extsqlite",
-        "title": "ext\/sqlite",
-        "description": "Extension Sqlite 2",
-        "timetofix": 60
-    },
-    {
-        "patternId": "Functions\/EmptyFunction",
-        "title": "Empty Function",
-        "description": "Function or method whose body is empty",
-        "timetofix": 20
-    },
-    {
-        "patternId": "Functions\/RedeclaredPhpFunction",
-        "title": "Redeclared PHP Functions",
-        "description": "Function that bear the same name as a PHP function, and that are declared",
-        "timetofix": 60
-    },
-    {
-        "patternId": "Interfaces\/EmptyInterface",
-        "title": "Empty Interfaces",
-        "description": "Empty interfaces are a code smell",
-        "timetofix": 5
-    },
-    {
-        "patternId": "Php\/CaseForPSS",
-        "title": "Use Lower Case For Parent, Static And Self",
-        "description": "Until PHP 5",
-        "timetofix": 5
-    },
-    {
-        "patternId": "Php\/Php54RemovedFunctions",
-        "title": "Functions Removed In PHP 5.4",
-        "description": "Those functions were removed in PHP 5",
-        "timetofix": 20
-    },
-    {
-        "patternId": "Structures\/Break0",
+        "patternId": "Structures/Break0",
         "title": "Break With 0",
-        "description": "Cannot break 0, as this makes no sense",
-        "timetofix": 20
+        "description": "Break With 0",
+        "timetofix": 15
     },
     {
-        "patternId": "Structures\/BreakNonInteger",
+        "patternId": "Structures/BreakNonInteger",
         "title": "Break With Non Integer",
-        "description": "When using a break, the argument of the operator must be a positive non-null integer literal or be omitted",
-        "timetofix": 20
+        "description": "Break With Non Integer",
+        "timetofix": 15
     },
     {
-        "patternId": "Structures\/CalltimePassByReference",
+        "patternId": "Structures/CalltimePassByReference",
         "title": "Calltime Pass By Reference",
-        "description": "PHP doesn't allow when a value is turned into a reference at functioncall, since PHP 5",
-        "timetofix": 20
+        "description": "Calltime Pass By Reference",
+        "timetofix": 15
     },
     {
-        "patternId": "Structures\/ErrorReportingWithInteger",
+        "patternId": "Structures/ErrorReportingWithInteger",
         "title": "error_reporting() With Integers",
-        "description": "Using named constants with error_reporting is strongly encouraged to ensure compatibility for future versions",
+        "description": "error_reporting() With Integers",
         "timetofix": 5
     },
     {
-        "patternId": "Structures\/EvalUsage",
+        "patternId": "Structures/EvalUsage",
         "title": "Eval() Usage",
-        "description": "Using eval() is bad for performances (compilation time), for caches (it won't be compiled), and for security (if it includes external data)",
-        "timetofix": 20
+        "description": "Eval() Usage",
+        "timetofix": 15
     },
     {
-        "patternId": "Structures\/ExitUsage",
+        "patternId": "Structures/ExitUsage",
         "title": "Exit() Usage",
-        "description": "Using exit or die() in the code makes the code untestable (it will break unit tests)",
-        "timetofix": 20
+        "description": "Exit() Usage",
+        "timetofix": 15
     },
     {
-        "patternId": "Structures\/ForWithFunctioncall",
-        "title": "For Using Functioncall",
-        "description": "It is recommended to avoid functioncall in the for() statement",
-        "timetofix": 60
-    },
-    {
-        "patternId": "Structures\/ForgottenWhiteSpace",
+        "patternId": "Structures/ForgottenWhiteSpace",
         "title": "Forgotten Whitespace",
-        "description": "White spaces have been left at either end of a file : before the PHP opening tag, or after the closing tag",
+        "description": "Forgotten Whitespace",
         "timetofix": 5
     },
     {
-        "patternId": "Structures\/Iffectation",
-        "title": "Iffectations",
-        "description": "Affectations that appears in a condition",
-        "timetofix": 20
-    },
-    {
-        "patternId": "Structures\/MultiplyByOne",
+        "patternId": "Structures/MultiplyByOne",
         "title": "Multiply By One",
-        "description": "Multiplying by 1 is useless",
+        "description": "Multiply By One",
         "timetofix": 5
     },
     {
-        "patternId": "Structures\/NotNot",
+        "patternId": "Structures/NotNot",
         "title": "Not Not",
-        "description": "Double not makes a boolean, not a true",
+        "description": "Not Not",
         "timetofix": 5
     },
     {
-        "patternId": "Structures\/OnceUsage",
+        "patternId": "Structures/OnceUsage",
         "title": "include_once() Usage",
-        "description": "include_once() and require_once() functions should be avoided for performances reasons",
-        "timetofix": 20
+        "description": "include_once() Usage",
+        "timetofix": 15
     },
     {
-        "patternId": "Structures\/PhpinfoUsage",
+        "patternId": "Structures/PhpinfoUsage",
         "title": "Phpinfo",
-        "description": "phpinfo() is a great function to learn about the current configuration of the server",
-        "timetofix": 20
+        "description": "Phpinfo",
+        "timetofix": 15
     },
     {
-        "patternId": "Structures\/StrposCompare",
+        "patternId": "Structures/StrposCompare",
         "title": "Strpos()-like Comparison",
-        "description": "strpos(), and several PHP native functions, returns a string position, starting at 0, or false, in case of failure",
-        "timetofix": 20
+        "description": "Strpos()-like Comparison",
+        "timetofix": 15
     },
     {
-        "patternId": "Structures\/ThrowsAndAssign",
+        "patternId": "Structures/ThrowsAndAssign",
         "title": "Throws An Assignement",
-        "description": "It is possible to throw an exception, and, in the same time, assign this exception to a variable",
+        "description": "Throws An Assignement",
         "timetofix": 5
     },
     {
-        "patternId": "Structures\/VardumpUsage",
+        "patternId": "Structures/VardumpUsage",
         "title": "var_dump()... Usage",
-        "description": "var_dump(), print_r() or var_export() should not be left in any production code",
+        "description": "var_dump()... Usage",
         "timetofix": 5
     },
     {
-        "patternId": "Structures\/toStringThrowsException",
+        "patternId": "Structures/toStringThrowsException",
         "title": "__toString() Throws Exception",
-        "description": "Magical method __toString() can't throw exceptions",
-        "timetofix": 20
+        "description": "__toString() Throws Exception",
+        "timetofix": 15
     },
     {
-        "patternId": "Variables\/VariableNonascii",
-        "title": "Non Ascii Variables",
-        "description": "PHP supports variables with certain characters",
-        "timetofix": 60
+        "patternId": "Structures/ForWithFunctioncall",
+        "title": "For Using Functioncall",
+        "description": "For Using Functioncall",
+        "timetofix": 30
     },
     {
-        "patternId": "Variables\/VariableUsedOnce",
+        "patternId": "Functions/EmptyFunction",
+        "title": "Empty Function",
+        "description": "Empty Function",
+        "timetofix": 15
+    },
+    {
+        "patternId": "Interfaces/EmptyInterface",
+        "title": "Empty Interfaces",
+        "description": "Empty Interfaces",
+        "timetofix": 5
+    },
+    {
+        "patternId": "Php/CaseForPSS",
+        "title": "Use Lower Case For Parent, Static And Self",
+        "description": "Use Lower Case For Parent, Static And Self",
+        "timetofix": 5
+    },
+    {
+        "patternId": "Variables/VariableUsedOnce",
         "title": "Used Once Variables",
-        "description": "This is the list of used once variables",
+        "description": "Used Once Variables",
         "timetofix": 5
     },
     {
-        "patternId": "Traits\/EmptyTrait",
+        "patternId": "Traits/EmptyTrait",
         "title": "Empty Traits",
-        "description": "List of all empty trait defined in the code",
+        "description": "Empty Traits",
         "timetofix": 5
     },
     {
-        "patternId": "Namespaces\/UnusedUse",
-        "title": "Unused Use",
-        "description": "Unused use statements",
+        "patternId": "Constants/ConstantStrangeNames",
+        "title": "Constants With Strange Names",
+        "description": "Constants With Strange Names",
+        "timetofix": 30
+    },
+    {
+        "patternId": "Classes/EmptyClass",
+        "title": "Empty Classes",
+        "description": "Empty Classes",
+        "timetofix": 15
+    },
+    {
+        "patternId": "Variables/VariableNonascii",
+        "title": "Non Ascii Variables",
+        "description": "Non Ascii Variables",
+        "timetofix": 30
+    },
+    {
+        "patternId": "Php/Php54RemovedFunctions",
+        "title": "Functions Removed In PHP 5.4",
+        "description": "Functions Removed In PHP 5.4",
+        "timetofix": 15
+    },
+    {
+        "patternId": "Classes/StaticMethodsCalledFromObject",
+        "title": "Static Methods Called From Object",
+        "description": "Static Methods Called From Object",
+        "timetofix": 15
+    },
+    {
+        "patternId": "Classes/NonStaticMethodsCalledStatic",
+        "title": "Non Static Methods Called In A Static",
+        "description": "Non Static Methods Called In A Static",
+        "timetofix": 15
+    },
+    {
+        "patternId": "Classes/NonPpp",
+        "title": "Forgotten Visibility",
+        "description": "Forgotten Visibility",
         "timetofix": 5
     },
     {
-        "patternId": "Namespaces\/UseWithFullyQualifiedNS",
+        "patternId": "Classes/OldStyleConstructor",
+        "title": "Old Style Constructor",
+        "description": "Old Style Constructor",
+        "timetofix": 15
+    },
+    {
+        "patternId": "Functions/RedeclaredPhpFunction",
+        "title": "Redeclared PHP Functions",
+        "description": "Redeclared PHP Functions",
+        "timetofix": 30
+    },
+    {
+        "patternId": "Arrays/MultipleIdenticalKeys",
+        "title": "Multiple Index Definition",
+        "description": "Multiple Index Definition",
+        "timetofix": 5
+    },
+    {
+        "patternId": "Namespaces/UseWithFullyQualifiedNS",
         "title": "Use With Fully Qualified Name",
-        "description": "Use statement doesn't require a fully qualified name",
-        "timetofix": 60
+        "description": "Use With Fully Qualified Name",
+        "timetofix": 30
     },
     {
-        "patternId": "Php\/RawPostDataUsage",
-        "title": "$HTTP_RAW_POST_DATA",
-        "description": "$HTTP_RAW_POST_DATA is deprecated, and should be replaced by php:\/\/input",
-        "timetofix": 60
+        "patternId": "Namespaces/UnusedUse",
+        "title": "Unused Use",
+        "description": "Unused Use",
+        "timetofix": 5
     },
     {
-        "patternId": "Structures\/UselessInstruction",
+        "patternId": "Structures/UselessInstruction",
         "title": "Useless Instructions",
-        "description": "Those instructions are useless, or contains useless parts",
-        "timetofix": 20
+        "description": "Useless Instructions",
+        "timetofix": 15
     },
     {
-        "patternId": "Classes\/AbstractStatic",
+        "patternId": "Php/RawPostDataUsage",
+        "title": "$HTTP_RAW_POST_DATA",
+        "description": "$HTTP_RAW_POST_DATA",
+        "timetofix": 30
+    },
+    {
+        "patternId": "Classes/AbstractStatic",
         "title": "Abstract Static Methods",
-        "description": "Methods cannot be both abstract and static",
-        "timetofix": 20
+        "description": "Abstract Static Methods",
+        "timetofix": 15
     },
     {
-        "patternId": "Constants\/InvalidName",
-        "title": "Invalid Constant Name",
-        "description": "According to PHP's manual, constant names, ' A valid constant name starts with a letter or underscore, followed by any number of letters, numbers, or underscores",
-        "timetofix": 20
-    },
-    {
-        "patternId": "Constants\/MultipleConstantDefinition",
+        "patternId": "Constants/MultipleConstantDefinition",
         "title": "Multiple Constant Definition",
-        "description": "Some constants are defined several times in your code",
-        "timetofix": 20
+        "description": "Multiple Constant Definition",
+        "timetofix": 15
     },
     {
-        "patternId": "Functions\/WrongOptionalParameter",
+        "patternId": "Constants/InvalidName",
+        "title": "Invalid Constant Name",
+        "description": "Invalid Constant Name",
+        "timetofix": 15
+    },
+    {
+        "patternId": "Functions/WrongOptionalParameter",
         "title": "Wrong Optional Parameter",
-        "description": "Wrong placement of optional parameters",
-        "timetofix": 20
+        "description": "Wrong Optional Parameter",
+        "timetofix": 15
     },
     {
-        "patternId": "Php\/IsnullVsEqualNull",
+        "patternId": "Php/IsnullVsEqualNull",
         "title": "Use === null",
-        "description": "It is faster to use === null instead of is_null()",
-        "timetofix": 20
+        "description": "Use === null",
+        "timetofix": 15
     },
     {
-        "patternId": "Classes\/ThisIsNotAnArray",
+        "patternId": "Classes/ThisIsNotAnArray",
         "title": "$this Is Not An Array",
-        "description": "`$this` variable represents the current object and it is not an array, unless the class (or its parents) has the ArrayAccess interface",
-        "timetofix": 20
+        "description": "$this Is Not An Array",
+        "timetofix": 15
     },
     {
-        "patternId": "Type\/OneVariableStrings",
+        "patternId": "Type/OneVariableStrings",
         "title": "One Variable String",
-        "description": "These strings only contains one variable or property or array",
+        "description": "One Variable String",
         "timetofix": 5
     },
     {
-        "patternId": "Php\/EchoTagUsage",
+        "patternId": "Php/EchoTagUsage",
         "title": "<?= Usage",
-        "description": "Usage of the <?= tag, that echo's directly the following content",
+        "description": "<?= Usage",
         "timetofix": 5
     },
     {
-        "patternId": "Classes\/StaticContainsThis",
-        "title": "Static Methods Can't Contain $this",
-        "description": "Static methods are also called 'class methods' : they may be called even if the class has no instantiated object",
-        "timetofix": 20
-    },
-    {
-        "patternId": "Php\/ClosureThisSupport",
+        "patternId": "Php/ClosureThisSupport",
         "title": "Closure May Use $this",
-        "description": "When closure were introduced in PHP, they couldn't use the $this variable, making is cumbersome to access local properties when the closure was created within an object",
-        "timetofix": 20
+        "description": "Closure May Use $this",
+        "timetofix": 15
     },
     {
-        "patternId": "Structures\/WhileListEach",
+        "patternId": "Classes/StaticContainsThis",
+        "title": "Static Methods Can't Contain $this",
+        "description": "Static Methods Can't Contain $this",
+        "timetofix": 15
+    },
+    {
+        "patternId": "Structures/WhileListEach",
         "title": "While(List() = Each())",
-        "description": "This code structure is quite old : it should be replace by the more modern and efficient foreach",
+        "description": "While(List() = Each())",
         "timetofix": 5
     },
     {
-        "patternId": "Structures\/OneLineTwoInstructions",
+        "patternId": "Structures/OneLineTwoInstructions",
         "title": "Several Instructions On The Same Line",
-        "description": "Usually, instructions do not share their line : one instruction, one line",
+        "description": "Several Instructions On The Same Line",
         "timetofix": 5
     },
     {
-        "patternId": "Functions\/OneLetterFunctions",
+        "patternId": "Functions/OneLetterFunctions",
         "title": "One Letter Functions",
-        "description": "One letter functions seems to be really short for a meaningful name",
-        "timetofix": 20
+        "description": "One Letter Functions",
+        "timetofix": 15
     },
     {
-        "patternId": "Structures\/MultipleDefinedCase",
+        "patternId": "Structures/MultipleDefinedCase",
         "title": "Multiples Identical Case",
-        "description": "Some cases are defined multiple times, but only one will be processed",
-        "timetofix": 20
+        "description": "Multiples Identical Case",
+        "timetofix": 15
     },
     {
-        "patternId": "Structures\/SwitchWithoutDefault",
+        "patternId": "Structures/SwitchWithoutDefault",
         "title": "Switch Without Default",
-        "description": "Always use a default statement in switch()",
-        "timetofix": 20
+        "description": "Switch Without Default",
+        "timetofix": 15
     },
     {
-        "patternId": "Structures\/FunctionPreSubscripting",
+        "patternId": "Structures/FunctionPreSubscripting",
         "title": "Function Subscripting, Old Style",
-        "description": "Since PHP 5",
+        "description": "Function Subscripting, Old Style",
         "timetofix": 5
     },
     {
-        "patternId": "Classes\/ThisIsForClasses",
+        "patternId": "Classes/ThisIsForClasses",
         "title": "$this Belongs To Classes Or Traits",
-        "description": "$this variable represents only the current object",
-        "timetofix": 20
+        "description": "$this Belongs To Classes Or Traits",
+        "timetofix": 15
     },
     {
-        "patternId": "Structures\/NestedTernary",
+        "patternId": "Structures/NestedTernary",
         "title": "Nested Ternary",
-        "description": "Ternary operators should not be nested too deep",
-        "timetofix": 20
+        "description": "Nested Ternary",
+        "timetofix": 15
     },
     {
-        "patternId": "Structures\/SwitchWithMultipleDefault",
+        "patternId": "Structures/SwitchWithMultipleDefault",
         "title": "Switch With Too Many Default",
-        "description": "Switch statements should only hold one default, not more",
-        "timetofix": 20
+        "description": "Switch With Too Many Default",
+        "timetofix": 15
     },
     {
-        "patternId": "Arrays\/NonConstantArray",
-        "title": "Non-constant Index In Array",
-        "description": "Undefined constants revert as strings in Arrays",
-        "timetofix": 5
-    },
-    {
-        "patternId": "Constants\/UndefinedConstants",
+        "patternId": "Constants/UndefinedConstants",
         "title": "Undefined Constants",
-        "description": "Constants definition can't be located",
-        "timetofix": 20
+        "description": "Undefined Constants",
+        "timetofix": 15
     },
     {
-        "patternId": "Classes\/InstantiatingAbstractClass",
+        "patternId": "Arrays/NonConstantArray",
+        "title": "Non-constant Index In Array",
+        "description": "Non-constant Index In Array",
+        "timetofix": 5
+    },
+    {
+        "patternId": "Classes/InstantiatingAbstractClass",
         "title": "Instantiating Abstract Class",
-        "description": "PHP cannot instantiate an abstract class",
-        "timetofix": 20
+        "description": "Instantiating Abstract Class",
+        "timetofix": 15
     },
     {
-        "patternId": "Classes\/MutualExtension",
+        "patternId": "Classes/MutualExtension",
         "title": "Classes Mutually Extending Each Other",
-        "description": "Those classes are extending each other, creating an extension loop",
-        "timetofix": 20
+        "description": "Classes Mutually Extending Each Other",
+        "timetofix": 15
     },
     {
-        "patternId": "Classes\/CitSameName",
+        "patternId": "Classes/CitSameName",
         "title": "Class, Interface Or Trait With Identical Names",
-        "description": "The following names are used at the same time for classes, interfaces or traits",
-        "timetofix": 20
+        "description": "Class, Interface Or Trait With Identical Names",
+        "timetofix": 15
     },
     {
-        "patternId": "Structures\/EmptyTryCatch",
+        "patternId": "Structures/EmptyTryCatch",
         "title": "Empty Try Catch",
-        "description": "The code does try, then catch errors but do no act upon the error",
-        "timetofix": 20
+        "description": "Empty Try Catch",
+        "timetofix": 15
     },
     {
-        "patternId": "Classes\/UndefinedClasses",
+        "patternId": "Classes/UndefinedClasses",
         "title": "Undefined Classes",
-        "description": "Those classes are used in the code, but there are no definition for them",
-        "timetofix": 60
+        "description": "Undefined Classes",
+        "timetofix": 30
     },
     {
-        "patternId": "Classes\/WrongCase",
-        "title": "Class Name Case Difference",
-        "description": "The spotted classes are used with a different case than their definition",
-        "timetofix": 5
-    },
-    {
-        "patternId": "Structures\/Htmlentitiescall",
+        "patternId": "Structures/Htmlentitiescall",
         "title": "Htmlentities Calls",
-        "description": "htmlentities() and htmlspecialchars() are used to prevent injecting special characters in HTML code",
+        "description": "Htmlentities Calls",
         "timetofix": 5
     },
     {
-        "patternId": "Classes\/UndefinedConstants",
+        "patternId": "Classes/UndefinedConstants",
         "title": "Undefined Class Constants",
-        "description": "Class constants that are used, but never defined",
-        "timetofix": 20
+        "description": "Undefined Class Constants",
+        "timetofix": 15
     },
     {
-        "patternId": "Classes\/UnusedPrivateProperty",
+        "patternId": "Classes/UnusedPrivateProperty",
         "title": "Unused Private Properties",
-        "description": "List of all static properties that are not used",
-        "timetofix": 20
+        "description": "Unused Private Properties",
+        "timetofix": 15
     },
     {
-        "patternId": "Classes\/UnusedPrivateMethod",
-        "title": "Unused Static Methods",
-        "description": "List of all static methods that are not used",
-        "timetofix": 20
+        "patternId": "Classes/UnusedPrivateMethod",
+        "title": "Unused Private Methods",
+        "description": "Unused Private Methods",
+        "timetofix": 15
     },
     {
-        "patternId": "Functions\/UnusedFunctions",
+        "patternId": "Functions/UnusedFunctions",
         "title": "Unused Functions",
-        "description": "The functions below are unused",
-        "timetofix": 20
+        "description": "Unused Functions",
+        "timetofix": 15
     },
     {
-        "patternId": "Variables\/VariableUsedOnceByContext",
+        "patternId": "Variables/VariableUsedOnceByContext",
         "title": "Used Once Variables (In Scope)",
-        "description": "This is the list of used once variables, scope by scope",
-        "timetofix": 20
+        "description": "Used Once Variables (In Scope)",
+        "timetofix": 15
     },
     {
-        "patternId": "Functions\/UndefinedFunctions",
+        "patternId": "Functions/UndefinedFunctions",
         "title": "Undefined Functions",
-        "description": "Some functions are called, but not defined in the code",
-        "timetofix": 20
+        "description": "Undefined Functions",
+        "timetofix": 15
     },
     {
-        "patternId": "Php\/Deprecated",
+        "patternId": "Php/Deprecated",
         "title": "Deprecated Functions",
-        "description": "The following functions are deprecated",
-        "timetofix": 20
+        "description": "Deprecated Functions",
+        "timetofix": 15
     },
     {
-        "patternId": "Structures\/CryptWithoutSalt",
+        "patternId": "Structures/CryptWithoutSalt",
         "title": "crypt() Without Salt",
-        "description": "PHP 5",
+        "description": "crypt() Without Salt",
         "timetofix": 5
     },
     {
-        "patternId": "Structures\/McryptcreateivWithoutOption",
+        "patternId": "Structures/McryptcreateivWithoutOption",
         "title": "mcrypt_create_iv() With Default Values",
-        "description": "Avoid using mcrypt_create_iv() default values",
+        "description": "mcrypt_create_iv() With Default Values",
         "timetofix": 5
     },
     {
-        "patternId": "Structures\/DanglingArrayReferences",
+        "patternId": "Structures/DanglingArrayReferences",
         "title": "Dangling Array References",
-        "description": "Always unset a referenced-variable used in a loop",
+        "description": "Dangling Array References",
         "timetofix": 5
     },
     {
-        "patternId": "Structures\/QueriesInLoop",
+        "patternId": "Structures/QueriesInLoop",
         "title": "Queries In Loops",
-        "description": "Avoid querying databases in a loop",
-        "timetofix": 60
+        "description": "Queries In Loops",
+        "timetofix": 30
     },
     {
-        "patternId": "Classes\/OldStyleVar",
-        "title": "Var Keyword",
-        "description": "Var was used in PHP 4 to mark properties as public",
-        "timetofix": 20
-    },
-    {
-        "patternId": "Functions\/AliasesUsage",
+        "patternId": "Functions/AliasesUsage",
         "title": "Aliases Usage",
-        "description": "PHP manual recommends to avoid function aliases",
-        "timetofix": 20
+        "description": "Aliases Usage",
+        "timetofix": 15
     },
     {
-        "patternId": "Functions\/UsesDefaultArguments",
+        "patternId": "Functions/UsesDefaultArguments",
         "title": "Uses Default Values",
-        "description": "Default values are provided to methods so as to make it convenient to use",
-        "timetofix": 20
+        "description": "Uses Default Values",
+        "timetofix": 15
     },
     {
-        "patternId": "Functions\/WrongNumberOfArguments",
+        "patternId": "Classes/OldStyleVar",
+        "title": "Var Keyword",
+        "description": "Var Keyword",
+        "timetofix": 15
+    },
+    {
+        "patternId": "Functions/WrongNumberOfArguments",
         "title": "Wrong Number Of Arguments",
-        "description": "Those functioncalls are made with too many or too few arguments",
-        "timetofix": 20
+        "description": "Wrong Number Of Arguments",
+        "timetofix": 15
     },
     {
-        "patternId": "Functions\/HardcodedPasswords",
+        "patternId": "Functions/HardcodedPasswords",
         "title": "Hardcoded Passwords",
-        "description": "Hardcoded passwords in the code",
-        "timetofix": 60
+        "description": "Hardcoded Passwords",
+        "timetofix": 30
     },
     {
-        "patternId": "Classes\/UnresolvedClasses",
+        "patternId": "Classes/UnresolvedClasses",
         "title": "Unresolved Classes",
-        "description": "The following classes are instantiated in the code, but their definition couldn't be found",
-        "timetofix": 20
+        "description": "Unresolved Classes",
+        "timetofix": 15
     },
     {
-        "patternId": "Classes\/UselessConstructor",
-        "title": "Useless Constructor",
-        "description": "Class constructor that have empty bodies are useless",
-        "timetofix": 60
-    },
-    {
-        "patternId": "Classes\/ImplementIsForInterface",
-        "title": "Implement Is For Interface",
-        "description": "With class heritage, implements should be used for interfaces, and extends with classes",
-        "timetofix": 20
-    },
-    {
-        "patternId": "Constants\/ConstRecommended",
-        "title": "Use const",
-        "description": "The const keyword may be used to define constant, just like the define() function",
-        "timetofix": 60
-    },
-    {
-        "patternId": "Namespaces\/UnresolvedUse",
+        "patternId": "Namespaces/UnresolvedUse",
         "title": "Unresolved Use",
-        "description": "The following use instructions cannot be resolved to a class or a namespace",
-        "timetofix": 60
+        "description": "Unresolved Use",
+        "timetofix": 30
     },
     {
-        "patternId": "Constants\/UnusedConstants",
+        "patternId": "Classes/ImplementIsForInterface",
+        "title": "Implement Is For Interface",
+        "description": "Implement Is For Interface",
+        "timetofix": 15
+    },
+    {
+        "patternId": "Constants/UnusedConstants",
         "title": "Unused Constants",
-        "description": "Those constants are defined in the code but never used",
+        "description": "Unused Constants",
         "timetofix": 5
     },
     {
-        "patternId": "Classes\/UndefinedParentMP",
+        "patternId": "Classes/UndefinedParentMP",
         "title": "Undefined Parent",
-        "description": "List of properties and methods that are accessed using 'parent' keyword but are not defined in the parent class",
-        "timetofix": 20
+        "description": "Undefined Parent",
+        "timetofix": 15
     },
     {
-        "patternId": "Classes\/UndefinedStaticMP",
+        "patternId": "Classes/UndefinedStaticMP",
         "title": "Undefined static:: Or self::",
-        "description": "List of all undefined static and self properties and methods",
-        "timetofix": 20
+        "description": "Undefined static:: Or self::",
+        "timetofix": 15
     },
     {
-        "patternId": "Classes\/AccessPrivate",
+        "patternId": "Classes/UselessConstructor",
+        "title": "Useless Constructor",
+        "description": "Useless Constructor",
+        "timetofix": 30
+    },
+    {
+        "patternId": "Classes/AccessPrivate",
         "title": "Accessing Private",
-        "description": "List of calls to private properties\/methods that will compile but yield some fatal error upon execution",
-        "timetofix": 20
+        "description": "Accessing Private",
+        "timetofix": 15
     },
     {
-        "patternId": "Classes\/AccessProtected",
-        "title": "Access Protected Structures",
-        "description": "It is not allowed to access protected properties or methods from outside the class or its relatives",
-        "timetofix": 20
-    },
-    {
-        "patternId": "Classes\/PssWithoutClass",
+        "patternId": "Classes/PssWithoutClass",
         "title": "Parent, Static Or Self Outside Class",
-        "description": "Parent, static and self keywords must be used within a class or a trait",
-        "timetofix": 20
+        "description": "Parent, Static Or Self Outside Class",
+        "timetofix": 15
     },
     {
-        "patternId": "Structures\/ListOmissions",
+        "patternId": "Classes/AccessProtected",
+        "title": "Access Protected Structures",
+        "description": "Access Protected Structures",
+        "timetofix": 15
+    },
+    {
+        "patternId": "Structures/ListOmissions",
         "title": "list() May Omit Variables",
-        "description": "Simply omit any unused variable in a list() call",
-        "timetofix": 20
+        "description": "list() May Omit Variables",
+        "timetofix": 15
     },
     {
-        "patternId": "Structures\/OrDie",
+        "patternId": "Structures/OrDie",
         "title": "Or Die",
-        "description": "Classic old style failed error management",
-        "timetofix": 20
+        "description": "Or Die",
+        "timetofix": 15
     },
     {
-        "patternId": "Structures\/UnreachableCode",
+        "patternId": "Constants/ConstRecommended",
+        "title": "Use const",
+        "description": "Use const",
+        "timetofix": 30
+    },
+    {
+        "patternId": "Structures/UnreachableCode",
         "title": "Unreachable Code",
-        "description": "Code may be unreachable, because other instructions prevent its reaching",
+        "description": "Unreachable Code",
         "timetofix": 5
     },
     {
-        "patternId": "Variables\/WrittenOnlyVariable",
-        "title": "Written Only Variables",
-        "description": "Those variables are being written, but never read",
-        "timetofix": 60
-    },
-    {
-        "patternId": "Functions\/MustReturn",
+        "patternId": "Functions/MustReturn",
         "title": "Must Return Methods",
-        "description": "The following methods are expected to return a value that will be used later",
-        "timetofix": 20
+        "description": "Must Return Methods",
+        "timetofix": 15
     },
     {
-        "patternId": "Structures\/EmptyLines",
-        "title": "Empty Instructions",
-        "description": "Empty instructions are part of the code that have no instructions",
-        "timetofix": 5
+        "patternId": "Variables/WrittenOnlyVariable",
+        "title": "Written Only Variables",
+        "description": "Written Only Variables",
+        "timetofix": 30
     },
     {
-        "patternId": "Classes\/UnusedMethods",
+        "patternId": "Classes/UnusedMethods",
         "title": "Unused Methods",
-        "description": "Those methods are never called as methods",
-        "timetofix": 60
+        "description": "Unused Methods",
+        "timetofix": 30
     },
     {
-        "patternId": "Structures\/PropertyVariableConfusion",
+        "patternId": "Structures/PropertyVariableConfusion",
         "title": "Property Variable Confusion",
-        "description": "Within a class, there is both a property and variables bearing the same name",
-        "timetofix": 60
+        "description": "Property Variable Confusion",
+        "timetofix": 30
     },
     {
-        "patternId": "Exceptions\/OverwriteException",
+        "patternId": "Exceptions/OverwriteException",
         "title": "Overwritten Exceptions",
-        "description": "In catch blocks, it is good practice not to overwrite the incoming exception, as information about the exception will be lost",
-        "timetofix": 20
+        "description": "Overwritten Exceptions",
+        "timetofix": 15
     },
     {
-        "patternId": "Structures\/ForeachNeedReferencedSource",
+        "patternId": "Structures/ForeachNeedReferencedSource",
         "title": "Foreach Needs Reference Array",
-        "description": "When using foreach with a reference as value, the source must be a referenced array, which is a variable (or array or property or static property)",
-        "timetofix": 20
+        "description": "Foreach Needs Reference Array",
+        "timetofix": 15
     },
     {
-        "patternId": "Structures\/ForeachReferenceIsNotModified",
+        "patternId": "Structures/ForeachReferenceIsNotModified",
         "title": "Foreach Reference Is Not Modified",
-        "description": "Foreach statement may loop using a reference, especially when the loop has to change values of the array it is looping on",
-        "timetofix": 20
+        "description": "Foreach Reference Is Not Modified",
+        "timetofix": 15
     },
     {
-        "patternId": "Structures\/NoChangeIncomingVariables",
-        "title": "Don't Change Incomings",
-        "description": "PHP hands over a lot of information using special variables like $_GET, $_POST, etc",
-        "timetofix": 60
-    },
-    {
-        "patternId": "Structures\/ComparedComparison",
+        "patternId": "Structures/ComparedComparison",
         "title": "Compared Comparison",
-        "description": "Usually, comparison are sufficient, and it is rare to have to compare the result of comparison",
-        "timetofix": 20
+        "description": "Compared Comparison",
+        "timetofix": 15
     },
     {
-        "patternId": "Functions\/UselessReturn",
+        "patternId": "Structures/NoChangeIncomingVariables",
+        "title": "Don't Change Incomings",
+        "description": "Don't Change Incomings",
+        "timetofix": 30
+    },
+    {
+        "patternId": "Functions/UselessReturn",
         "title": "Useless Return",
-        "description": "The spotted functions or methods have a return statement, but this statement is useless",
+        "description": "Useless Return",
         "timetofix": 5
     },
     {
-        "patternId": "Classes\/UnusedClass",
+        "patternId": "Classes/UnusedClass",
         "title": "Unused Classes",
-        "description": "The following classes are never explicitely used in the code",
-        "timetofix": 20
+        "description": "Unused Classes",
+        "timetofix": 15
     },
     {
-        "patternId": "Structures\/Unpreprocessed",
+        "patternId": "Structures/Unpreprocessed",
         "title": "Unpreprocessed Values",
-        "description": "Preprocessing values is the preparation of values before PHP executes the code",
+        "description": "Unpreprocessed Values",
         "timetofix": 5
     },
     {
-        "patternId": "Classes\/UndefinedProperty",
+        "patternId": "Classes/UndefinedProperty",
         "title": "Undefined Properties",
-        "description": "List of properties that are not explicitely defined in the class, its parents or traits",
-        "timetofix": 20
+        "description": "Undefined Properties",
+        "timetofix": 15
     },
     {
-        "patternId": "Php\/ShortOpenTagRequired",
+        "patternId": "Php/ShortOpenTagRequired",
         "title": "Short Open Tags",
-        "description": "Usage of short open tags is discouraged",
-        "timetofix": 20
+        "description": "Short Open Tags",
+        "timetofix": 15
     },
     {
-        "patternId": "Structures\/BooleanStrictComparison",
+        "patternId": "Structures/BooleanStrictComparison",
         "title": "Strict Comparison With Booleans",
-        "description": "Strict comparisons prevent from mistaking an error with a false",
-        "timetofix": 20
+        "description": "Strict Comparison With Booleans",
+        "timetofix": 15
     },
     {
-        "patternId": "Structures\/LoneBlock",
+        "patternId": "Structures/LoneBlock",
         "title": "Lone Blocks",
-        "description": "Any grouped code without a commanding structure is useless",
+        "description": "Lone Blocks",
         "timetofix": 5
     },
     {
-        "patternId": "Classes\/ThisIsNotForStatic",
+        "patternId": "Classes/ThisIsNotForStatic",
         "title": "$this Is Not For Static Methods",
-        "description": "Static methods shouldn't use $this variable",
-        "timetofix": 20
+        "description": "$this Is Not For Static Methods",
+        "timetofix": 15
     },
     {
-        "patternId": "Structures\/GlobalUsage",
+        "patternId": "Structures/GlobalUsage",
         "title": "Global Usage",
-        "description": "List usage of globals variables, with global keywords or direct access to $GLOBALS",
-        "timetofix": 60
+        "description": "Global Usage",
+        "timetofix": 30
     },
     {
-        "patternId": "Php\/ReservedNames",
-        "title": "PHP Keywords As Names",
-        "description": "PHP has a set of reserved keywords",
-        "timetofix": 20
+        "patternId": "Php/ReservedNames",
+        "title": "allowedNames",
+        "description": "allowedNames",
+        "timetofix": 15
     },
     {
-        "patternId": "Php\/LogicalInLetters",
-        "title": "Logical Should Use Symbolic Operators",
-        "description": "Logical operators come in two flavors :  and \/ &&, || \/ or, ^ \/ xor",
-        "timetofix": 5
-    },
-    {
-        "patternId": "Classes\/ShouldUseSelf",
+        "patternId": "Classes/ShouldUseSelf",
         "title": "Could Use self",
-        "description": "'self' keyword refers to the current class, or any of its parents",
+        "description": "Could Use self",
         "timetofix": 5
     },
     {
-        "patternId": "Structures\/ImplicitGlobal",
+        "patternId": "Structures/ImplicitGlobal",
         "title": "Implicit Global",
-        "description": "Global variables, that are used in local scope with global keyword, but are not declared as global in the global scope",
-        "timetofix": 20
+        "description": "Implicit Global",
+        "timetofix": 15
     },
     {
-        "patternId": "Structures\/CatchShadowsVariable",
+        "patternId": "Php/LogicalInLetters",
+        "title": "Logical Should Use Symbolic Operators",
+        "description": "Logical Should Use Symbolic Operators",
+        "timetofix": 5
+    },
+    {
+        "patternId": "Structures/CatchShadowsVariable",
         "title": "Catch Overwrite Variable",
-        "description": "The try\/catch structure uses some variables that also in use in this scope",
+        "description": "Catch Overwrite Variable",
         "timetofix": 5
     },
     {
-        "patternId": "Functions\/DeepDefinitions",
+        "patternId": "Functions/DeepDefinitions",
         "title": "Deep Definitions",
-        "description": "Structures, such as functions, classes, interfaces, traits, etc",
-        "timetofix": 60
+        "description": "Deep Definitions",
+        "timetofix": 30
     },
     {
-        "patternId": "Classes\/ConstantClass",
+        "patternId": "Classes/ConstantClass",
         "title": "Constant Class",
-        "description": "A class or an interface only made up of constants",
-        "timetofix": 60
+        "description": "Constant Class",
+        "timetofix": 30
     },
     {
-        "patternId": "Files\/NotDefinitionsOnly",
-        "title": "Not Definitions Only",
-        "description": "Files should only include definitions (class, functions, traits, interfaces, constants), or global instructions, but not both",
-        "timetofix": 60
-    },
-    {
-        "patternId": "Arrays\/ShouldPreprocess",
-        "title": "Preprocess Arrays",
-        "description": "Using long list of assignations for initializing arrays is significantly slower than the declaring them as an array",
-        "timetofix": 20
-    },
-    {
-        "patternId": "Structures\/RepeatedPrint",
+        "patternId": "Structures/RepeatedPrint",
         "title": "Repeated print()",
-        "description": "Always merge several print or echo in one call",
-        "timetofix": 20
+        "description": "Repeated print()",
+        "timetofix": 15
     },
     {
-        "patternId": "Structures\/PrintWithoutParenthesis",
+        "patternId": "Structures/PrintWithoutParenthesis",
         "title": "Avoid Parenthesis",
-        "description": "Avoid Parenthesis for language construct",
-        "timetofix": 20
+        "description": "Avoid Parenthesis",
+        "timetofix": 15
     },
     {
-        "patternId": "Structures\/ObjectReferences",
+        "patternId": "Classes/LocallyUnusedProperty",
+        "title": "Locally Unused Property",
+        "description": "Locally Unused Property",
+        "timetofix": 30
+    },
+    {
+        "patternId": "Structures/ObjectReferences",
         "title": "Objects Don't Need References",
-        "description": "There is no need to create references for objects, as those are always passed by reference when used as arguments",
+        "description": "Objects Don't Need References",
         "timetofix": 5
     },
     {
-        "patternId": "Classes\/LocallyUnusedProperty",
-        "title": "Locally Unused Property",
-        "description": "Those properties are defined in a class, and this class doesn't have any method that makes use of them",
-        "timetofix": 60
-    },
-    {
-        "patternId": "Variables\/LostReferences",
+        "patternId": "Variables/LostReferences",
         "title": "Lost References",
-        "description": "Either avoid references, or propagate them correctly",
-        "timetofix": 20
+        "description": "Lost References",
+        "timetofix": 15
     },
     {
-        "patternId": "Constants\/CreatedOutsideItsNamespace",
+        "patternId": "Constants/CreatedOutsideItsNamespace",
         "title": "Constants Created Outside Its Namespace",
         "description": "Constants Created Outside Its Namespace",
-        "timetofix": 60
+        "timetofix": 30
     },
     {
-        "patternId": "Namespaces\/ConstantFullyQualified",
+        "patternId": "Namespaces/ConstantFullyQualified",
         "title": "Fully Qualified Constants",
-        "description": "Constants defined with their namespace",
-        "timetofix": 60
+        "description": "Fully Qualified Constants",
+        "timetofix": 30
     },
     {
-        "patternId": "Classes\/PropertyNeverUsed",
+        "patternId": "Classes/PropertyNeverUsed",
         "title": "Never Used Properties",
-        "description": "Properties that are never used",
-        "timetofix": 60
+        "description": "Never Used Properties",
+        "timetofix": 30
     },
     {
-        "patternId": "Type\/NoRealComparison",
+        "patternId": "Type/NoRealComparison",
         "title": "No Real Comparison",
-        "description": "Avoid comparing decimal numbers with ==, ===, !==, !=",
-        "timetofix": 20
+        "description": "No Real Comparison",
+        "timetofix": 15
     },
     {
-        "patternId": "Structures\/SequenceInFor",
+        "patternId": "Structures/SequenceInFor",
         "title": "Sequences In For",
-        "description": "For() instructions allows several instructions in each of its parameters",
-        "timetofix": 20
+        "description": "Sequences In For",
+        "timetofix": 15
     },
     {
-        "patternId": "Classes\/ShouldUseThis",
+        "patternId": "Classes/ShouldUseThis",
         "title": "Should Use Local Class",
-        "description": "Methods in a class should use the class, or be functions",
-        "timetofix": 60
+        "description": "Should Use Local Class",
+        "timetofix": 30
     },
     {
-        "patternId": "Classes\/DirectCallToMagicMethod",
+        "patternId": "Classes/DirectCallToMagicMethod",
         "title": "No Direct Call To Magic Method",
-        "description": "PHP magic methods, such as __get(), __set(), ",
-        "timetofix": 20
+        "description": "No Direct Call To Magic Method",
+        "timetofix": 15
     },
     {
-        "patternId": "Type\/StringHoldAVariable",
+        "patternId": "Type/StringHoldAVariable",
         "title": "String May Hold A Variable",
-        "description": "Those strings looks like holding a variable",
+        "description": "String May Hold A Variable",
         "timetofix": 5
     },
     {
-        "patternId": "Structures\/EchoWithConcat",
-        "title": "Echo With Concat",
-        "description": "Optimize your echo's by not concatenating at echo() time, but serving all argument separated",
-        "timetofix": 20
-    },
-    {
-        "patternId": "Structures\/UnusedGlobal",
+        "patternId": "Structures/UnusedGlobal",
         "title": "Unused Global",
-        "description": "List of global keyword, used in various functions but not actually used in the code",
-        "timetofix": 20
+        "description": "Unused Global",
+        "timetofix": 15
     },
     {
-        "patternId": "Structures\/UselessGlobal",
+        "patternId": "Structures/UselessGlobal",
         "title": "Useless Global",
-        "description": "Global are useless in two cases",
-        "timetofix": 20
+        "description": "Useless Global",
+        "timetofix": 15
     },
     {
-        "patternId": "Structures\/ShouldPreprocess",
+        "patternId": "Structures/ShouldPreprocess",
         "title": "Preprocessable",
-        "description": "The following expression are made of literals or already known values : they may be fully calculated before running PHP",
+        "description": "Preprocessable",
         "timetofix": 5
     },
     {
-        "patternId": "Classes\/UselessFinal",
+        "patternId": "Classes/UselessFinal",
         "title": "Useless Final",
-        "description": "When a class is declared final, all of its methods are also final by default",
+        "description": "Useless Final",
         "timetofix": 5
     },
     {
-        "patternId": "Structures\/UselessUnset",
+        "patternId": "Structures/UselessUnset",
         "title": "Useless Unset",
-        "description": "Unsetting variables may not be applicable with a certain type of variables",
-        "timetofix": 20
+        "description": "Useless Unset",
+        "timetofix": 15
     },
     {
-        "patternId": "Structures\/BuriedAssignation",
+        "patternId": "Structures/BuriedAssignation",
         "title": "Buried Assignation",
-        "description": "Those assignations are buried in the code, and placed in unexpected situations",
-        "timetofix": 60
+        "description": "Buried Assignation",
+        "timetofix": 30
     },
     {
-        "patternId": "Performances\/ArrayMergeInLoops",
+        "patternId": "Performances/ArrayMergeInLoops",
         "title": "No array_merge() In Loops",
-        "description": "array_merge() is memory intensive : every call will duplicate the arguments in memory, before merging them",
-        "timetofix": 20
+        "description": "No array_merge() In Loops",
+        "timetofix": 15
     },
     {
-        "patternId": "Structures\/UselessParenthesis",
+        "patternId": "Structures/UselessParenthesis",
         "title": "Useless Parenthesis",
-        "description": "Situations where parenthesis are not necessary, and may be removed",
+        "description": "Useless Parenthesis",
         "timetofix": 5
     },
     {
-        "patternId": "Classes\/UnresolvedInstanceof",
+        "patternId": "Classes/UnresolvedInstanceof",
         "title": "Unresolved Instanceof",
-        "description": "The instanceof operator doesn't confirm if the compared class exists",
+        "description": "Unresolved Instanceof",
         "timetofix": 5
     },
     {
-        "patternId": "Php\/UseObjectApi",
+        "patternId": "Php/UseObjectApi",
         "title": "Use Object Api",
-        "description": "When PHP offers the alternative between procedural and OOP api for the same features, it is recommended to use the OOP API",
-        "timetofix": 60
+        "description": "Use Object Api",
+        "timetofix": 30
     },
     {
-        "patternId": "Exceptions\/Unthrown",
+        "patternId": "Exceptions/Unthrown",
         "title": "Unthrown Exception",
-        "description": "These are exceptions that are defined in the code but never thrown",
-        "timetofix": 20
+        "description": "Unthrown Exception",
+        "timetofix": 15
     },
     {
-        "patternId": "Php\/oldAutoloadUsage",
-        "title": "Old Style __autoload()",
-        "description": "Avoid __autoload(), only use spl_register_autoload()",
-        "timetofix": 5
-    },
-    {
-        "patternId": "Structures\/AlteringForeachWithoutReference",
+        "patternId": "Structures/AlteringForeachWithoutReference",
         "title": "Altering Foreach Without Reference",
-        "description": "Foreach() loop that should use a reference",
-        "timetofix": 20
+        "description": "Altering Foreach Without Reference",
+        "timetofix": 15
     },
     {
-        "patternId": "Classes\/toStringPss",
+        "patternId": "Php/oldAutoloadUsage",
+        "title": "Old Style __autoload()",
+        "description": "Old Style __autoload()",
+        "timetofix": 5
+    },
+    {
+        "patternId": "Structures/EmptyLines",
+        "title": "Empty Instructions",
+        "description": "Empty Instructions",
+        "timetofix": 5
+    },
+    {
+        "patternId": "Classes/toStringPss",
         "title": "Magic Visibility",
-        "description": "The class magic methods must have public visibility and cannot be static",
-        "timetofix": 20
+        "description": "Magic Visibility",
+        "timetofix": 15
     },
     {
-        "patternId": "Php\/UsePathinfo",
+        "patternId": "Php/UsePathinfo",
         "title": "Use Pathinfo",
-        "description": "Use pathinfo() function instead of string manipulations",
-        "timetofix": 20
+        "description": "Use Pathinfo",
+        "timetofix": 15
     },
     {
-        "patternId": "Functions\/ShouldUseConstants",
-        "title": "Should Use Constants",
-        "description": "The following functions have related constants that should be used as arguments, instead of scalar literals, such as integers or strings",
-        "timetofix": 20
-    },
-    {
-        "patternId": "Php\/HashAlgos",
+        "patternId": "Php/HashAlgos",
         "title": "Hash Algorithms",
-        "description": "There is a long but limited list of hashing algorithm available to PHP",
-        "timetofix": 60
+        "description": "Hash Algorithms",
+        "timetofix": 30
     },
     {
-        "patternId": "Structures\/NoParenthesisForLanguageConstruct",
+        "patternId": "Functions/ShouldUseConstants",
+        "title": "Should Use Constants",
+        "description": "Should Use Constants",
+        "timetofix": 15
+    },
+    {
+        "patternId": "Structures/NoParenthesisForLanguageConstruct",
         "title": "No Parenthesis For Language Construct",
-        "description": "Some PHP language constructs, such are include, print, echo don't need parenthesis",
-        "timetofix": 20
+        "description": "No Parenthesis For Language Construct",
+        "timetofix": 15
     },
     {
-        "patternId": "Structures\/UnusedLabel",
+        "patternId": "Structures/UnusedLabel",
         "title": "Unused Label",
-        "description": "Some labels have been defined in the code, but they are not used",
-        "timetofix": 20
+        "description": "Unused Label",
+        "timetofix": 15
     },
     {
-        "patternId": "Structures\/NoHardcodedPath",
+        "patternId": "Structures/NoHardcodedPath",
         "title": "No Hardcoded Path",
-        "description": "It is not recommended to have literals when accessing files",
-        "timetofix": 60
+        "description": "No Hardcoded Path",
+        "timetofix": 30
     },
     {
-        "patternId": "Structures\/NoHardcodedPort",
+        "patternId": "Structures/NoHardcodedPort",
         "title": "No Hardcoded Port",
-        "description": "When connecting to a remove server, port is an important information",
-        "timetofix": 20
+        "description": "No Hardcoded Port",
+        "timetofix": 15
     },
     {
-        "patternId": "Functions\/UseConstantAsArguments",
+        "patternId": "Functions/UseConstantAsArguments",
         "title": "Use Constant As Arguments",
-        "description": "Some methods and functions are defined to be used with constants as arguments",
-        "timetofix": 20
+        "description": "Use Constant As Arguments",
+        "timetofix": 15
     },
     {
-        "patternId": "Structures\/ImpliedIf",
+        "patternId": "Structures/ImpliedIf",
         "title": "Implied If",
-        "description": "It is confusing to emulate if\/then with boolean operators",
+        "description": "Implied If",
         "timetofix": 5
     },
     {
-        "patternId": "Variables\/OverwrittenLiterals",
-        "title": "Overwritten Literals",
-        "description": "The same variable is assigned a literal twice",
-        "timetofix": 5
-    },
-    {
-        "patternId": "Classes\/MakeDefault",
+        "patternId": "Classes/MakeDefault",
         "title": "Assign Default To Properties",
-        "description": "Properties may be assigned default values at declaration time",
+        "description": "Assign Default To Properties",
         "timetofix": 5
     },
     {
-        "patternId": "Classes\/NoPublicAccess",
+        "patternId": "Variables/OverwrittenLiterals",
+        "title": "Overwritten Literals",
+        "description": "Overwritten Literals",
+        "timetofix": 5
+    },
+    {
+        "patternId": "Classes/NoPublicAccess",
         "title": "No Public Access",
-        "description": "The properties below are declared with public access, but are never used publicly",
-        "timetofix": 20
+        "description": "No Public Access",
+        "timetofix": 15
     },
     {
-        "patternId": "Structures\/ShouldChainException",
+        "patternId": "Structures/ShouldChainException",
         "title": "Should Chain Exception",
-        "description": "Chain exception to provide more context",
+        "description": "Should Chain Exception",
         "timetofix": 5
     },
     {
-        "patternId": "Interfaces\/UnusedInterfaces",
+        "patternId": "Interfaces/UnusedInterfaces",
         "title": "Unused Interfaces",
-        "description": "Some interfaces are defined but not used",
+        "description": "Unused Interfaces",
         "timetofix": 5
     },
     {
-        "patternId": "Interfaces\/UselessInterfaces",
-        "title": "Useless Interfaces",
-        "description": "The interfaces below are defined and are implemented by some classes",
-        "timetofix": 20
-    },
-    {
-        "patternId": "Interfaces\/UndefinedInterfaces",
+        "patternId": "Interfaces/UndefinedInterfaces",
         "title": "Undefined Interfaces",
-        "description": "Typehint or instanceof that are relying on undefined interfaces (or classes) : they will always return false",
-        "timetofix": 20
+        "description": "Undefined Interfaces",
+        "timetofix": 15
     },
     {
-        "patternId": "Interfaces\/ConcreteVisibility",
+        "patternId": "Interfaces/UselessInterfaces",
+        "title": "Useless Interfaces",
+        "description": "Useless Interfaces",
+        "timetofix": 15
+    },
+    {
+        "patternId": "Interfaces/ConcreteVisibility",
         "title": "Concrete Visibility",
-        "description": "Methods that implements an interface in a class must be public",
+        "description": "Concrete Visibility",
         "timetofix": 5
     },
     {
-        "patternId": "Structures\/DoubleInstruction",
+        "patternId": "Structures/DoubleInstruction",
         "title": "Double Instructions",
-        "description": "Twice the same call in a row",
+        "description": "Double Instructions",
         "timetofix": 5
     },
     {
-        "patternId": "Security\/ShouldUsePreparedStatement",
-        "title": "Should Use Prepared Statement",
-        "description": "Modern databases provides support for prepared statement : it separates the query from the processed data and highten significantly the security",
-        "timetofix": 60
-    },
-    {
-        "patternId": "Structures\/PrintAndDie",
+        "patternId": "Structures/PrintAndDie",
         "title": "Print And Die",
-        "description": "Die() also prints",
+        "description": "Print And Die",
         "timetofix": 5
     },
     {
-        "patternId": "Structures\/UncheckedResources",
+        "patternId": "Structures/UncheckedResources",
         "title": "Unchecked Resources",
-        "description": "Resources are created, but never checked before being used",
-        "timetofix": 60
+        "description": "Unchecked Resources",
+        "timetofix": 30
     },
     {
-        "patternId": "Structures\/NoHardcodedIp",
+        "patternId": "Security/ShouldUsePreparedStatement",
+        "title": "Should Use Prepared Statement",
+        "description": "Should Use Prepared Statement",
+        "timetofix": 30
+    },
+    {
+        "patternId": "Structures/NoHardcodedIp",
         "title": "No Hardcoded Ip",
-        "description": "Do not leave hard coded IP in your code",
-        "timetofix": 60
+        "description": "No Hardcoded Ip",
+        "timetofix": 30
     },
     {
-        "patternId": "Structures\/ElseIfElseif",
+        "patternId": "Structures/EchoWithConcat",
+        "title": "Echo With Concat",
+        "description": "Echo With Concat",
+        "timetofix": 15
+    },
+    {
+        "patternId": "Structures/ElseIfElseif",
         "title": "Else If Versus Elseif",
-        "description": "Always use elseif instead of else and if",
-        "timetofix": 20
+        "description": "Else If Versus Elseif",
+        "timetofix": 15
     },
     {
-        "patternId": "Structures\/UnsetInForeach",
+        "patternId": "Structures/UnsetInForeach",
         "title": "Unset In Foreach",
-        "description": "Unset applied to the variables of a foreach loop are useless, as they are copies and not the actual value",
-        "timetofix": 20
+        "description": "Unset In Foreach",
+        "timetofix": 15
     },
     {
-        "patternId": "Classes\/CouldBeClassConstant",
+        "patternId": "Classes/CouldBeClassConstant",
         "title": "Could Be Class Constant",
-        "description": "When a property is defined and read, but never modified, it may be a constant",
-        "timetofix": 20
+        "description": "Could Be Class Constant",
+        "timetofix": 15
     },
     {
-        "patternId": "Structures\/CouldBeStatic",
+        "patternId": "Structures/CouldBeStatic",
         "title": "Could Be Static",
-        "description": "This global is only used in one function or method",
-        "timetofix": 20
+        "description": "Could Be Static",
+        "timetofix": 15
     },
     {
-        "patternId": "Classes\/MultipleDeclarations",
+        "patternId": "Classes/MultipleDeclarations",
         "title": "Multiple Class Declarations",
-        "description": "It is possible to declare several times the same class in the code",
-        "timetofix": 20
+        "description": "Multiple Class Declarations",
+        "timetofix": 15
     },
     {
-        "patternId": "Namespaces\/EmptyNamespace",
+        "patternId": "Namespaces/EmptyNamespace",
         "title": "Empty Namespace",
-        "description": "Declaring a namespace in the code and not using it for structure declarations or global instructions is useless",
+        "description": "Empty Namespace",
         "timetofix": 5
     },
     {
-        "patternId": "Structures\/CouldUseShortAssignation",
+        "patternId": "Structures/CouldUseShortAssignation",
         "title": "Could Use Short Assignation",
-        "description": "Use short assignement operator, to speed up code, and keep syntax clear",
+        "description": "Could Use Short Assignation",
         "timetofix": 5
     },
     {
-        "patternId": "Classes\/UselessAbstract",
+        "patternId": "Classes/UselessAbstract",
         "title": "Useless Abstract Class",
-        "description": "Those classes are marked 'abstract' and they are never extended",
-        "timetofix": 60
+        "description": "Useless Abstract Class",
+        "timetofix": 30
     },
     {
-        "patternId": "Structures\/StaticLoop",
+        "patternId": "Structures/StaticLoop",
         "title": "Static Loop",
-        "description": "Static loop may be preprocessed",
-        "timetofix": 60
+        "description": "Static Loop",
+        "timetofix": 30
     },
     {
-        "patternId": "Performances\/PrePostIncrement",
+        "patternId": "Performances/PrePostIncrement",
         "title": "Pre-increment",
-        "description": "When possible, use the pre-increment operator (++$i or --$i) instead of the post-increment operator ($i++ or $i--)",
-        "timetofix": 20
+        "description": "Pre-increment",
+        "timetofix": 15
     },
     {
-        "patternId": "Structures\/OnlyVariableReturnedByReference",
+        "patternId": "Structures/OnlyVariableReturnedByReference",
         "title": "Only Variable Returned By Reference",
-        "description": "Function can't return literals by reference",
-        "timetofix": 20
+        "description": "Only Variable Returned By Reference",
+        "timetofix": 15
     },
     {
-        "patternId": "Structures\/IndicesAreIntOrString",
+        "patternId": "Structures/IndicesAreIntOrString",
         "title": "Indices Are Int Or String",
-        "description": "Indices in an array notation such as $array['indice'] may only be integers or string",
-        "timetofix": 20
+        "description": "Indices Are Int Or String",
+        "timetofix": 15
     },
     {
-        "patternId": "Type\/ShouldTypecast",
+        "patternId": "Type/ShouldTypecast",
         "title": "Should Typecast",
-        "description": "When typecasting, it is better to use the casting operator, such as (int) or (bool)",
-        "timetofix": 20
+        "description": "Should Typecast",
+        "timetofix": 15
     },
     {
-        "patternId": "Classes\/NoSelfReferencingConstant",
+        "patternId": "Classes/NoSelfReferencingConstant",
         "title": "No Self Referencing Constant",
-        "description": "It is not possible to use 'self' when defining a constant in a class",
-        "timetofix": 20
+        "description": "No Self Referencing Constant",
+        "timetofix": 15
     },
     {
-        "patternId": "Structures\/NoDirectUsage",
-        "title": "No Direct Usage",
-        "description": "The results of the following functions shouldn't be used directly, but checked first",
-        "timetofix": 60
-    },
-    {
-        "patternId": "Structures\/BreakOutsideLoop",
+        "patternId": "Structures/BreakOutsideLoop",
         "title": "Break Outside Loop",
-        "description": "Starting with PHP 7, break or continue that are outside a loop (for, foreach(), do",
-        "timetofix": 60
+        "description": "Break Outside Loop",
+        "timetofix": 30
     },
     {
-        "patternId": "Structures\/NoSubstrOne",
+        "patternId": "Structures/NoDirectUsage",
+        "title": "No Direct Usage",
+        "description": "No Direct Usage",
+        "timetofix": 30
+    },
+    {
+        "patternId": "Structures/NoSubstrOne",
         "title": "No Substr() One",
-        "description": "Use array notation $string[$position] to reach a single byte in a string",
+        "description": "No Substr() One",
         "timetofix": 5
     },
     {
-        "patternId": "Structures\/DoubleAssignation",
+        "patternId": "Structures/DoubleAssignation",
         "title": "Double Assignation",
-        "description": "This happens when a container (variable, property, array index) is assigned with values twice in a row",
-        "timetofix": 20
+        "description": "Double Assignation",
+        "timetofix": 15
     },
     {
-        "patternId": "Php\/EmptyList",
+        "patternId": "Php/EmptyList",
         "title": "Empty List",
-        "description": "Empty list() are not allowed anymore in PHP 7",
-        "timetofix": 20
+        "description": "Empty List",
+        "timetofix": 15
     },
     {
-        "patternId": "Structures\/UselessBrackets",
+        "patternId": "Structures/UselessBrackets",
         "title": "Useless Brackets",
-        "description": "Standalone brackets have no use",
+        "description": "Useless Brackets",
         "timetofix": 5
     },
     {
-        "patternId": "Structures\/pregOptionE",
+        "patternId": "Structures/pregOptionE",
         "title": "preg_replace With Option e",
-        "description": "preg_replace() supported the \/e option until PHP 7",
-        "timetofix": 20
+        "description": "preg_replace With Option e",
+        "timetofix": 15
     },
     {
-        "patternId": "Structures\/EvalWithoutTry",
+        "patternId": "Structures/EvalWithoutTry",
         "title": "eval() Without Try",
-        "description": "eval() emits a ParseError exception with PHP 7 and later",
-        "timetofix": 20
+        "description": "eval() Without Try",
+        "timetofix": 15
     },
     {
-        "patternId": "Extensions\/Extfann",
-        "title": "ext\/fann",
-        "description": "Extension fann",
-        "timetofix": 60
-    },
-    {
-        "patternId": "Functions\/RelayFunction",
+        "patternId": "Functions/RelayFunction",
         "title": "Relay Function",
-        "description": "Relay function only hand workload to another one",
-        "timetofix": 20
+        "description": "Relay Function",
+        "timetofix": 15
     },
     {
-        "patternId": "Functions\/funcGetArgModified",
+        "patternId": "Functions/funcGetArgModified",
         "title": "func_get_arg() Modified",
-        "description": "func_get_arg() and func_get_args() used to report the calling value of the argument until PHP 7",
-        "timetofix": 20
+        "description": "func_get_arg() Modified",
+        "timetofix": 15
     },
     {
-        "patternId": "Structures\/UseInstanceof",
+        "patternId": "Structures/UseInstanceof",
         "title": "Avoid get_class()",
-        "description": "get_class() should be replaced with the instanceof operator to check the class of an object",
-        "timetofix": 20
+        "description": "Avoid get_class()",
+        "timetofix": 15
     },
     {
-        "patternId": "Type\/SilentlyCastInteger",
+        "patternId": "Type/SilentlyCastInteger",
         "title": "Silently Cast Integer",
-        "description": "Those are integer literals that are cast to a float when running PHP",
-        "timetofix": 20
+        "description": "Silently Cast Integer",
+        "timetofix": 15
     },
     {
-        "patternId": "Traits\/UnusedTrait",
+        "patternId": "Traits/UnusedTrait",
         "title": "Unused Traits",
-        "description": "Those traits are not used in a class or another trait",
-        "timetofix": 60
+        "description": "Unused Traits",
+        "timetofix": 30
     },
     {
-        "patternId": "Structures\/TimestampDifference",
+        "patternId": "Structures/TimestampDifference",
         "title": "Timestamp Difference",
-        "description": "time() and microtime() shouldn't be used to calculate duration or with durations",
-        "timetofix": 60
+        "description": "Timestamp Difference",
+        "timetofix": 30
     },
     {
-        "patternId": "Functions\/UnusedArguments",
+        "patternId": "Functions/UnusedArguments",
         "title": "Unused Arguments",
-        "description": "Those arguments are not used in the method or function",
-        "timetofix": 20
+        "description": "Unused Arguments",
+        "timetofix": 15
     },
     {
-        "patternId": "Structures\/SwitchToSwitch",
+        "patternId": "Structures/SwitchToSwitch",
         "title": "Switch To Switch",
-        "description": "The following structures are based on if \/ elseif \/ else",
-        "timetofix": 20
+        "description": "Switch To Switch",
+        "timetofix": 15
     },
     {
-        "patternId": "Php\/InternalParameterType",
+        "patternId": "Php/InternalParameterType",
         "title": "Wrong Parameter Type",
-        "description": "The expected parameter is not of the correct type",
-        "timetofix": 20
+        "description": "Wrong Parameter Type",
+        "timetofix": 15
     },
     {
-        "patternId": "Classes\/CouldBePrivate",
+        "patternId": "Classes/CouldBePrivate",
         "title": "Property Could Be Private Property",
-        "description": "The following properties are never used outside their class of definition  Given the analyzed code, they could be set as private",
-        "timetofix": 60
+        "description": "Property Could Be Private Property",
+        "timetofix": 30
     },
     {
-        "patternId": "Classes\/RedefinedConstants",
+        "patternId": "Classes/RedefinedConstants",
         "title": "Redefined Class Constants",
-        "description": "Redefined class constants",
-        "timetofix": 60
+        "description": "Redefined Class Constants",
+        "timetofix": 30
     },
     {
-        "patternId": "Classes\/RedefinedDefault",
+        "patternId": "Classes/RedefinedDefault",
         "title": "Redefined Default",
-        "description": "Classes allows properties to be set with a default value",
-        "timetofix": 60
+        "description": "Redefined Default",
+        "timetofix": 30
     },
     {
-        "patternId": "Php\/FopenMode",
+        "patternId": "Php/FopenMode",
         "title": "Wrong fopen() Mode",
-        "description": "Wrong file opening for fopen()",
-        "timetofix": 20
+        "description": "Wrong fopen() Mode",
+        "timetofix": 15
     },
     {
-        "patternId": "Php\/DirectiveName",
+        "patternId": "Php/DirectiveName",
         "title": "Unknown Directive Name",
-        "description": "Unknown directives names used in the code",
-        "timetofix": 20
+        "description": "Unknown Directive Name",
+        "timetofix": 15
     },
     {
-        "patternId": "Variables\/CloseNaming",
-        "title": "Confusing Names",
-        "description": "The following variables's name are very close and may lead to confusion",
-        "timetofix": 60
-    },
-    {
-        "patternId": "Php\/PregMatchAllFlag",
+        "patternId": "Php/PregMatchAllFlag",
         "title": "preg_match_all() Flag",
-        "description": "preg_match_all() has an option to configure the structure of the results : it is either by capturing parenthesis (by default), or by result sets",
-        "timetofix": 20
+        "description": "preg_match_all() Flag",
+        "timetofix": 15
     },
     {
-        "patternId": "Structures\/NegativePow",
+        "patternId": "Structures/NegativePow",
         "title": "Negative Power",
-        "description": "The power operator ** has higher precedence than the sign operators + and -",
+        "description": "Negative Power",
         "timetofix": 5
     },
     {
-        "patternId": "Interfaces\/AlreadyParentsInterface",
-        "title": "Already Parents Interface",
-        "description": "The same interface is implemented by a class and one of its children",
-        "timetofix": 5
-    },
-    {
-        "patternId": "Php\/BetterRand",
+        "patternId": "Php/BetterRand",
         "title": "Use random_int()",
-        "description": "rand() and mt_rand() should be replaced with random_int()",
+        "description": "Use random_int()",
         "timetofix": 5
     },
     {
-        "patternId": "Classes\/CantExtendFinal",
+        "patternId": "Interfaces/AlreadyParentsInterface",
+        "title": "Already Parents Interface",
+        "description": "Already Parents Interface",
+        "timetofix": 5
+    },
+    {
+        "patternId": "Classes/WrongCase",
+        "title": "Class Name Case Difference",
+        "description": "Class Name Case Difference",
+        "timetofix": 5
+    },
+    {
+        "patternId": "Classes/CantExtendFinal",
         "title": "Can't Extend Final",
-        "description": "It is not possible to extend final classes",
+        "description": "Can't Extend Final",
         "timetofix": 5
     },
     {
-        "patternId": "Structures\/TernaryInConcat",
+        "patternId": "Structures/TernaryInConcat",
         "title": "Ternary In Concat",
-        "description": "Ternary operator has higher priority than dot '",
-        "timetofix": 20
+        "description": "Ternary In Concat",
+        "timetofix": 15
     },
     {
-        "patternId": "Classes\/UsingThisOutsideAClass",
+        "patternId": "Classes/UsingThisOutsideAClass",
         "title": "Using $this Outside A Class",
-        "description": "`$this` is a special variable, that should only be used in a class context",
+        "description": "Using $this Outside A Class",
         "timetofix": 5
     },
     {
-        "patternId": "Traits\/UndefinedTrait",
+        "patternId": "Traits/UndefinedTrait",
         "title": "Undefined Trait",
-        "description": "Those traits are undefined",
-        "timetofix": 20
+        "description": "Undefined Trait",
+        "timetofix": 15
     },
     {
-        "patternId": "Structures\/NoHardcodedHash",
+        "patternId": "Structures/NoHardcodedHash",
         "title": "No Hardcoded Hash",
-        "description": "Hash should never be hardcoded",
-        "timetofix": 60
+        "description": "No Hardcoded Hash",
+        "timetofix": 30
     },
     {
-        "patternId": "Structures\/IdenticalConditions",
+        "patternId": "Structures/IdenticalConditions",
         "title": "Identical Conditions",
-        "description": "These logical expressions contain members that are identical",
-        "timetofix": 20
+        "description": "Identical Conditions",
+        "timetofix": 15
     },
     {
-        "patternId": "Structures\/UnknownPregOption",
+        "patternId": "Structures/UnknownPregOption",
         "title": "Unkown Regex Options",
-        "description": "PHP's regex support the following list of options : eimsuxADJSUX",
-        "timetofix": 60
+        "description": "Unkown Regex Options",
+        "timetofix": 30
     },
     {
-        "patternId": "Structures\/NoChoice",
+        "patternId": "Structures/NoChoice",
         "title": "No Choice",
-        "description": "A conditional structure is being used, but both alternatives are the same, leading to the illusion of choice",
+        "description": "No Choice",
         "timetofix": 5
     },
     {
-        "patternId": "Structures\/CommonAlternatives",
+        "patternId": "Structures/CommonAlternatives",
         "title": "Common Alternatives",
-        "description": "In the following conditional structures, expressions were found that are common to both 'then' and 'else'",
+        "description": "Common Alternatives",
         "timetofix": 5
     },
     {
-        "patternId": "Structures\/LogicalMistakes",
+        "patternId": "Structures/LogicalMistakes",
         "title": "Logical Mistakes",
-        "description": "Avoid logical mistakes within long expressions",
-        "timetofix": 20
+        "description": "Logical Mistakes",
+        "timetofix": 15
     },
     {
-        "patternId": "Exceptions\/UncaughtExceptions",
+        "patternId": "Structures/Iffectation",
+        "title": "Iffectations",
+        "description": "Iffectations",
+        "timetofix": 15
+    },
+    {
+        "patternId": "Exceptions/UncaughtExceptions",
         "title": "Uncaught Exceptions",
-        "description": "The following exceptions are thrown in the code, but are never caught",
-        "timetofix": 20
+        "description": "Uncaught Exceptions",
+        "timetofix": 15
     },
     {
-        "patternId": "Structures\/SameConditions",
+        "patternId": "Structures/SameConditions",
         "title": "Same Conditions In Condition",
-        "description": "At least two consecutive if\/then structures use identical conditions",
-        "timetofix": 20
+        "description": "Same Conditions In Condition",
+        "timetofix": 15
     },
     {
-        "patternId": "Structures\/ReturnTrueFalse",
+        "patternId": "Structures/ReturnTrueFalse",
         "title": "Return True False",
-        "description": "These conditional expressions return true\/false, depending on the condition",
-        "timetofix": 20
+        "description": "Return True False",
+        "timetofix": 15
     },
     {
-        "patternId": "Structures\/UselessSwitch",
+        "patternId": "Structures/UselessSwitch",
         "title": "Useless Switch",
-        "description": "This switch has only one case",
+        "description": "Useless Switch",
         "timetofix": 5
     },
     {
-        "patternId": "Variables\/Overwriting",
+        "patternId": "Variables/Overwriting",
         "title": "Overwriting Variable",
-        "description": "Replacing the content of a variable by something different is prone to errors",
-        "timetofix": 20
+        "description": "Overwriting Variable",
+        "timetofix": 15
     },
     {
-        "patternId": "Structures\/CouldUseDir",
+        "patternId": "Structures/CouldUseDir",
         "title": "Could Use __DIR__",
-        "description": "Use __DIR__ constant to access the current file's parent directory",
-        "timetofix": 20
+        "description": "Could Use __DIR__",
+        "timetofix": 15
     },
     {
-        "patternId": "Php\/ShouldUseCoalesce",
+        "patternId": "Php/ShouldUseCoalesce",
         "title": "Should Use Coalesce",
-        "description": "PHP 7 introduced the ?? operator, that replaces longer structures to set default values when a variable is not set",
-        "timetofix": 20
+        "description": "Should Use Coalesce",
+        "timetofix": 15
     },
     {
-        "patternId": "Classes\/MakeGlobalAProperty",
+        "patternId": "Classes/MakeGlobalAProperty",
         "title": "Make Global A Property",
-        "description": "Calling global (or $GLOBALS) in methods is slower and less testable than setting the global to a property, and using this property",
-        "timetofix": 60
+        "description": "Make Global A Property",
+        "timetofix": 30
     },
     {
-        "patternId": "Structures\/IfWithSameConditions",
+        "patternId": "Structures/IfWithSameConditions",
         "title": "If With Same Conditions",
-        "description": "Successive If \/ then structures that have the same condition may be either merged or have one of the condition changed",
-        "timetofix": 20
+        "description": "If With Same Conditions",
+        "timetofix": 15
     },
     {
-        "patternId": "Exceptions\/ThrowFunctioncall",
+        "patternId": "Exceptions/ThrowFunctioncall",
         "title": "Throw Functioncall",
-        "description": "The throw keyword is excepted to use an exception",
+        "description": "Throw Functioncall",
         "timetofix": 5
     },
     {
-        "patternId": "Classes\/UseInstanceof",
+        "patternId": "Classes/UseInstanceof",
         "title": "Use Instanceof",
-        "description": "The instanceof operator is a faster alternative to is_object()",
-        "timetofix": 20
+        "description": "Use Instanceof",
+        "timetofix": 15
     },
     {
-        "patternId": "Structures\/ResultMayBeMissing",
+        "patternId": "Structures/ResultMayBeMissing",
         "title": "Results May Be Missing",
-        "description": "preg_match() may return empty values, if the search fails",
-        "timetofix": 20
+        "description": "Results May Be Missing",
+        "timetofix": 15
     },
     {
-        "patternId": "Structures\/NeverNegative",
+        "patternId": "Structures/NeverNegative",
         "title": "Always Positive Comparison",
-        "description": "Some PHP native functions, such as count(), strlen(), or abs() only returns positive or null values",
+        "description": "Always Positive Comparison",
         "timetofix": 5
     },
     {
-        "patternId": "Structures\/EmptyBlocks",
+        "patternId": "Structures/EmptyBlocks",
         "title": "Empty Blocks",
-        "description": "Full empty block, part of a control structures",
+        "description": "Empty Blocks",
         "timetofix": 5
     },
     {
-        "patternId": "Classes\/ThrowInDestruct",
+        "patternId": "Classes/ThrowInDestruct",
         "title": "Throw In Destruct",
-        "description": "According to the manual, 'Attempting to throw an exception from a destructor (called in the time of script termination) causes a fatal error",
-        "timetofix": 20
+        "description": "Throw In Destruct",
+        "timetofix": 15
     },
     {
-        "patternId": "Structures\/UseSystemTmp",
+        "patternId": "Structures/UseSystemTmp",
         "title": "Use System Tmp",
-        "description": "It is recommended to avoid hardcoding the temporary file",
-        "timetofix": 60
+        "description": "Use System Tmp",
+        "timetofix": 30
     },
     {
-        "patternId": "Traits\/DependantTrait",
+        "patternId": "Traits/DependantTrait",
         "title": "Dependant Trait",
-        "description": "Traits should be autonomous",
-        "timetofix": 60
+        "description": "Dependant Trait",
+        "timetofix": 30
     },
     {
-        "patternId": "Namespaces\/HiddenUse",
+        "patternId": "Namespaces/HiddenUse",
         "title": "Hidden Use Expression",
-        "description": "The use expression for namespaces should always be at te beginning of the namespace block",
+        "description": "Hidden Use Expression",
         "timetofix": 5
     },
     {
-        "patternId": "Namespaces\/CouldUseAlias",
+        "patternId": "Namespaces/CouldUseAlias",
         "title": "Could Use Alias",
-        "description": "This long name may be reduced by using an available alias",
-        "timetofix": 20
+        "description": "Could Use Alias",
+        "timetofix": 15
     },
     {
-        "patternId": "Namespaces\/ShouldMakeAlias",
+        "patternId": "Namespaces/ShouldMakeAlias",
         "title": "Should Make Alias",
-        "description": "Long names should be aliased",
-        "timetofix": 20
+        "description": "Should Make Alias",
+        "timetofix": 15
     },
     {
-        "patternId": "Classes\/MultipleTraitOrInterface",
+        "patternId": "Classes/MultipleTraitOrInterface",
         "title": "Multiple Identical Trait Or Interface",
-        "description": "There is no need to use the same trait, or implements the same interface  more than once",
+        "description": "Multiple Identical Trait Or Interface",
         "timetofix": 5
     },
     {
-        "patternId": "Namespaces\/MultipleAliasDefinitions",
+        "patternId": "Namespaces/MultipleAliasDefinitions",
         "title": "Multiple Alias Definitions",
-        "description": "Some aliases are representing differents classes across the repository",
+        "description": "Multiple Alias Definitions",
         "timetofix": 5
     },
     {
-        "patternId": "Structures\/NestedIfthen",
+        "patternId": "Structures/NestedIfthen",
         "title": "Nested Ifthen",
-        "description": "Three levels of ifthen is too much",
-        "timetofix": 20
+        "description": "Nested Ifthen",
+        "timetofix": 15
     },
     {
-        "patternId": "Structures\/CastToBoolean",
+        "patternId": "Structures/CastToBoolean",
         "title": "Cast To Boolean",
-        "description": "This expression may be reduced by casting to boolean type",
+        "description": "Cast To Boolean",
         "timetofix": 5
     },
     {
-        "patternId": "Structures\/FailingSubstrComparison",
+        "patternId": "Structures/FailingSubstrComparison",
         "title": "Failed Substr Comparison",
-        "description": "The extracted string must be of the size of the compared string",
+        "description": "Failed Substr Comparison",
         "timetofix": 5
     },
     {
-        "patternId": "Structures\/ShouldMakeTernary",
+        "patternId": "Structures/ShouldMakeTernary",
         "title": "Should Make Ternary",
-        "description": "Ternary operators are the best when assigning values to a variable",
+        "description": "Should Make Ternary",
         "timetofix": 5
     },
     {
-        "patternId": "Functions\/UnusedReturnedValue",
+        "patternId": "Functions/UnusedReturnedValue",
         "title": "Unused Returned Value",
-        "description": "The function called returns a value, which is ignored",
-        "timetofix": 20
+        "description": "Unused Returned Value",
+        "timetofix": 15
     },
     {
-        "patternId": "Structures\/ModernEmpty",
+        "patternId": "Structures/ModernEmpty",
         "title": "Modernize Empty With Expression",
-        "description": "empty() accept expressions since PHP 5",
-        "timetofix": 20
+        "description": "Modernize Empty With Expression",
+        "timetofix": 15
     },
     {
-        "patternId": "Structures\/UsePositiveCondition",
+        "patternId": "Structures/UsePositiveCondition",
         "title": "Use Positive Condition",
-        "description": "Whenever possible, use a positive condition",
-        "timetofix": 20
+        "description": "Use Positive Condition",
+        "timetofix": 15
     },
     {
-        "patternId": "Structures\/DropElseAfterReturn",
+        "patternId": "Structures/DropElseAfterReturn",
         "title": "Drop Else After Return",
-        "description": "Avoid else clause when the then clause returns, but not the else",
-        "timetofix": 20
+        "description": "Drop Else After Return",
+        "timetofix": 15
     },
     {
-        "patternId": "Classes\/UseClassOperator",
+        "patternId": "Classes/UseClassOperator",
         "title": "Use Class Operator",
-        "description": "Use ::class to hardcode class names, instead of strings",
+        "description": "Use Class Operator",
         "timetofix": 5
     },
     {
-        "patternId": "Security\/DontEchoError",
-        "title": "Dont Echo Error",
-        "description": "It is recommended to avoid displaying error messages directly to the browser",
+        "patternId": "Security/DontEchoError",
+        "title": "Don't Echo Error",
+        "description": "Don't Echo Error",
         "timetofix": 5
     },
     {
-        "patternId": "Structures\/UselessCasting",
+        "patternId": "Structures/UselessCasting",
         "title": "Useless Casting",
-        "description": "There is no need to overcast returned values",
+        "description": "Useless Casting",
         "timetofix": 5
     },
     {
-        "patternId": "Structures\/NoIssetWithEmpty",
+        "patternId": "Structures/NoIssetWithEmpty",
         "title": "No Isset With Empty",
-        "description": "Empty() actually does the job of Isset() too",
+        "description": "No Isset With Empty",
         "timetofix": 5
     },
     {
-        "patternId": "Structures\/UselessCheck",
+        "patternId": "Structures/UselessCheck",
         "title": "Useless Check",
-        "description": "Situation where the condition is useless",
+        "description": "Useless Check",
         "timetofix": 5
     },
     {
-        "patternId": "Classes\/UnitializedProperties",
+        "patternId": "Classes/UnitializedProperties",
         "title": "Unitialized Properties",
-        "description": "Properties that are not initialized in the constructor, nor at definition",
-        "timetofix": 20
+        "description": "Unitialized Properties",
+        "timetofix": 15
     },
     {
-        "patternId": "Structures\/BailOutEarly",
+        "patternId": "Structures/BailOutEarly",
         "title": "Bail Out Early",
-        "description": "When using conditions, it is recommended to quit in the current context, and avoid else clause altogether",
-        "timetofix": 20
+        "description": "Bail Out Early",
+        "timetofix": 15
     },
     {
-        "patternId": "Structures\/DontChangeBlindKey",
+        "patternId": "Structures/DontChangeBlindKey",
         "title": "Dont Change The Blind Var",
-        "description": "When using a foreach(), the blind variables hold a copy of the original value",
-        "timetofix": 20
+        "description": "Dont Change The Blind Var",
+        "timetofix": 15
     },
     {
-        "patternId": "Php\/UseStdclass",
+        "patternId": "Php/UseStdclass",
         "title": "Avoid Using stdClass",
-        "description": "stdClass is the default class for PHP",
-        "timetofix": 60
+        "description": "Avoid Using stdClass",
+        "timetofix": 30
     },
     {
-        "patternId": "Functions\/TooManyLocalVariables",
-        "title": "Too Many Local Variables",
-        "description": "Too many local variables were found in the methods",
-        "timetofix": 60
+        "patternId": "Functions/TooManyLocalVariables",
+        "title": "tooManyLocalVariableThreshold",
+        "description": "tooManyLocalVariableThreshold",
+        "timetofix": 30
     },
     {
-        "patternId": "Classes\/WrongName",
+        "patternId": "Classes/WrongName",
         "title": "Illegal Name For Method",
-        "description": "PHP has reserved usage of methods starting with __ for magic methods",
-        "timetofix": 60
+        "description": "Illegal Name For Method",
+        "timetofix": 30
     },
     {
-        "patternId": "Classes\/FinalByOcramius",
+        "patternId": "Classes/FinalByOcramius",
         "title": "Class Should Be Final By Ocramius",
-        "description": "'Make your classes always final, if they implement an interface, and no other public methods are defined'",
-        "timetofix": 60
+        "description": "Class Should Be Final By Ocramius",
+        "timetofix": 30
     },
     {
-        "patternId": "Classes\/CouldBeProtectedProperty",
+        "patternId": "Classes/CouldBeProtectedProperty",
         "title": "Could Be Protected Property",
-        "description": "Those properties are declared public, but are never used publicly",
-        "timetofix": 60
+        "description": "Could Be Protected Property",
+        "timetofix": 30
     },
     {
-        "patternId": "Variables\/AssignedTwiceOrMore",
+        "patternId": "Variables/AssignedTwiceOrMore",
         "title": "Assigned Twice",
-        "description": "The same variable is assigned twice in the same function",
-        "timetofix": 20
+        "description": "Assigned Twice",
+        "timetofix": 15
+    },
+    {
+        "patternId": "Structures/MissingParenthesis",
+        "title": "Missing Parenthesis",
+        "description": "Missing Parenthesis",
+        "timetofix": 5
     }
 ]

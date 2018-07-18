@@ -1,4 +1,3 @@
-Make Global A Property
 Calling global (or $GLOBALS) in methods is slower and less testable than setting the global to a property, and using this property.
 
 Using properties is slightly faster than calling global or $GLOBALS, though the gain is not important. 

@@ -1,4 +1,3 @@
-Useless Abstract Class
 Those classes are marked 'abstract' and they are never extended. This way, they won't be instantiated nor used. 
 
 Abstract classes that have only static methods are omitted here : one usage of such classes are Utilities classes, which only offer static methods. 

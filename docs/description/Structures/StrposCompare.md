@@ -1,5 +1,6 @@
-Strpos()-like Comparison
-strpos(), and several PHP native functions, returns a string position, starting at 0, or false, in case of failure. 
+The result of that function may be mistaken with an error.
+
+strpos(), along with several PHP native functions, returns a string position, starting at 0, or false, in case of failure. 
 
 <?php
 

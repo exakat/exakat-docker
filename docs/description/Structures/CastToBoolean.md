@@ -1,5 +1,4 @@
-Cast To Boolean
-This expression may be reduced by casting to boolean type.
+This expression may be reduced by casting to boolean type. 
 
 <?php
 
@@ -13,6 +12,10 @@ $variable = (bool) $condition != 'met';
 // also, with an indentical condition
 $variable = !(bool) $condition == 'met';
 
-
+// This also works with straight booleans expressions
+$variable = $condition == 'met' ? true : false;
+// Same as 
+$variable = $condition == 'met';
 
 ?>
+

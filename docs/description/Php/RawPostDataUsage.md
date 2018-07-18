@@ -1,4 +1,3 @@
-$HTTP_RAW_POST_DATA
 $HTTP_RAW_POST_DATA is deprecated, and should be replaced by php://input. 
 
 $HTTP_RAW_POST_DATA is deprecated since PHP 5.6.
@@ -15,5 +14,5 @@ $postdata = file_get_contents(php://input);
 
 ?>
 
-See also `$HTTP_RAW_POST_DATA variable <http://php.net/manual/en/reserved.variables.httprawpostdata.php>`_.
+See also [$HTTP_RAW_POST_DATA variable](http://php.net/manual/en/reserved.variables.httprawpostdata.php).
 

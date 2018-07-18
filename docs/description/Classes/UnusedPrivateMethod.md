@@ -1,5 +1,6 @@
-Unused Static Methods
-List of all static methods that are not used. This looks like dead code.
+Private methods that are not used are dead code. 
+
+Private methods are reserved for the defining class. Thus, they must be used with $this or any variation of self:: 
 
 <?php
 

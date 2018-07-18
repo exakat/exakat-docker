@@ -1,4 +1,3 @@
-Function Subscripting, Old Style
 Since PHP 5.4, it is now possible use function results as an array, and access directly its element : 
 
 <?php

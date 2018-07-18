@@ -1,4 +1,3 @@
-Same Conditions In Condition
 At least two consecutive if/then structures use identical conditions. The latter will probably be ignored.
 
 This analysis returns false positive when there are attempt to fix the situation, or to call an alternative solution. 

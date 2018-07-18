@@ -1,4 +1,3 @@
-Unused Methods
 Those methods are never called as methods. 
 
 They are probably dead code, unless they are called dynamically.

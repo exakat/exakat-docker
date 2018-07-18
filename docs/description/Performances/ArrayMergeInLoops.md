@@ -1,4 +1,3 @@
-No array_merge() In Loops
 array_merge() is memory intensive : every call will duplicate the arguments in memory, before merging them. 
 
 To handle arrays that may be quite big, it is recommended to avoid using array_merge() in a loop. Instead, one should use array_merge() with as many arguments as possible, making the merge a on time call.

@@ -1,4 +1,3 @@
-Unused Constants
 Those constants are defined in the code but never used. Defining unused constants slow down the application, as they are executed and stored in PHP hashtables. 
 
 <?php

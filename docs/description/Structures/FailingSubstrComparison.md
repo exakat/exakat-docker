@@ -1,4 +1,3 @@
-Failed Substr Comparison
 The extracted string must be of the size of the compared string.
 
 This is also true for negative lengths.

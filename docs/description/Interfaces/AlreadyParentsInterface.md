@@ -1,4 +1,3 @@
-Already Parents Interface
 The same interface is implemented by a class and one of its children. 
 
 That way, the child doesn't need to implement the interface, nor define its methods to be an instance of the interface. 

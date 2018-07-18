@@ -1,4 +1,3 @@
-Overwriting Variable
 Replacing the content of a variable by something different is prone to errors. For example, it is not obvious if the $text variable is plain text or HTML text. 
 
 <?php

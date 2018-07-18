@@ -1,4 +1,3 @@
-Old Style Constructor
 PHP classes used to have the method bearing the same name as the class acts as the constructor. That was PHP 4, and early PHP 5. 
 
 The manual issues a warning about this syntax : 'Old style constructors are DEPRECATED in PHP 7.0, and will be removed in a future version. You should always use __construct() in new code.'
@@ -35,4 +34,4 @@ This is no more the case in PHP 5, which relies on __construct() to do so. Havin
 
 Note that classes with methods bearing the class name, but inside a namespace are not following this convention, as this is not breaking backward compatibility. Those are excluded from the analyze.
 
-See also `Constructors and Destructors ¶ <http://php.net/manual/en/language.oop5.decon.php>`_.
+See also [Constructors and Destructors ¶](http://php.net/manual/en/language.oop5.decon.php).

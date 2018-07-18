@@ -1,4 +1,3 @@
-No Hardcoded Path
 It is not recommended to have literals when accessing files. 
 
 Either use __FILE__ and __DIR__ to make the path relative to the current file; use a DOC_ROOT as a configuration constant that will allow you to move your script later or rely on functions likes sys_get_temp_dir(), to reach special folders.

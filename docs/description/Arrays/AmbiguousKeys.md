@@ -1,4 +1,3 @@
-Ambiguous Array Index
 Those indexes are defined with different types, in the same array. 
 
 Array indices only accept integers and strings, so any other type of literal is reported. 

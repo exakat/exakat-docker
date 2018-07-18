@@ -1,5 +1,4 @@
-Could Use Short Assignation
-Use short assignement operator, to speed up code, and keep syntax clear.  
+Use short assignment operator, to speed up code, and keep syntax clear.  
 
 Some operators, like * or +, have a compact and fast 'do-and-assign' version. They looks like a compacted version for = and the operator. This syntax is good for readability, and saves some memory in the process. 
 
@@ -43,5 +42,5 @@ $j <<= 9;
 
 Short operators are faster than the extended version, though it is a micro-optimization.
 
-See also `Assignation Operators <http://php.net/manual/en/language.operators.assignment.php>`_.
+See also [Assignation Operators](http://php.net/manual/en/language.operators.assignment.php).
 

@@ -1,4 +1,3 @@
-Useless Casting
 There is no need to overcast returned values.
 
 <?php
@@ -14,4 +13,4 @@ $c = (bool) ($b > 2);
 
 ?>
 
-See also `Type juggling <http://php.net/manual/en/language.types.type-juggling.php>`_.
+See also [Type juggling](http://php.net/manual/en/language.types.type-juggling.php).

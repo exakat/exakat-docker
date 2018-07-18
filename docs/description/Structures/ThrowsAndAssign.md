@@ -1,7 +1,6 @@
-Throws An Assignement
 It is possible to throw an exception, and, in the same time, assign this exception to a variable.
 
-However, $e will never be used, as the exception is thrown, and any following code is not executed. 
+However, the variable will never be used, as the exception is thrown, and any following code is not executed. 
 
 <?php
 
@@ -14,4 +13,4 @@ However, $e will never be used, as the exception is thrown, and any following co
 
 ?>
 
-The assignement should be removed.
+The assignment should be removed.

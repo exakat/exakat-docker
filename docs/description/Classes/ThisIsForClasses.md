@@ -1,4 +1,3 @@
-$this Belongs To Classes Or Traits
 $this variable represents only the current object. 
 
 It is a pseudo-variable, and should be used within class's or trait's methods (except for static) and not outside.

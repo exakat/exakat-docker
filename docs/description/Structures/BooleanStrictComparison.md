@@ -1,4 +1,3 @@
-Strict Comparison With Booleans
 Strict comparisons prevent from mistaking an error with a false. 
 
 Booleans may be easily mistaken with other values, especially when the function may return integer or boolean as a normal course of action. 

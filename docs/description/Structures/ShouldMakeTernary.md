@@ -1,4 +1,3 @@
-Should Make Ternary
 Ternary operators are the best when assigning values to a variable.
 
 This way, they are less verbose, compatible with assignation and easier to read.

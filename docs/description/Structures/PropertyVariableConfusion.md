@@ -1,4 +1,3 @@
-Property Variable Confusion
 Within a class, there is both a property and variables bearing the same name. 
 
 <?php

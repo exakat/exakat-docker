@@ -1,4 +1,3 @@
-Constants Created Outside Its Namespace
 Constants Created Outside Its Namespace.
 
 Using the define() function, it is possible to create constant outside their namespace, but using the fully qualified namespace.

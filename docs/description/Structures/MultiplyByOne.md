@@ -1,4 +1,3 @@
-Multiply By One
 Multiplying by 1 is useless. 
 
 If it is used to type cast a value to number, then casting (integer) or (real) is clearer. This behavior may change with PHP 7.1, which has unified the behavior of all hidden casts. 
