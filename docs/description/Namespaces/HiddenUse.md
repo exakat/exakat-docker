@@ -1,4 +1,3 @@
-Hidden Use Expression
 The use expression for namespaces should always be at te beginning of the namespace block. 
 
 It is where everyone expect them, and it is less confusing than having them at various levels.

@@ -1,4 +1,3 @@
-Use random_int()
 rand() and mt_rand() should be replaced with random_int().
 
 At worse, rand() should be replaced with mt_rand(), which is a drop-in replacement and srand() by mt_srand(). 
@@ -32,4 +31,4 @@ $a = sha256(uniqid());
 Since PHP 7, random_int() along with random_bytes(), provides cryptographically secure pseudo-random bytes, which are good to be used
 when security is involved. openssl_random_pseudo_bytes() may be used when the OpenSSL extension is available.
 
-See also `CSPRNG <http://php.net/manual/en/book.csprng.php>`_ and `OpenSSL <http://php.net/manual/en/book.openssl.php>`_.
+See also [CSPRNG](http://php.net/manual/en/book.csprng.php) and [OpenSSL](http://php.net/manual/en/book.openssl.php).

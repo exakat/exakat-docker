@@ -1,7 +1,6 @@
-Avoid get_class()
-get_class() should be replaced with the instanceof operator to check the class of an object. 
+``get_class()`` should be replaced with the ``instanceof`` operator to check the class of an object. 
 
-get_class() will only compare the full namespace name of the object's class, while instanceof actually resolve the name, using the local namespace and aliases.
+``get_class()`` only compares the full namespace name of the object's class, while ``instanceof`` actually resolves the name, using the local namespace and aliases.
 
 <?php
 
@@ -22,3 +21,5 @@ get_class() will only compare the full namespace name of the object's class, whi
     }
 ?>
 
+See also [get_class](http://php.net/get_class) and 
+         [Type Operators](http://php.net/instanceof).

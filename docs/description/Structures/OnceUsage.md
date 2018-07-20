@@ -1,4 +1,3 @@
-include_once() Usage
 include_once() and require_once() functions should be avoided for performances reasons.
 
 <?php

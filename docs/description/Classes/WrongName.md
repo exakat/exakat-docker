@@ -1,5 +1,4 @@
-Illegal Name For Method
-PHP has reserved usage of methods starting with __ for magic methods. It is recommended to avoid using this prefix, to prevent confusions.
+PHP has reserved usage of methods starting with ``__`` for magic methods. It is recommended to avoid using this prefix, to prevent confusions.
 
 <?php
 
@@ -15,3 +14,5 @@ class foo{
 }
 
 ?>
+
+See also [Magic Methods](http://php.net/manual/en/language.oop5.magic.php).

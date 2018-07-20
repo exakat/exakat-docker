@@ -1,4 +1,3 @@
-Undefined Properties
 List of properties that are not explicitely defined in the class, its parents or traits.
 
 <?php
@@ -16,4 +15,4 @@ class foo {
 
 ?>
 
-See also `Properties <http://php.net/manual/en/language.oop5.properties.php>`_.
+See also [Properties](http://php.net/manual/en/language.oop5.properties.php).

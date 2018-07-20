@@ -1,4 +1,3 @@
-Non Static Methods Called In A Static
 Static methods have to be declared as such (using the static keyword). Then, 
 one may call them without instantiating the object.
 
@@ -34,5 +33,5 @@ in-family method.
     } 
 ?>
 
-See also `static keyword <http://php.net/manual/en/language.oop5.static.php>`_.
+See also [static keyword](http://php.net/manual/en/language.oop5.static.php).
 

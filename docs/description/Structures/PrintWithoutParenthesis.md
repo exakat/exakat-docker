@@ -1,4 +1,3 @@
-Avoid Parenthesis
 Avoid Parenthesis for language construct. Languages constructs are a few PHP native elements, that looks like functions but are not. 
 
 Among other distinction, those elements cannot be directly used as variable function call, and they may be used with or without parenthesis.

@@ -1,4 +1,3 @@
-Unused Arguments
 Those arguments are not used in the method or function. 
 
 Unused arguments should be removed in functions : they are just dead code.

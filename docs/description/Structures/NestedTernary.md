@@ -1,4 +1,3 @@
-Nested Ternary
 Ternary operators should not be nested too deep.
 
 They are a convenient instruction to apply some condition, and avoid a if() structure. It works best when it is simple, like in a one liner. 

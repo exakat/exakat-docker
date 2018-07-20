@@ -1,5 +1,4 @@
-$this Is Not An Array
-`$this` variable represents the current object and it is not an array, unless the class (or its parents) has the ArrayAccess interface.
+``$this`` variable represents the current object and it is not an array, unless the class (or its parents) has the ArrayAccess interface.
 
 <?php
 
@@ -18,3 +17,6 @@ class Foo2 {
 }
 
 ?>
+
+See also [ArrayAccess](http://php.net/manual/en/class.arrayaccess.php) and 
+         [The Basics](http://php.net/manual/en/language.oop5.basic.php).

@@ -1,4 +1,3 @@
-Break With Non Integer
 When using a break, the argument of the operator must be a positive non-null integer literal or be omitted.
 
 Other values were acceptable in PHP 5.3 and previous version, but this is now reported as an error.

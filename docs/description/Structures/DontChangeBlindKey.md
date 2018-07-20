@@ -1,4 +1,3 @@
-Dont Change The Blind Var
 When using a foreach(), the blind variables hold a copy of the original value. It is confusing to modify them, as it seems that the original value may be changed.
 
 When actually changing the original value, use the reference in the foreach definition to make it obvious, and save the final reassignation.

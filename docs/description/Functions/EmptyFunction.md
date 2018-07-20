@@ -1,4 +1,3 @@
-Empty Function
 Function or method whose body is empty. 
 
 Such functions or methods are rarely useful. As a bare minimum, the function should return some useful value, even if constant.

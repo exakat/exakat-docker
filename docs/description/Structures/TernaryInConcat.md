@@ -1,4 +1,3 @@
-Ternary In Concat
 Ternary operator has higher priority than dot '.' for concatenation. This means that : 
 
 <?php

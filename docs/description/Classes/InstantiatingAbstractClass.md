@@ -1,4 +1,3 @@
-Instantiating Abstract Class
 PHP cannot instantiate an abstract class. 
 
 The classes are actually abstract classes, and should be derived into a concrete class to be instantiated.
@@ -22,4 +21,4 @@ new Foo();
 
 ?>
 
-See also `Class Abstraction <http://php.net/manual/en/language.oop5.abstract.php>`_.
+See also [Class Abstraction](http://php.net/manual/en/language.oop5.abstract.php).

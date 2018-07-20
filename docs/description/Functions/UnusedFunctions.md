@@ -1,4 +1,3 @@
-Unused Functions
 The functions below are unused. They look like deadcode.
 
 <?php

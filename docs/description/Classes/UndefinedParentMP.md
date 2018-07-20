@@ -1,5 +1,4 @@
-Undefined Parent
-List of properties and methods that are accessed using 'parent' keyword but are not defined in the parent class. 
+List of properties and methods that are accessed using ``parent`` keyword but are not defined in the parent class. 
 
 This will be compilable but will yield a fatal error during execution.
 
@@ -23,7 +22,6 @@ class theChild extends theParent {
 
 ?>
 
-Note that if the parent is defined (extends someClass) but someClass is not available in the tested code (it may be in composer,
-another dependency, or just not there) it will not be reported.
+Note that if the parent is defined using ``extends someClass`` but ``someClass`` is not available in the tested code, it will not be reported : it may be in composer, another dependency, or just missing.
 
-See also `parent <http://php.net/manual/en/keyword.parent.php>`_.
+See also [parent](http://php.net/manual/en/keyword.parent.php).

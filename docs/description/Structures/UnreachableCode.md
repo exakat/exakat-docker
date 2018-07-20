@@ -1,4 +1,3 @@
-Unreachable Code
 Code may be unreachable, because other instructions prevent its reaching. 
 For example, it be located after throw, return, exit(), die(), goto, break or continue : this way, it cannot be reached, as the previous instruction will divert the engine to another part of the code. 
 

@@ -1,4 +1,3 @@
-Print And Die
 Die() also prints. 
 
 When stopping a script with die(), it is possible to provide a message as first argument, that will be displayed at execution. There is no need to make a specific call to print or echo.

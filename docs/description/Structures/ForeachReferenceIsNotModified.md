@@ -1,4 +1,3 @@
-Foreach Reference Is Not Modified
 Foreach statement may loop using a reference, especially when the loop has to change values of the array it is looping on. 
 
 In the spotted loop, reference are used but never modified. They may be removed.

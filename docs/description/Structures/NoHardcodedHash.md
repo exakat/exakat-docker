@@ -1,4 +1,3 @@
-No Hardcoded Hash
 Hash should never be hardcoded. 
 
 Hashes may be MD5, SHA1, SHA512, Bcrypt or any other. Such values must be easily changed, for security reasons, and the source code is not the safest place to hide it. 

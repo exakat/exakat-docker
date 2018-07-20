@@ -1,4 +1,3 @@
-Used Once Variables
 This is the list of used once variables. 
 
 <?php

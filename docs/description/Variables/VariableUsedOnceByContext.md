@@ -1,4 +1,3 @@
-Used Once Variables (In Scope)
 This is the list of used once variables, scope by scope. Those variables are used once in a function, a method, a class or a namespace. In any case, this means the variable is read or written, while it should be used at least twice. 
 
 <?php

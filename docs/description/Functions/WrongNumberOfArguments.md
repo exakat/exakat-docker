@@ -1,4 +1,3 @@
-Wrong Number Of Arguments
 Those functioncalls are made with too many or too few arguments. 
 
 When the number arguments is wrong for native functions, PHP emits a warning. 

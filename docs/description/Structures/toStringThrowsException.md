@@ -1,4 +1,3 @@
-__toString() Throws Exception
 Magical method __toString() can't throw exceptions.
 
 In fact, __toString() may not let an exception pass. If it throw an exception, but must catch it. If an underlying method throws an exception, it must be caught.
@@ -26,6 +25,8 @@ class myString {
 
 A fatal error is displayed, when an exception is not intercepted in the __toString() function. 
 
-PHP Fatal error:  Method myString::__toString() must not throw an exception, caught Exception: 'Exception message' in file.php
+::
 
-See also `__toString() <http://php.net/manual/en/language.oop5.magic.php#object.tostring>`_.
+    PHP Fatal error:  Method myString::__toString() must not throw an exception, caught Exception: 'Exception message' in ``file.php``
+
+See also [__toString()](http://php.net/manual/en/language.oop5.magic.php#object.tostring).

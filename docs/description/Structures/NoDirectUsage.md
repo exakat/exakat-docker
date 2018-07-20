@@ -1,4 +1,3 @@
-No Direct Usage
 The results of the following functions shouldn't be used directly, but checked first. 
 
 For example, glob() returns an array, unless some error happens, in which case it returns a boolean (false). In such case, however rare it is, plugging glob() directly in a foreach() loops will yield errors.

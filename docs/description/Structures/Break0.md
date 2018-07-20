@@ -1,4 +1,3 @@
-Break With 0
 Cannot break 0, as this makes no sense. Break 1 is the minimum, and is the default value.
 
 <?php

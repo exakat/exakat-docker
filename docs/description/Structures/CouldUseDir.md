@@ -1,4 +1,3 @@
-Could Use __DIR__
 Use __DIR__ constant to access the current file's parent directory. 
 
 Avoid using dirname() on __FILE__.
@@ -18,5 +17,5 @@ assert(dirname(__FILE__) == __DIR__);
 
 __DIR__ has been introduced in PHP 5.3.0.
 
-See also `Magic Constants <http://php.net/manual/en/language.constants.predefined.php>`_.
+See also [Magic Constants](http://php.net/manual/en/language.constants.predefined.php).
 

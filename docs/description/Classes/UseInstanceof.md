@@ -1,5 +1,4 @@
-Use Instanceof
-The instanceof operator is a faster alternative to is_object(). 
+The instanceof operator is a more precise alternative to is_object(). It is also faster.
 
 instanceof checks for an variable to be of a class or its parents or the interfaces it implements. 
 Once instanceof has been used, the actual attributes available (properties, constants, methods) are known, unlike with is_object().
@@ -37,3 +36,6 @@ class Foo {
 instanceof and is_object() may not be always interchangeable. Consider using isset on a known property for a simple check on object. You may also consider is_string(), is_integer() or is_scalar(), in particular instead of !is_object().
 
 The instanceof operator is also faster than the is_object() functioncall. 
+
+See also [Type Operators](http://php.net/manual/en/language.operators.type.php#language.operators.type) and 
+         [is_object](http://php.net/manual/en/function.is-object.php).

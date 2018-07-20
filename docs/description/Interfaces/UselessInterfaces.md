@@ -1,4 +1,3 @@
-Useless Interfaces
 The interfaces below are defined and are implemented by some classes. 
 However, they are never used to enforce objects's class in the code, using instanceof or a typehint. 
 As they are currently used, those interfaces may be removed without change in behavior.

@@ -1,4 +1,3 @@
-Wrong Optional Parameter
 Wrong placement of optional parameters.
 
 PHP parameters are optional when they defined with a default value, like this : 

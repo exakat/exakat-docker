@@ -1,4 +1,3 @@
-Assign Default To Properties
 Properties may be assigned default values at declaration time. Such values may be later modified, if needed. 
 
 <?php

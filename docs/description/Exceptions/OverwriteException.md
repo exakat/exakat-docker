@@ -1,4 +1,3 @@
-Overwritten Exceptions
 In catch blocks, it is good practice not to overwrite the incoming exception, as information about the exception will be lost.
 
 <?php

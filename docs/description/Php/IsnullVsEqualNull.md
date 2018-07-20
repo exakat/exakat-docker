@@ -1,4 +1,3 @@
-Use === null
 It is faster to use === null instead of is_null().
 
 <?php

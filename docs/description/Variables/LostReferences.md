@@ -1,4 +1,3 @@
-Lost References
 Either avoid references, or propagate them correctly.
 
 When assigning a referenced variable with another reference, the initial reference is lost, while the intend was to transfer the content. 

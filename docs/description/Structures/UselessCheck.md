@@ -1,4 +1,3 @@
-Useless Check
 Situation where the condition is useless. 
 
 <?php

@@ -1,4 +1,3 @@
-Parent, Static Or Self Outside Class
 Parent, static and self keywords must be used within a class or a trait. They make no sens outside a class or trait scope, as self and static refers to the current class and parent refers to one of parent above.
 
 PHP 7.0 and later detect their usage at compile time, and emits a fatal error.

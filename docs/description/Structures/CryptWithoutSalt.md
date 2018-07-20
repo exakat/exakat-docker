@@ -1,5 +1,4 @@
-crypt() Without Salt
-PHP 5.6 and later require a salt when calling crypt(). Previous versions didn't require it. Salt is a simple string, that is usually only known by the application.
+PHP requires a salt when calling crypt(). 5.5 and previous versions didn't require it. Salt is a simple string, that is usually only known by the application.
 
 According to the manual : The salt parameter is optional. However, crypt() creates a weak hash without the salt. PHP 5.6 or later raise an E_NOTICE error without it. Make sure to specify a strong enough salt for better security.
 
@@ -16,4 +15,4 @@ $hash = crypt($password);
 
 ?>
 
-See also `crypt <http://www.php.net/crypt>`_.
+See also [crypt](http://www.php.net/crypt).
