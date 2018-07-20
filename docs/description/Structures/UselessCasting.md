@@ -13,3 +13,4 @@ $c = (bool) ($b > 2);
 
 ?>
 
+See also [Type juggling](http://php.net/manual/en/language.types.type-juggling.php).

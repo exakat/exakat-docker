@@ -1,6 +1,6 @@
-PHP's regex support the following list of options : eimsuxADJSUX. They are detailled in the manual : [http://php.net/manual/en/reference.pcre.pattern.modifiers.php](http://php.net/manual/en/reference.pcre.pattern.modifiers.php). 
+Regex support in PHP accepts the following list of options : ``eimsuxADJSUX``. 
 
-All other options are not supported, may be ignored or raise an error.
+All other letter used as option are not supported : depending on the situation, they may be ignored or raise an error.
 
 <?php
 
@@ -11,3 +11,5 @@ if (preg_match('/\d+/isA', $string, $results)) { }
 if (preg_match('/\d+/php', $string, $results)) { }
 
 ?>
+
+See also [Pattern Modifiers](http://php.net/manual/en/reference.pcre.pattern.modifiers.php)

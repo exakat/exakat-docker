@@ -1,4 +1,4 @@
-Spot logical mistakes within logical expressions. 
+Avoid logical mistakes within long expressions. 
 
 Sometimes, the logic is not what it seems. It is important to check the actual impact of every part of the logical expression. Do not hesitate to make a table with all possible cases. If those cases are too numerous, it may be time to rethink the whole expression. 
 

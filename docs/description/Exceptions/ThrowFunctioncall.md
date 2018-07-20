@@ -16,3 +16,4 @@ function getException(ERROR_TYPE, $message) {
 
 When the new keyword is forgotten, then the class construtor is used as a functionname, and now exception is emited, but an 'Undefined function' fatal error is emited. 
 
+See also [Exceptions](http://php.net/manual/en/language.exceptions.php).

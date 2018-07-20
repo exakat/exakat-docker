@@ -23,3 +23,4 @@ if (empty($a2)) {
 
 ?>
 
+See also [empty()](http://www.php.net/manual/en/function.empty.php).

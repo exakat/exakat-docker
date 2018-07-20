@@ -1,11 +1,11 @@
 # Exakat Docker Container.
 
-[Docker](https://www.docker.com) container to install and run [Exakat](https://www.exakat.io/) 0.11.0.
+[Docker](https://www.docker.com) container to install and run [Exakat](https://www.exakat.io/) 1.3.6.
 
 ## Features
 
-* [Exakat](https://www.exakat.io/) [`0.11.0`](https://github.com/exakat/exakat.git)
-* [PHP](https://php.net) 7.1
+* [Exakat](https://www.exakat.io/) [`1.3.6`](https://github.com/exakat/exakat.git)
+* [PHP](https://php.net) 7.2
 
 ## Installation
 

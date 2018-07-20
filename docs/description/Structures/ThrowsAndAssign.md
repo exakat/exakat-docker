@@ -1,5 +1,7 @@
 It is possible to throw an exception, and, in the same time, assign this exception to a variable.
 
+However, the variable will never be used, as the exception is thrown, and any following code is not executed. 
+
 <?php
 
     // $e is useful, though not by much
@@ -11,6 +13,4 @@ It is possible to throw an exception, and, in the same time, assign this excepti
 
 ?>
 
-However, $e will never be used, as the exception is thrown, and any following code is not executed. 
-
-The assignement should be removed.
+The assignment should be removed.

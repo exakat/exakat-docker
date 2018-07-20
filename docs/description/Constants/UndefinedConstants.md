@@ -13,3 +13,6 @@ echo A.B.C;
 ?>
 
 It is recommended to define them all, or to avoid using them.
+
+See also [Constants](http://php.net/manual/en/language.constants.php).
+

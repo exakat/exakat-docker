@@ -1,4 +1,4 @@
-Avoid __autoload(). Only use spl_register_autoload().
+Avoid __autoload(), only use spl_register_autoload().
 
 __autoload() will be deprecated in PHP 7.2 and possibly removed in later version.
 

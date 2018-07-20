@@ -79,8 +79,8 @@
     },
     {
         "patternId": "Structures/StrposCompare",
-        "title": "Strpos Comparison",
-        "description": "Strpos Comparison",
+        "title": "Strpos()-like Comparison",
+        "description": "Strpos()-like Comparison",
         "timetofix": 15
     },
     {
@@ -117,12 +117,6 @@
         "patternId": "Interfaces/EmptyInterface",
         "title": "Empty Interfaces",
         "description": "Empty Interfaces",
-        "timetofix": 5
-    },
-    {
-        "patternId": "Type/MalformedOctal",
-        "title": "Malformed Octal",
-        "description": "Malformed Octal",
         "timetofix": 5
     },
     {
@@ -204,12 +198,6 @@
         "timetofix": 5
     },
     {
-        "patternId": "Php/Incompilable",
-        "title": "Incompilable Files",
-        "description": "Incompilable Files",
-        "timetofix": 30
-    },
-    {
         "patternId": "Namespaces/UseWithFullyQualifiedNS",
         "title": "Use With Fully Qualified Name",
         "description": "Use With Fully Qualified Name",
@@ -256,12 +244,6 @@
         "title": "Wrong Optional Parameter",
         "description": "Wrong Optional Parameter",
         "timetofix": 15
-    },
-    {
-        "patternId": "Functions/MultipleSameArguments",
-        "title": "Multiple Definition Of The Same Argument",
-        "description": "Multiple Definition Of The Same Argument",
-        "timetofix": 5
     },
     {
         "patternId": "Php/IsnullVsEqualNull",
@@ -409,14 +391,14 @@
     },
     {
         "patternId": "Classes/UnusedPrivateProperty",
-        "title": "Unused Static Properties",
-        "description": "Unused Static Properties",
+        "title": "Unused Private Properties",
+        "description": "Unused Private Properties",
         "timetofix": 15
     },
     {
         "patternId": "Classes/UnusedPrivateMethod",
-        "title": "Unused Static Methods",
-        "description": "Unused Static Methods",
+        "title": "Unused Private Methods",
+        "description": "Unused Private Methods",
         "timetofix": 15
     },
     {
@@ -439,8 +421,8 @@
     },
     {
         "patternId": "Php/Deprecated",
-        "title": "Deprecated Code",
-        "description": "Deprecated Code",
+        "title": "Deprecated Functions",
+        "description": "Deprecated Functions",
         "timetofix": 15
     },
     {
@@ -481,8 +463,8 @@
     },
     {
         "patternId": "Classes/OldStyleVar",
-        "title": "Var",
-        "description": "Var",
+        "title": "Var Keyword",
+        "description": "Var Keyword",
         "timetofix": 15
     },
     {
@@ -502,12 +484,6 @@
         "title": "Unresolved Classes",
         "description": "Unresolved Classes",
         "timetofix": 15
-    },
-    {
-        "patternId": "Functions/LoopCalling",
-        "title": "Functions In Loop Calls",
-        "description": "Functions In Loop Calls",
-        "timetofix": 30
     },
     {
         "patternId": "Namespaces/UnresolvedUse",
@@ -607,8 +583,8 @@
     },
     {
         "patternId": "Structures/PropertyVariableConfusion",
-        "title": "Property/Variable Confusion",
-        "description": "Property/Variable Confusion",
+        "title": "Property Variable Confusion",
+        "description": "Property Variable Confusion",
         "timetofix": 30
     },
     {
@@ -666,30 +642,6 @@
         "timetofix": 15
     },
     {
-        "patternId": "Extensions/Extapc",
-        "title": "ext/apc",
-        "description": "ext/apc",
-        "timetofix": 30
-    },
-    {
-        "patternId": "Extensions/Extfdf",
-        "title": "ext/fdf",
-        "description": "ext/fdf",
-        "timetofix": 30
-    },
-    {
-        "patternId": "Extensions/Extmysql",
-        "title": "ext/mysql",
-        "description": "ext/mysql",
-        "timetofix": 30
-    },
-    {
-        "patternId": "Extensions/Extsqlite",
-        "title": "ext/sqlite",
-        "description": "ext/sqlite",
-        "timetofix": 30
-    },
-    {
         "patternId": "Php/ShortOpenTagRequired",
         "title": "Short Open Tags",
         "description": "Short Open Tags",
@@ -714,12 +666,6 @@
         "timetofix": 15
     },
     {
-        "patternId": "Functions/ShouldBeTypehinted",
-        "title": "Argument Should Be Typehinted",
-        "description": "Argument Should Be Typehinted",
-        "timetofix": 30
-    },
-    {
         "patternId": "Structures/GlobalUsage",
         "title": "Global Usage",
         "description": "Global Usage",
@@ -727,8 +673,8 @@
     },
     {
         "patternId": "Php/ReservedNames",
-        "title": "PHP Keywords As Names",
-        "description": "PHP Keywords As Names",
+        "title": "allowedNames",
+        "description": "allowedNames",
         "timetofix": 15
     },
     {
@@ -766,18 +712,6 @@
         "title": "Constant Class",
         "description": "Constant Class",
         "timetofix": 30
-    },
-    {
-        "patternId": "Files/NotDefinitionsOnly",
-        "title": "Not Definitions Only",
-        "description": "Not Definitions Only",
-        "timetofix": 30
-    },
-    {
-        "patternId": "Arrays/ShouldPreprocess",
-        "title": "Preprocess Arrays",
-        "description": "Preprocess Arrays",
-        "timetofix": 15
     },
     {
         "patternId": "Structures/RepeatedPrint",
@@ -997,8 +931,8 @@
     },
     {
         "patternId": "Structures/ImpliedIf",
-        "title": "No Implied If",
-        "description": "No Implied If",
+        "title": "Implied If",
+        "description": "Implied If",
         "timetofix": 5
     },
     {
@@ -1134,12 +1068,6 @@
         "timetofix": 30
     },
     {
-        "patternId": "Classes/NullOnNew",
-        "title": "Null On New",
-        "description": "Null On New",
-        "timetofix": 5
-    },
-    {
         "patternId": "Structures/StaticLoop",
         "title": "Static Loop",
         "description": "Static Loop",
@@ -1206,12 +1134,6 @@
         "timetofix": 15
     },
     {
-        "patternId": "Php/ListWithAppends",
-        "title": "List With Appends",
-        "description": "List With Appends",
-        "timetofix": 30
-    },
-    {
         "patternId": "Structures/UselessBrackets",
         "title": "Useless Brackets",
         "description": "Useless Brackets",
@@ -1228,12 +1150,6 @@
         "title": "eval() Without Try",
         "description": "eval() Without Try",
         "timetofix": 15
-    },
-    {
-        "patternId": "Extensions/Extfann",
-        "title": "ext/fann",
-        "description": "ext/fann",
-        "timetofix": 30
     },
     {
         "patternId": "Functions/RelayFunction",
@@ -1291,8 +1207,8 @@
     },
     {
         "patternId": "Classes/CouldBePrivate",
-        "title": "Property Could Be Private",
-        "description": "Property Could Be Private",
+        "title": "Property Could Be Private Property",
+        "description": "Property Could Be Private Property",
         "timetofix": 30
     },
     {
@@ -1318,12 +1234,6 @@
         "title": "Unknown Directive Name",
         "description": "Unknown Directive Name",
         "timetofix": 15
-    },
-    {
-        "patternId": "Variables/CloseNaming",
-        "title": "Confusing Names",
-        "description": "Confusing Names",
-        "timetofix": 30
     },
     {
         "patternId": "Php/PregMatchAllFlag",
@@ -1429,8 +1339,8 @@
     },
     {
         "patternId": "Structures/SameConditions",
-        "title": "Same Conditions",
-        "description": "Same Conditions",
+        "title": "Same Conditions In Condition",
+        "description": "Same Conditions In Condition",
         "timetofix": 15
     },
     {
@@ -1515,12 +1425,6 @@
         "patternId": "Structures/UseSystemTmp",
         "title": "Use System Tmp",
         "description": "Use System Tmp",
-        "timetofix": 30
-    },
-    {
-        "patternId": "Classes/PropertyUsedBelow",
-        "title": "Property Used Below",
-        "description": "Property Used Below",
         "timetofix": 30
     },
     {
@@ -1615,8 +1519,8 @@
     },
     {
         "patternId": "Security/DontEchoError",
-        "title": "Dont Echo Error",
-        "description": "Dont Echo Error",
+        "title": "Don't Echo Error",
+        "description": "Don't Echo Error",
         "timetofix": 5
     },
     {
@@ -1662,15 +1566,9 @@
         "timetofix": 30
     },
     {
-        "patternId": "Functions/CouldReturnVoid",
-        "title": "Could Return Void",
-        "description": "Could Return Void",
-        "timetofix": 15
-    },
-    {
         "patternId": "Functions/TooManyLocalVariables",
-        "title": "Too Many Local Variables",
-        "description": "Too Many Local Variables",
+        "title": "tooManyLocalVariableThreshold",
+        "description": "tooManyLocalVariableThreshold",
         "timetofix": 30
     },
     {
@@ -1692,15 +1590,15 @@
         "timetofix": 30
     },
     {
-        "patternId": "Structures/LongArguments",
-        "title": "Long Arguments",
-        "description": "Long Arguments",
-        "timetofix": 15
-    },
-    {
         "patternId": "Variables/AssignedTwiceOrMore",
         "title": "Assigned Twice",
         "description": "Assigned Twice",
         "timetofix": 15
+    },
+    {
+        "patternId": "Structures/MissingParenthesis",
+        "title": "Missing Parenthesis",
+        "description": "Missing Parenthesis",
+        "timetofix": 5
     }
 ]

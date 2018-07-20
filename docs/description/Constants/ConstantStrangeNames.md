@@ -14,3 +14,5 @@ echo defined('ABC!') ? constant('ABC!') : 'Undefined';
 
 ?>
 
+See also [PHP Constants](http://php.net/manual/en/language.constants.php).
+

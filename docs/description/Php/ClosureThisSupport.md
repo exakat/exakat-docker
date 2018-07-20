@@ -1,3 +1,24 @@
 When closure were introduced in PHP, they couldn't use the $this variable, making is cumbersome to access local properties when the closure was created within an object. 
 
+<?php
+
+// Invalid code in PHP 5.4 and less
+class Test
+{
+    public function testing()
+    {
+        return function() {
+            var_dump($this);
+        };
+    }
+}
+
+$object = new Test;
+$function = $object->testing();
+$function();
+    
+?>
+
 This is not the case anymore since PHP 5.4.
+
+See also [Anonymus Functions](http://php.net/manual/en/functions.anonymous.php).

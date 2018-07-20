@@ -1,6 +1,6 @@
 Resources are created, but never checked before being used. This is not safe.
 
-Always check that resources are correctly created before using them
+Always check that resources are correctly created before using them.
 
 <?php
 
@@ -28,3 +28,4 @@ bzclose(bzopen('file'));
 
 ?>
 
+See also [resources](http://php.net/manual/en/language.types.resource.php).

@@ -1,8 +1,6 @@
 'Make your classes always final, if they implement an interface, and no other public methods are defined'.
 
-When a class should be final, as explained by Ocramiux (Marco Pivetti).
-
-Full article : [When to declare classes final](http://ocramius.github.io/blog/when-to-declare-classes-final/).
+When a class should be final, as explained by Ocramius (Marco Pivetta).
 
 <?php
 
@@ -20,4 +18,6 @@ class finalClass implements i1 {
 }
 
 ?>
+
+See also [When to declare classes final](http://ocramius.github.io/blog/when-to-declare-classes-final/).
 

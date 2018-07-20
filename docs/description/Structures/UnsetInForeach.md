@@ -1,4 +1,4 @@
-Unset applied to the variables of a foreach loop are useless, as they are copies and not the actual value. Even if the value is a reference, unsetting it will not have effect on the original array : the only effect may be on values inside an array, or on properties inside an object.
+Unset applied to the variables of a ``foreach`` loop are useless, as they are copies and not the actual value. Even if the value is a reference, unsetting it has no effect on the original array : the only effect may be indirect, on elements inside an array, or on properties inside an object.
 
 <?php
 
@@ -26,3 +26,4 @@ print_r($array); // now [ ['c' => null] ]
 
 ?>
 
+See also [foreach](http://php.net/manual/en/control-structures.foreach.php).

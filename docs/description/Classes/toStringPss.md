@@ -18,4 +18,4 @@ class foo{
 
 ?>
 
-See [Magic methods](http://php.net/manual/en/language.oop5.magic.php).
+See also [Magic methods](http://php.net/manual/en/language.oop5.magic.php).

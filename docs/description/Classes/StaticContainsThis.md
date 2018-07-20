@@ -1,4 +1,4 @@
-Static methods are also called 'class methods' : they may be called even if the class has no instantiated object. Thus, the local variable $this won't exist, PHP will set it to NULL as usual. 
+Static methods are also called ``class methods`` : they may be called even if the class has no instantiated object. Thus, the local variable ``$this`` won't exist, PHP will set it to NULL as usual. 
 
 <?php
 
@@ -18,4 +18,6 @@ class foo {
 
 ?>
 
-Either, this is not a static method (simply remove the static keyword), or replace all $this mention by static properties Class::$property.
+Either, this is not a static method (simply remove the ``static`` keyword), or replace all $this mention by static properties ``Class::$property``.
+
+See also [Static Keyword](http://php.net/manual/en/language.oop5.static.php)

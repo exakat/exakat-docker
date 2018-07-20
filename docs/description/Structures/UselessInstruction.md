@@ -1,13 +1,16 @@
 Those instructions are useless, or contains useless parts. 
 
-For example, running '&lt;?php 1 + 1; ?&gt;' does nothing : the addition is actually performed, but not used : not displayed, not stored, not set. Just plain lost. 
+For example, an addition whose result is not stored in a variable, or immediately reused, does nothing : it is actually performed, and the result is lost. Just plain lost. 
 
 Here the useless instructions that are spotted : 
 
 <?php
 
-// This is a typo, that PHP turns into a constant, then a string. 
-conitnue;
+// Concatenating with an empty string is useless.
+$string = 'This part '.$is.' usefull but '.$not.'';
+
+// This is a typo, that PHP turns into a constant, then a string, then nothing.
+continue;
 
 // Empty string in a concatenation
 $a = 'abc' . '';

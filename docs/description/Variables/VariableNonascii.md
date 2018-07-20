@@ -1,11 +1,6 @@
-PHP supports variables with certain characters. 
+PHP allows certain characters in variable names. The variable name must only include letters, figures, underscores and ASCII characters from 128 to 255. 
 
-<?literal 
-[a-zA-Z_\x7f-\xff][a-zA-Z0-9_\x7f-\xff]*
-
-?>
-
-In practice, letters outside the scope of a-zA-Z0-9 are rare, and require more care when editing the code or passing it from OS to OS. 
+In practice, letters outside the scope of ``a-zA-Z0-9`` are rare, and require more care when editing the code or passing it from OS to OS. 
 
 <?php
 
@@ -20,3 +15,4 @@ $people = new 人();
 
 ?>
 
+See also [Variables](http://php.net/manual/en/language.variables.basics.php).

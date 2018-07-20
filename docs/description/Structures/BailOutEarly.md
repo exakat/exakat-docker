@@ -1,9 +1,9 @@
-When using conditions, it is recommended to return in the then, and avoid else clause. 
+When using conditions, it is recommended to quit in the current context, and avoid else clause altogether. 
 
 The main benefit is to make clear the method applies a condition, and stop quickly went it is not satisfied. 
 The main sequence is then focused on the useful code. 
 
-This works with break, continue too, inside loops. 
+This works with the break, continue, throw and goto keywords too, depending on situations.
 
 <?php
 
@@ -49,5 +49,17 @@ function foo3($a) {
     return $a;
 }
 
+// Make a return early, and make the condition clearly visible.
+function foo3($a) {
+    if ($a < 0) {
+        $a++;
+        methodcall();
+        functioncall();
+    } 
+}
+
 ?>
+
+See also [Avoid nesting too deeply and return early (part 1)](https://github.com/jupeter/clean-code-php#avoid-nesting-too-deeply-and-return-early-part-1) and 
+         [Avoid nesting too deeply and return early (part 2)](https://github.com/jupeter/clean-code-php#avoid-nesting-too-deeply-and-return-early-part-2).
 

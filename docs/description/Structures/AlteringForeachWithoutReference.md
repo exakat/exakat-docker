@@ -23,3 +23,5 @@ foreach($source as $key => &$value) {
 
 You may also use array_walk() or array_map() (when $key is not used) to avoid the use of foreach.
 
+See also [Foreach](http://php.net/manual/en/control-structures.foreach.php).
+

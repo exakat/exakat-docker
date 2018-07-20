@@ -122,12 +122,6 @@
             "parameters": []
         },
         {
-            "patternId": "Type/MalformedOctal",
-            "level": "Warning",
-            "category": "ErrorProne",
-            "parameters": []
-        },
-        {
             "patternId": "Php/CaseForPSS",
             "level": "Warning",
             "category": "ErrorProne",
@@ -206,12 +200,6 @@
             "parameters": []
         },
         {
-            "patternId": "Php/Incompilable",
-            "level": "Warning",
-            "category": "ErrorProne",
-            "parameters": []
-        },
-        {
             "patternId": "Namespaces/UseWithFullyQualifiedNS",
             "level": "Warning",
             "category": "ErrorProne",
@@ -255,12 +243,6 @@
         },
         {
             "patternId": "Functions/WrongOptionalParameter",
-            "level": "Warning",
-            "category": "ErrorProne",
-            "parameters": []
-        },
-        {
-            "patternId": "Functions/MultipleSameArguments",
             "level": "Warning",
             "category": "ErrorProne",
             "parameters": []
@@ -506,12 +488,6 @@
             "parameters": []
         },
         {
-            "patternId": "Functions/LoopCalling",
-            "level": "Warning",
-            "category": "ErrorProne",
-            "parameters": []
-        },
-        {
             "patternId": "Namespaces/UnresolvedUse",
             "level": "Warning",
             "category": "ErrorProne",
@@ -668,30 +644,6 @@
             "parameters": []
         },
         {
-            "patternId": "Extensions/Extapc",
-            "level": "Warning",
-            "category": "ErrorProne",
-            "parameters": []
-        },
-        {
-            "patternId": "Extensions/Extfdf",
-            "level": "Warning",
-            "category": "ErrorProne",
-            "parameters": []
-        },
-        {
-            "patternId": "Extensions/Extmysql",
-            "level": "Warning",
-            "category": "ErrorProne",
-            "parameters": []
-        },
-        {
-            "patternId": "Extensions/Extsqlite",
-            "level": "Warning",
-            "category": "ErrorProne",
-            "parameters": []
-        },
-        {
             "patternId": "Php/ShortOpenTagRequired",
             "level": "Warning",
             "category": "ErrorProne",
@@ -711,12 +663,6 @@
         },
         {
             "patternId": "Classes/ThisIsNotForStatic",
-            "level": "Warning",
-            "category": "ErrorProne",
-            "parameters": []
-        },
-        {
-            "patternId": "Functions/ShouldBeTypehinted",
             "level": "Warning",
             "category": "ErrorProne",
             "parameters": []
@@ -765,18 +711,6 @@
         },
         {
             "patternId": "Classes/ConstantClass",
-            "level": "Warning",
-            "category": "ErrorProne",
-            "parameters": []
-        },
-        {
-            "patternId": "Files/NotDefinitionsOnly",
-            "level": "Warning",
-            "category": "ErrorProne",
-            "parameters": []
-        },
-        {
-            "patternId": "Arrays/ShouldPreprocess",
             "level": "Warning",
             "category": "ErrorProne",
             "parameters": []
@@ -1136,12 +1070,6 @@
             "parameters": []
         },
         {
-            "patternId": "Classes/NullOnNew",
-            "level": "Warning",
-            "category": "ErrorProne",
-            "parameters": []
-        },
-        {
             "patternId": "Structures/StaticLoop",
             "level": "Warning",
             "category": "ErrorProne",
@@ -1208,12 +1136,6 @@
             "parameters": []
         },
         {
-            "patternId": "Php/ListWithAppends",
-            "level": "Warning",
-            "category": "ErrorProne",
-            "parameters": []
-        },
-        {
             "patternId": "Structures/UselessBrackets",
             "level": "Warning",
             "category": "ErrorProne",
@@ -1227,12 +1149,6 @@
         },
         {
             "patternId": "Structures/EvalWithoutTry",
-            "level": "Warning",
-            "category": "ErrorProne",
-            "parameters": []
-        },
-        {
-            "patternId": "Extensions/Extfann",
             "level": "Warning",
             "category": "ErrorProne",
             "parameters": []
@@ -1317,12 +1233,6 @@
         },
         {
             "patternId": "Php/DirectiveName",
-            "level": "Warning",
-            "category": "ErrorProne",
-            "parameters": []
-        },
-        {
-            "patternId": "Variables/CloseNaming",
             "level": "Warning",
             "category": "ErrorProne",
             "parameters": []
@@ -1520,12 +1430,6 @@
             "parameters": []
         },
         {
-            "patternId": "Classes/PropertyUsedBelow",
-            "level": "Warning",
-            "category": "ErrorProne",
-            "parameters": []
-        },
-        {
             "patternId": "Traits/DependantTrait",
             "level": "Warning",
             "category": "ErrorProne",
@@ -1664,12 +1568,6 @@
             "parameters": []
         },
         {
-            "patternId": "Functions/CouldReturnVoid",
-            "level": "Warning",
-            "category": "ErrorProne",
-            "parameters": []
-        },
-        {
             "patternId": "Functions/TooManyLocalVariables",
             "level": "Warning",
             "category": "ErrorProne",
@@ -1694,13 +1592,13 @@
             "parameters": []
         },
         {
-            "patternId": "Structures/LongArguments",
+            "patternId": "Variables/AssignedTwiceOrMore",
             "level": "Warning",
             "category": "ErrorProne",
             "parameters": []
         },
         {
-            "patternId": "Variables/AssignedTwiceOrMore",
+            "patternId": "Structures/MissingParenthesis",
             "level": "Warning",
             "category": "ErrorProne",
             "parameters": []

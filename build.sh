@@ -1,12 +1,6 @@
-#compile 
-docker build --no-cache -t exakat/codacy:0.10.9 .
+#!/usr/bin/env bash
 
-#run
-docker run -t \
---net=none \
---privileged=false \
---cap-drop=ALL \
---user=docker \
---rm=true \
--v $(pwd)/projects/api/code:/src:ro \
-exakat/codacy:0.10.9
+# Build exakat docker
+docker build -f gremlin.dockerfile -t exakat/gremlin:latest .
+docker run --rm -it -v "$PWD:/mnt" exakat/gremlin:latest
+docker build --no-cache -t codacy/codacy-exakat:latest .
