@@ -1,7 +1,7 @@
 FROM php:7.1-cli-jessie
 
 LABEL MAINTAINER Exakat, Damien Seguy, dseguy@exakat.io
-ENV EXAKAT_VERSION 1.3.4
+ENV EXAKAT_VERSION 1.4.2
 ENV GREMLIN_VERSION 3.3.3
 
 COPY exakat.sh /usr/src/exakat/
@@ -11,19 +11,14 @@ RUN \
     echo "===> php.ini" && \
     echo "memory_limit=-1" >> /usr/local/etc/php/php.ini && \
     \
-    apt-get update && apt-get install -y --no-install-recommends apt-utils gnupg  && \
+    echo "deb http://http.debian.net/debian jessie-backports main" | tee --append /etc/apt/sources.list.d/jessie-backports.list > /dev/null && \
+    \
+    apt-get update && apt-get install -y --no-install-recommends apt-utils gnupg wget software-properties-common python-software-properties  && \
     \
     echo "===> Java 8"  && \
-    echo "deb http://ppa.launchpad.net/webupd8team/java/ubuntu trusty main" | tee /etc/apt/sources.list.d/webupd8team-java.list  && \
-    echo "deb-src http://ppa.launchpad.net/webupd8team/java/ubuntu trusty main" | tee -a /etc/apt/sources.list.d/webupd8team-java.list  && \
-    apt-key adv --keyserver keyserver.ubuntu.com --recv-keys EEA14886  && \
-    apt-get update  && \
+    apt-get install -y --no-install-recommends  -t jessie-backports openjdk-8-jdk  && \
     \
-    echo debconf shared/accepted-oracle-license-v1-1 select true | debconf-set-selections  && \
-    echo debconf shared/accepted-oracle-license-v1-1 seen true | debconf-set-selections  && \
-    DEBIAN_FRONTEND=noninteractive apt-get install -y --force-yes oracle-java8-installer oracle-java8-set-default  && \
-    \
-    apt-get update && apt-get install -y --no-install-recommends git subversion mercurial lsof unzip && \
+    apt-get install -y --no-install-recommends git subversion mercurial lsof unzip && \
     \
     echo "====> Exakat $EXAKAT_VERSION" && \
     cd /usr/src/exakat && \
