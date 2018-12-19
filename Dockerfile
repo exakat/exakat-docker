@@ -5,7 +5,7 @@ ENV EXAKAT_VERSION 1.5.8
 ENV GREMLIN_VERSION 3.3.4
 
 COPY exakat.sh /usr/src/exakat/
-COPY exakat.phar /usr/src/exakat/
+COPY config/exakat.ini /usr/src/exakat/config/
 
 RUN \
     echo "====> Exakat $EXAKAT_VERSION" && \
