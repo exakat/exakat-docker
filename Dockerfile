@@ -1,7 +1,7 @@
 FROM php:7.3-cli-stretch
 
 LABEL MAINTAINER Exakat, Damien Seguy, dseguy@exakat.io
-ENV EXAKAT_VERSION 1.5.8
+ENV EXAKAT_VERSION 1.6.0
 ENV GREMLIN_VERSION 3.3.4
 
 COPY exakat.sh /usr/src/exakat/
@@ -20,7 +20,13 @@ RUN \
     apt-get update && \
     apt-get install -y default-jre && \
     \
-    apt-get install -y --no-install-recommends git subversion mercurial lsof unzip && \
+    apt-get install -y --no-install-recommends git subversion mercurial lsof unzip zip && \
+    \
+    echo "===> Composer"  && \
+    curl -sS https://getcomposer.org/installer -o composer-setup.php && \
+    HASH="$(curl --silent -o - https://composer.github.io/installer.sig)" && \
+    php -r "if (hash_file('SHA384', 'composer-setup.php') === '$HASH') { echo 'Installer verified'; } else { echo 'Installer corrupt'; unlink('composer-setup.php'); } echo PHP_EOL;" && \
+    php composer-setup.php --install-dir=/usr/local/bin --filename=composer && \
     \
     echo "====> Gremlin-Server" && \
     curl --silent -o apache-tinkerpop-gremlin-server-$GREMLIN_VERSION-bin.zip http://dist.exakat.io/apache-tinkerpop-gremlin-server-$GREMLIN_VERSION-bin.zip && \
