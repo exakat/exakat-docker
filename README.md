@@ -7,7 +7,7 @@
 * [Exakat](https://www.exakat.io/) [`1.6.0`](https://github.com/exakat/exakat.git)
 * [PHP](https://php.net) 7.3
 * [Gremlin Server 3.3.4](http://tinkerpop.apache.org/)
-* [Git](https://git-scm.com/), [Mercurial](https://www.mercurial-scm.org/) and [SVN](https://subversion.apache.org/).
+* [Git](https://git-scm.com/), [Mercurial](https://www.mercurial-scm.org/), [Composer](https://getcomposer.org/) and [SVN](https://subversion.apache.org/).
 
 ## Installation
 
