@@ -1,7 +1,7 @@
 FROM php:7.3-cli-stretch
 
 LABEL MAINTAINER Exakat, Damien Seguy, dseguy@exakat.io
-ENV EXAKAT_VERSION 1.6.0
+ENV EXAKAT_VERSION 1.6.1
 ENV GREMLIN_VERSION 3.3.4
 
 COPY exakat.sh /usr/src/exakat/
