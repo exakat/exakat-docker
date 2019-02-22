@@ -1,7 +1,7 @@
 FROM php:7.3-cli-stretch
 
 LABEL MAINTAINER Exakat, Damien Seguy, dseguy@exakat.io
-ENV EXAKAT_VERSION 1.6.1
+ENV EXAKAT_VERSION 1.6.7
 ENV GREMLIN_VERSION 3.3.4
 
 COPY exakat.sh /usr/src/exakat/
@@ -20,7 +20,7 @@ RUN \
     apt-get update && \
     apt-get install -y default-jre && \
     \
-    apt-get install -y --no-install-recommends git subversion mercurial lsof unzip zip && \
+    apt-get install -y --no-install-recommends git subversion mercurial bzr lsof unzip zip && \
     \
     echo "===> Composer"  && \
     curl -sS https://getcomposer.org/installer -o composer-setup.php && \
