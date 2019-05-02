@@ -1,5 +1,11 @@
 #Building
-docker build --no-cache -t exakat/exakat:1.7.6 .
+docker build --no-cache -t exakat/exakat:1.7.7 .
+
+docker build --no-cache -t exakat/base:3.3.6 .
+
+docker build --no-cache -t exakat/gitlab  --file Dockerfile-gitlab . 
+docker run -it --rm  --entrypoint /bin/sh exakat/gitlab
+
 
 docker build --no-cache -t exakat/exakat-alpine:1.7.0 --file Dockerfile-alpine . 
 
