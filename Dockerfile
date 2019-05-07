@@ -20,7 +20,7 @@ RUN \
     apt-get update && \
     apt-get install -y default-jre && \
     \
-    apt-get install -y --no-install-recommends git subversion mercurial bzr lsof unzip zip && \
+    apt-get install -y --no-install-recommends procps git subversion mercurial bzr lsof unzip zip && \
     \
     echo "===> Composer"  && \
     curl -sS https://getcomposer.org/installer -o composer-setup.php && \
