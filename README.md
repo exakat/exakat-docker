@@ -20,13 +20,13 @@
 2. Run Exakat:
 
     ``` sh
-	$ docker run -v $(pwd)/projects:/usr/src/exakat/projects --rm exakat/exakat run
+	$ docker run -v $(pwd)/projects:/usr/src/exakat/projects --rm exakat/exakat exakat
     ```
 
 3. Make commandline short cut for Exakat :
 
     ``` sh
-    $ echo "#\!/bin/bash\ndocker run -it -v \$(pwd)/projects:/usr/src/exakat/projects --rm --name my-exakat exakat/exakat \$@" > /usr/local/bin/exakat
+    $ echo "#\!/bin/bash\ndocker run -it -v \$(pwd)/projects:/usr/src/exakat/projects --rm --name my-exakat exakat/exakat exakat \$@" > /usr/local/bin/exakat
     $ chmod u+x /usr/local/bin/exakat
     $ exakat version
     ```
@@ -51,7 +51,7 @@ To build the Exakat dockerfile :
 4. Test the Exakat container:
 
     ``` sh
-    $ docker run -it -v $(pwd):/usr/src/exakat/projects --rm exakat/exakat doctor
-    $ docker run -it -v $(pwd):/usr/src/exakat/projects --rm exakat/exakat init -p nlptools -R https://github.com/atrilla/nlptools.git -v
-    $ docker run -it -v $(pwd):/usr/src/exakat/projects --rm exakat/exakat project -v -p nlptools
+    $ docker run -it -v $(pwd):/usr/src/exakat/projects --rm exakat/exakat exakat doctor
+    $ docker run -it -v $(pwd):/usr/src/exakat/projects --rm exakat/exakat exakat init -p nlptools -R https://github.com/atrilla/nlptools.git -v
+    $ docker run -it -v $(pwd):/usr/src/exakat/projects --rm exakat/exakat exakat project -v -p nlptools
 	```

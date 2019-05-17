@@ -42,18 +42,12 @@ RUN \
     curl --silent http://dist.exakat.io/index.php?file=exakat-$EXAKAT_VERSION.phar -o exakat.phar && \
     chmod a+x /usr/src/exakat/exakat.* && \
     \
-    export TERM="xterm" && \
-    \
-    php exakat.phar doctor  && \
-    \
     echo "====> Cleanup" && \
     \
     apt-get clean && \
     rm -rf /var/cache/oracle-jdk8-installer  && \
-    rm -rf /var/lib/apt/lists/* 
+    rm -rf /var/lib/apt/lists/* && \
+    ln -s /usr/src/exakat/exakat.phar /usr/local/bin/exakat && \
+    exakat doctor
 
-WORKDIR /usr/src/exakat
-
-entrypoint [ "/usr/src/exakat/exakat.sh" ]
-
-CMD [ "doctor" ]
+CMD [ "exakat", "doctor" ]
