@@ -1,6 +1,9 @@
 #Building
-docker build --no-cache -t exakat/exakat:1.8.0-local .
+docker build --no-cache -t exakat/exakat:1.8.3-local .
 docker images pull exakat/exakat:1.8.0 .
+
+# docker images |grep -v REPOSITORY|awk '{print $1}'|xargs -L1 docker pull 
+
 
 docker build --no-cache -t exakat/exakat:gitlab  --file Dockerfile-gitlab . 
 
@@ -68,3 +71,6 @@ docker run -it --rm -v $(pwd)/projects/backbee/code:/src exakat/exakat:latest pr
 docker run -it --rm -v $(pwd)/projects/backbee/code:/src exakat/exakat:1.7.8-local project -v
 
 /usr/src/exakat/exakat.phar project -v
+
+
+docker run -it --rm -w /src -v $(pwd):/src --entrypoint "/usr/src/exakat/exakat.phar" exakat/exakat:latest  project -v
