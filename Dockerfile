@@ -4,6 +4,8 @@ LABEL MAINTAINER Exakat, Damien Seguy, dseguy@exakat.io
 ENV EXAKAT_VERSION 1.9.7
 ENV GREMLIN_VERSION 3.4.3
 
+ENV PATH="/usr/src/exakat/:${PATH}"
+
 COPY exakat.sh /usr/src/exakat/
 COPY config/exakat.ini /usr/src/exakat/config/
 
@@ -41,13 +43,15 @@ RUN \
     cd /usr/src/exakat && \
     curl --silent http://dist.exakat.io/index.php?file=exakat-$EXAKAT_VERSION.phar -o exakat.phar && \
     chmod a+x /usr/src/exakat/exakat.* && \
+    mv exakat.phar exakat && \
     \
     echo "====> Cleanup" && \
     \
     apt-get clean && \
     rm -rf /var/cache/oracle-jdk8-installer  && \
     rm -rf /var/lib/apt/lists/* && \
-    ln -s /usr/src/exakat/exakat.phar /usr/local/bin/exakat && \
+    export PATH=$PATH:/usr/src/exakat/ && \
+    echo $PATH && \
     exakat doctor
 
 CMD [ "exakat", "doctor" ]
