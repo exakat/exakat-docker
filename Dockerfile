@@ -1,7 +1,7 @@
 FROM php:7.3-cli-stretch
 
 LABEL MAINTAINER Exakat, Damien Seguy, dseguy@exakat.io
-ENV EXAKAT_VERSION 1.9.7
+ENV EXAKAT_VERSION 1.9.8
 ENV GREMLIN_VERSION 3.4.3
 
 ENV PATH="/usr/src/exakat/:${PATH}"
@@ -50,8 +50,6 @@ RUN \
     apt-get clean && \
     rm -rf /var/cache/oracle-jdk8-installer  && \
     rm -rf /var/lib/apt/lists/* && \
-    export PATH=$PATH:/usr/src/exakat/ && \
-    echo $PATH && \
     exakat doctor
 
 CMD [ "exakat", "doctor" ]
