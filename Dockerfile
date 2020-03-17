@@ -1,8 +1,9 @@
 FROM php:7.4-cli-buster
 
 LABEL MAINTAINER Exakat, Damien Seguy, dseguy@exakat.io
-ENV EXAKAT_VERSION 2.0.5
-ENV GREMLIN_VERSION 3.4.4
+ENV EXAKAT_VERSION 2.0.6
+ENV GREMLIN_VERSION 3.4.6
+ENV GREMLIN_NEO4J_VERSION 3.4.6
 
 ENV PATH="/usr/src/exakat/:${PATH}"
 
@@ -36,7 +37,7 @@ RUN \
     mv apache-tinkerpop-gremlin-server-$GREMLIN_VERSION tinkergraph && \
     rm -rf apache-tinkerpop-gremlin-server-$GREMLIN_VERSION-bin.zip  && \
     cd tinkergraph && \
-    bin/gremlin-server.sh install org.apache.tinkerpop neo4j-gremlin $GREMLIN_VERSION && \
+    bin/gremlin-server.sh install org.apache.tinkerpop neo4j-gremlin $GREMLIN_NEO4J_VERSION && \
     cd .. && \
     \
     echo "====> Exakat $EXAKAT_VERSION" && \
