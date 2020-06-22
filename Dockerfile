@@ -2,8 +2,7 @@ FROM php:7.4-cli-buster
 
 LABEL MAINTAINER Exakat, Damien Seguy, dseguy@exakat.io
 ENV EXAKAT_VERSION 2.1.1
-ENV GREMLIN_VERSION 3.4.6
-ENV GREMLIN_NEO4J_VERSION 3.4.6
+ENV GREMLIN_VERSION 3.4.7
 
 ENV PATH="/usr/src/exakat/:${PATH}"
 
@@ -32,7 +31,7 @@ RUN \
     php composer-setup.php --install-dir=/usr/local/bin --filename=composer && \
     \
     echo "====> Gremlin-Server" && \
-    curl --silent -o apache-tinkerpop-gremlin-server-$GREMLIN_VERSION-bin.zip http://dist.exakat.io/apache-tinkerpop-gremlin-server-$GREMLIN_VERSION-bin.zip && \
+    curl --silent -o apache-tinkerpop-gremlin-server-$GREMLIN_VERSION-bin.zip http://www.exakat.io/versions/apache-tinkerpop-gremlin-server-$GREMLIN_VERSION-bin.zip && \
     unzip apache-tinkerpop-gremlin-server-$GREMLIN_VERSION-bin.zip && \
     mv apache-tinkerpop-gremlin-server-$GREMLIN_VERSION tinkergraph && \
     rm -rf apache-tinkerpop-gremlin-server-$GREMLIN_VERSION-bin.zip  && \
@@ -42,7 +41,7 @@ RUN \
     \
     echo "====> Exakat $EXAKAT_VERSION" && \
     cd /usr/src/exakat && \
-    curl --silent http://dist.exakat.io/index.php?file=exakat-$EXAKAT_VERSION.phar -o exakat.phar && \
+    curl --silent http://www.exakat.io/versions/index.php?file=exakat-$EXAKAT_VERSION.phar -o exakat.phar && \
     chmod a+x /usr/src/exakat/exakat.* && \
     mv exakat.phar exakat && \
     \
