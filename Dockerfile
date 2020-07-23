@@ -1,7 +1,7 @@
 FROM php:7.4-cli-buster
 
 LABEL MAINTAINER Exakat, Damien Seguy, dseguy@exakat.io
-ENV EXAKAT_VERSION 2.1.3
+ENV EXAKAT_VERSION 2.1.4
 ENV GREMLIN_VERSION 3.4.7
 
 ENV PATH="/usr/src/exakat/:${PATH}"
@@ -16,6 +16,7 @@ RUN \
     \
     echo "===> php.ini" && \
     echo "memory_limit=-1" >> /usr/local/etc/php/php.ini && \
+    echo "zend.assertions=-1" >> /usr/local/etc/php/php.ini && \
     \
     echo "===> Java 8"  && \
     mkdir -p /usr/share/man/man1 && \
@@ -36,7 +37,7 @@ RUN \
     mv apache-tinkerpop-gremlin-server-$GREMLIN_VERSION tinkergraph && \
     rm -rf apache-tinkerpop-gremlin-server-$GREMLIN_VERSION-bin.zip  && \
     cd tinkergraph && \
-    bin/gremlin-server.sh install org.apache.tinkerpop neo4j-gremlin $GREMLIN_NEO4J_VERSION && \
+    bin/gremlin-server.sh install org.apache.tinkerpop neo4j-gremlin $GREMLIN_VERSION && \
     cd .. && \
     \
     echo "====> Exakat $EXAKAT_VERSION" && \
