@@ -1,8 +1,9 @@
-FROM php:7.4-cli-buster
+FROM php:8.1-cli-buster
 
 LABEL MAINTAINER Exakat, Damien Seguy, dseguy@exakat.io
-ENV EXAKAT_VERSION 2.1.9
-ENV GREMLIN_VERSION 3.4.8
+ENV EXAKAT_VERSION 2.4.0
+ENV GREMLIN_VERSION 3.4.13
+ENV TZ=Europe/Paris
 
 ENV PATH="/usr/src/exakat/:${PATH}"
 
@@ -45,9 +46,8 @@ RUN \
     \
     echo "====> Exakat $EXAKAT_VERSION" && \
     cd /usr/src/exakat && \
-    curl --silent https://www.exakat.io/versions/index.php?file=exakat-$EXAKAT_VERSION.phar -o exakat.phar && \
-    chmod a+x /usr/src/exakat/exakat.* && \
-    mv exakat.phar exakat && \
+    curl --silent https://www.exakat.io/versions/index.php?file=exakat-$EXAKAT_VERSION.phar -o exakat && \
+    chmod a+x /usr/src/exakat/exakat && \
     \
     echo "====> Cleanup" && \
     \
