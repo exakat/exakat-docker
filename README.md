@@ -1,13 +1,23 @@
 # Exakat Docker Container
 
-[Docker](https://www.docker.com) container to install and run [Exakat](https://www.exakat.io/) 2.4.0.
+[Docker](https://www.docker.com) container and run [Exakat](https://www.exakat.io/) 2.4.0.
 
 ## Features
 
 * [Exakat](https://www.exakat.io/) [`2.4.0`](https://github.com/exakat/exakat-ce.git)
-* [PHP](https://php.net) 8.1
+* [PHP](https://php.net) 8.1 or 8.0
 * [Gremlin Server 3.4.13](http://tinkerpop.apache.org/)
-* [Git](https://git-scm.com/), [Mercurial](https://www.mercurial-scm.org/), [Composer](https://getcomposer.org/), [Bazaar](http://bazaar.canonical.com/en/) and [SVN](https://subversion.apache.org/).
+* VCS
+	* [Git](https://git-scm.com/) 
+	* [Mercurial](https://www.mercurial-scm.org/)
+	* [Composer](https://getcomposer.org/)
+	* [Bazaar](http://bazaar.canonical.com/en/)
+	* [SVN](https://subversion.apache.org/).
+	* [zip]
+
+## Tags
+
+
 
 ## Installation
 
